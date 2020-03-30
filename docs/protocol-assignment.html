@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Protocol Assignment | LIS 598 - Data Curation II</title>
+  <meta name="description" content="Chapter 5 Protocol Assignment | LIS 598 - Data Curation II" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Protocol Assignment | LIS 598 - Data Curation II" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html" />
+  
+  
+  <meta name="github-repo" content="OpenDataLiteracy/LIS598-Sp2020-DC2" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Protocol Assignment | LIS 598 - Data Curation II" />
+  
+  
+  
+
+<meta name="author" content="Nicholas Weber and Bree Norlander" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tidy-data.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Bookdown Book</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#graduate-school-during-a-pandemic"><i class="fa fa-check"></i><b>1.1</b> Graduate school during a pandemic</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#how-this-class-is-organized"><i class="fa fa-check"></i><b>1.2</b> How this class is organized</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#weekly-overview"><i class="fa fa-check"></i><b>1.3</b> Weekly Overview</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html"><i class="fa fa-check"></i><b>2</b> Data Curation II - Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#types-of-knowledge"><i class="fa fa-check"></i><b>2.1</b> Types of Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#working-defintions"><i class="fa fa-check"></i><b>2.2</b> Working Defintions</a></li>
+<li class="chapter" data-level="2.3" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#summary"><i class="fa fa-check"></i><b>2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html"><i class="fa fa-check"></i><b>3</b> Tables, Trees, and Triples</a><ul>
+<li class="chapter" data-level="3.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#trees"><i class="fa fa-check"></i><b>3.1</b> Trees</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#xml-vs-json---the-holy-war-of-information-science"><i class="fa fa-check"></i><b>3.1.1</b> XML vs JSON - The holy war of Information Science</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#readings"><i class="fa fa-check"></i><b>3.2</b> Readings</a></li>
+<li class="chapter" data-level="3.3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#exercise"><i class="fa fa-check"></i><b>3.3</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4</b> Tidy Data</a><ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html#readings-1"><i class="fa fa-check"></i><b>4.1</b> Readings</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="protocol-assignment.html"><a href="protocol-assignment.html"><i class="fa fa-check"></i><b>5</b> Protocol Assignment</a><ul>
+<li class="chapter" data-level="5.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#overview-requirements"><i class="fa fa-check"></i><b>5.1</b> Overview &amp; Requirements</a></li>
+<li class="chapter" data-level="5.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-1-user-stories-use-cases"><i class="fa fa-check"></i><b>5.2</b> Exercise 1: User Stories + Use Cases</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#user-stories"><i class="fa fa-check"></i><b>5.2.1</b> User Stories</a></li>
+<li class="chapter" data-level="5.2.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#use-cases-best-practices"><i class="fa fa-check"></i><b>5.2.2</b> Use Cases (Best Practices)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-2-data-collection-policies"><i class="fa fa-check"></i><b>5.3</b> Exercise 2: Data Collection Policies</a></li>
+<li class="chapter" data-level="5.4" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-3-repository-architectures"><i class="fa fa-check"></i><b>5.4</b> Exercise 3: Repository Architectures</a></li>
+<li class="chapter" data-level="5.5" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-4-data-transformations-and-quality-criteria"><i class="fa fa-check"></i><b>5.5</b> Exercise 4: Data Transformations and Quality Criteria</a></li>
+<li class="chapter" data-level="5.6" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-5-data-licensing"><i class="fa fa-check"></i><b>5.6</b> Exercise 5: Data Licensing</a></li>
+<li class="chapter" data-level="5.7" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-6-metadata-application-profiles"><i class="fa fa-check"></i><b>5.7</b> Exercise 6: Metadata Application Profiles</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">LIS 598 - Data Curation II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="protocol-assignment" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Protocol Assignment</h1>
+<div id="overview-requirements" class="section level2">
+<h2><span class="header-section-number">5.1</span> Overview &amp; Requirements</h2>
+<p>A protocol is like a recipe - it tells you what ingredients, tools, and steps are necessary to produce an end result. So just as you would follow a recipe to bake a cake, you might also follow a protocol to archive, share, or reuse data. In Data Curation I you created a simple protocol for a single dataset. In Data Curation II we have significantly more knowledge and skills to build upon this first protocol. In this assignment, we want to develop a protocol that makes clear how a data collection was assembled, what design choices were made in curating the collection, and some justification for why those choices meet a designated community’s expectations. Like any other recipe there are many ways we can achieve each of these steps. For example, our decisions about how to normalize data will depend on who is going to use it, the effort, the expense, etc. </p>
+<p>Over the course of the quarter you will complete a group or individual project focused on developing a protocol for curating a collection of open data. The topic, the audience, the type of data, and the curation tools required are all up for you to decide (note: I provide some examples below). </p>
+<p><strong>Goals</strong></p>
+<ul>
+<li>Gain experience curating data “in the wild” (e.g. on the web).</li>
+<li>Demonstrate competency in producing or identifying existing best practices for curating various types of data.</li>
+<li>Practice creating structured and unstructured documentation that improves the accessibility and usability of data.</li>
+<li>Develop a protocol that shows off your talents and can act as a portfolio for future professional activity.</li>
+</ul>
+<p><strong>Final Deliverable</strong></p>
+<p>Your final deliverable should include the following components:
+1. Project definition, scope, and audience
+2. User stories that define stakeholders
+4. Metadata needs, and a proposed schema or standard that will be applied to data in your collection
+4. Deposit policies for data in your collection (who can deposit, what kinds of data are of in scope, size of contributions, formats, etc.)
+6. Ingest, Transformation, Licensing, and Preservation Policies that will govern your data collection
+7. Curated Datasets - that is some related data that are normalized and described for a particular audience (This includes documentation for how transformations were performed, how data can and should be used, as well as limitations of the data).</p>
+<p>You will be required to produce a written report that <em>coherently</em> brings together each of the pieces described above.  Each week we will do an activity that helps you practice and produce a portion of your report. You should, with minimal additional effort, be able to simply combine these activities into one single document and hand it in (along with your data) for a passing grade. Additional information that you choose to include is left to your discretion. The only requirement is to include - at minimum - the elements above.</p>
+<p><strong>Form of Final Deliverable</strong></p>
+<p>Your final deliverable could take many forms. You can, as the examples demonstrate, deposit data in an open platform (e.g. Github) and supplement the collection with written documentation. You could also pitch another idea. I am completely open to innovations with this assignment - the only requirements are that you engage with the concepts we are discussing in class, and try to somehow implement these in a real world setting.</p>
+<p><strong>Presentation</strong></p>
+<p>In Week 10 you will be given the opprotunity to present a 5-10 minute overview of your protocol. This is optional. If you decide to do this, you should plan to explain design choices around each aspect of your final deliverable. How formal you make the presentation (slides, prepared talking points, etc) is up to your group. I will not grade informal presentations and in fact I highly encourage them.</p>
+<p><strong>Example Protocols</strong></p>
+<p>Here are some examples of previous Data Curation 2 protocols:
+- Flattened Fauna: <a href="https://github.com/amckennafoster/flattenedfauna">Repository</a> and <a href="https://flattenedfauna.gitbook.io/practice-space/-Lf0sbd1cy0sxUG-f_Sa/">Project Report</a>
+- VaxStats: <a href="https://github.com/kthrog/VaxStats">Repository</a> and <a href="https://vaxstats.gitbook.io/vax-stats/">Project Report</a>
+- R3 Recycling: <a href="https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling">Repository</a> and <a href="https://rochellelundy.gitbooks.io/r3-recycling-repository/content/">Project Report</a> (Note the lead author on this repository used it as a portfolio for her current job as a data curator) </p>
+</div>
+<div id="exercise-1-user-stories-use-cases" class="section level2">
+<h2><span class="header-section-number">5.2</span> Exercise 1: User Stories + Use Cases</h2>
+<p>In the third and fifth week of class we read about examples of doing data curation work that are “user centered.” Two broad techniques for engineering requirements of these users are through use cases, and user stories. The following exercises may be helpful in the work you plan to do this quarter in building a protocol to satisfy a community of data users. (note: both of these exercises are also listed on our canvas pages).</p>
+<div id="user-stories" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> User Stories</h3>
+<p>User stories are a simple, but powerful way to capture requirements when doing systems analysis and development.</p>
+<p>The level of detail, and the specific narrative style will vary greatly on the intended audience. For example, if we want to create a user story for accessing data stored in our repository we will need to think closely about different types of users, their skills, the ways they could access data, the different data they may want, etc.</p>
+<p>This could become a very complicated user story that could be overwhelming to translate into actionable policy or features of our data repository.</p>
+<p>Instead of trying to think through each complicated aspect of a user’s need we can try to atomize a user experience. In doing so we come up with simple story about the user that tells us the “who what and why” - so that we can figure out “how” …</p>
+<p><em>Elements</em></p>
+<p>The three most basic elements of a user story are:
+- Stakeholder - the type of stakeholder might be a user, curators, administrator, etc.
+- Feature - this could be a feature of a dataset, a system, or service
+- Goal - what is the stakeholder trying to achieve with the feature?</p>
+<p><em>Templates</em>
+A template for a user story goes something like this:</p>
+<p>As a <code>user</code> I want <code>some feature</code> so that I can achieve some <code>goal</code>.</p>
+<p>As a <code>data user of the QDR</code> I want to <code>find all datasets about recycling for cities in Pacific Northwest</code> So that I can reliably <code>compare recycling program policies and outcomes</code> for this region.</p>
+<p>Some variations on this theme: More recent work in human centered design places the goals first - that is, it attempts to say what is trying to be done, before even saying who is trying to do it…</p>
+<p>This is helpful for thinking about goals that may be shared across different user or stakeholder types.</p>
+<p>This variation of a user story goes something like:</p>
+<p>In order to achieve some business value
+As a stakeholder type
+I want some new system feature</p>
+<p><em>Here is your task</em></p>
+<p>Create user stories that help you understand the potential wants, needs, and desires of your designated community of users. For this first attempt - focus on user stories around data sharing. How might you satisfy these user stories? What choices do these stories help clarify or obscure about your protocol, and your designated community?</p>
+<p>Here is an example that can help clarify the way that user stories are assembled for the protocol: <a href="https://rochellelundy.gitbooks.io/r3-recycling-repository/content/r3Recycling/protocolReport/userCommunity.html" class="uri">https://rochellelundy.gitbooks.io/r3-recycling-repository/content/r3Recycling/protocolReport/userCommunity.html</a></p>
+</div>
+<div id="use-cases-best-practices" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Use Cases (Best Practices)</h3>
+<p>Another way to begin gathering information about users and their expectations for data are through use cases. As you read in week 5 for class the W3C has developed a template for conducting use cases for data on the web best practices. This exercise asks you to use that template to investigate best practices for data and repositories that are relevant to your quarter protocols.</p>
+<p>The simple steps to follow:
+- Read the Data on the Web Use Cases &amp; Requirements (as part of your weekly reading) <a href="https://www.w3.org/TR/dwbp-ucr" class="uri">https://www.w3.org/TR/dwbp-ucr</a>
+- Identify a data collection published on the web that is relevant to your protocol.
+- Develop a Use Case following the DWBP outline.</p>
+<p><strong>Protocol Deliverable</strong>
+Your should begin with a brief 3-5 sentence overview of the data, publisher, and the relevance to your quarter project. Additionally, your report might include the following:</p>
+<ul>
+<li>Elements that characterize the data available (or at least published in summary form) on the web: Domains served by the data; Obligation / Motivation for publishing the data; Potential ways that the domains will use the data; Quality (this will vary – we’ll discuss in class); Lineage (provenance); Size; Type / Format; Rate of Change; Lifespan; Potential audiences.</li>
+<li>Positive aspects of the published data.</li>
+<li>Negative aspects of the published data.</li>
+<li>Challenges that will face data publishers, users, or meeting best practices over time. See: <a href="https://www.w3.org/TR/dwbp-ucr/#general-challenges" class="uri">https://www.w3.org/TR/dwbp-ucr/#general-challenges</a></li>
+<li>Requirements for DWBP: Select two requirements for your data source, and justify why this is a requirement (~3 sentences) (See: <a href="https://www.w3.org/TR/dwbp-ucr/#requirements-1" class="uri">https://www.w3.org/TR/dwbp-ucr/#requirements-1</a></li>
+</ul>
+</div>
+</div>
+<div id="exercise-2-data-collection-policies" class="section level2">
+<h2><span class="header-section-number">5.3</span> Exercise 2: Data Collection Policies</h2>
+<p><strong>Intro</strong><br />
+Most data repositories draw a distinction between self-deposit, submission-based, and opportunistic data collecting.</p>
+<ul>
+<li>Self-deposit is exactly what it sounds like - data producers or collectors upload their data directly to a repository. Curation takes place post-hoc to make sure that there are no viruses, that data are within copyright protections, etc (Typical curation tasks like cleaning of data, creation of additional metadata, structuring of data, etc, are not typically applied to these kinds of collections.)</li>
+<li>Submission repositories require users to propose a deposit and follow strict guidelines before their data is accepted. Curators in this role act as a gatekeeper for what comes into the repository, and also perform preliminary work that will lead to more useful data over the long-term.</li>
+<li>Opportunistic is also exactly what it sounds like - data curators serve as the collectors of data and thus are expected to both evaluate as well as prepare the data for eventual deposit into a long-term storage repository.</li>
+</ul>
+<p>Regardless of how data are acquired there should be clear criteria for which kinds or types of content are relevant to a repository, and which are not. This criteria might also include the size, formats, and even subjects of a data collection. Libraries and Archives have historically referred to these kinds of policies as collection development. Data collections (or data repositories) differ in terms of their collection policies in that they are concerned with not only what types of data should be collected, but also what form and with what additional relevant resources should data be accepted. In short, a data collection policy brings together the readings and lecture we did around data cleaning, packaging, and sharing.</p>
+<p>Here are some valuable examples:</p>
+<ul>
+<li>ICPSR: <a href="http://www.icpsr.umich.edu/icpsrweb/deposit/">What should my deposit include?</a></li>
+<li>Cornell: <a href="http://guides.library.cornell.edu/ecommons/contentpolicy">Content collection policy</a> and also see their valuable <a href="http://guides.library.cornell.edu/ecommons/formats">Recommended file formats</a></li>
+<li>QDR - has a very structured submission process, including a set of helpful <a href="https://qdr.syr.edu/deposit/process">data deposit forms</a></li>
+<li>Roper Center also has a helpful example of a <a href="https://ropercenter.cornell.edu/polls/deposit-data/">deposit forms</a></li>
+<li>IDEALS - a repository at the University of Illinois has an excellent policy on the preservation grantees they can make for <a href="https://wiki.illinois.edu/wiki/display/IDEALS/Digital+Preservation+Support+Policy#DigitalPreservationSupportPolicy-Category1">particular file formats</a></li>
+</ul>
+<p><strong>Protocol Deliverable</strong><br />
+Establish the policies that will govern your data collection policy. This should include (at minimum):</p>
+<ul>
+<li>What are the criteria that make a dataset, or collection, relevant to your protocol? What, if anything, might exclude a relevant dataset?</li>
+<li>What will you require to be included for a minimum viable package of data? (e.g. the data must have a clear license, a format that is (or can be converted to) an open standard, and enough contextual documentation that structured metadata can be created).</li>
+<li>What formats will you accep, and what formats will not you accept?</li>
+<li>How big can a collection be (in size)?</li>
+<li>What kind of preservation guarantees will you make for each format?</li>
+</ul>
+<p>You should feel free to LIBERALLY borrow from existing repository policies or protocols that we have looked at this quarter. You should also feel empowered to look at other protocols, or other repositories and decide how to answer some of these questions.</p>
+</div>
+<div id="exercise-3-repository-architectures" class="section level2">
+<h2><span class="header-section-number">5.4</span> Exercise 3: Repository Architectures</h2>
+<p>Most of us will never design a new data curation system from the ground up. We will, by and large, develop on top of existing software platforms that provide basic features. This means we can focus our time and attention on <strong>configuring</strong> these architectures to meet our specific needs.</p>
+<p>As we read and reviewed in class this week - there are many existing open-source data repositories from which we can choose. However, deciding between different repository platforms can be a daunting task. We have to balance time, skills, user needs, and the requirements for both hardware and other related software.</p>
+<p>In this exercise we’ll try to use some basic criteria to profile the software underlying a repository platform, and then decide which repository we feel might ultimately be best for our data collections.</p>
+<p>Side note - many of you will not need to evaluate a repository for the sake of your protocol, but this is a handy skill to practice so may still be worth your time.</p>
+<p>For this exercise you can chose between four repository platforms.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://ckan.org/">CKAN</a> - by the Open Knowledge Foundation <a href="http://demo.ckan.org/">Demo</a></li>
+<li><a href="http://dataverse.org/">Dataverse</a> - by Harvard University <a href="https://demo.dataverse.org/">Demo</a> (see in particular this <a href="http://guides.dataverse.org/en/latest/installation/intro.html#intended-audience">introduction</a></li>
+<li><a href="https://samvera.org/samvera-open-source-repository-framework/technology-stack/">Samavera</a> - by a consortium of University Libraries and Cultural Heritage Institutions</li>
+<li><a href="https://wiki.duraspace.org/display/FF">Fedora</a> - by the DuraSpace consortium.</li>
+</ol>
+<p><strong>Evaluation criteria</strong><br />
+In order to evaluate a repository we need clear criteria about what makes one more suitable to our users’ needs than any other.</p>
+<p>Here is an example of a profile I created for the <a href="https://docs.google.com/document/d/1_wB4SUWwsZYcYq87k4_GfFxL9pPYXDqFsTGwhXhriQY/edit">Qualitative Data Repository</a> when our advisory board needed a simple explanation of why the technical team would invest a year of time and money into switching from one repository software platform (Fedora) to another (Dataverse).</p>
+<p>In general we can evaluate a repository in two ways:</p>
+<ol style="list-style-type: decimal">
+<li>Profiling the software that underlies a repository system: The underlying software for a repository can be thought of as the “repository architecture” (and is sometimes colloquially called the “repository stack”). An architecture typically consists of all the different components that are needed to realize the repository. An architecture typically includes an operating system, a server application, a database, a search engine, and a set of protocols that allow for data to be transferred between different components of the architecture. For example - the list below is the Dataverse architecture:</li>
+</ol>
+<ul>
+<li>Linux: RHEL/CentOS is highly recommended since all development and QA happens on this distribution.</li>
+<li>Glassfish: a Java EE application server to which the Dataverse application (war file) is to be deployed.</li>
+<li>PostgreSQL: a relational database.</li>
+<li>Solr: a search engine. A Dataverse-specific schema is provided.</li>
+<li>SMTP server: for sending mail for password resets and other notifications.</li>
+<li>Persistent identifier service: DOI and Handle support are provided. Production use requires a registered DOI or Handle.net authority.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Creating user stories / use cases to understand what expectations our users might have about a repository. We have previous completed exercises on these more “user centered” techniques - so for now we will focus our time and attention on evaluating the underlying software of a repository.</li>
+</ol>
+<p>In choosing a repository platform we should try to find the right balance between software (and our own skills) and user needs (or how well the software meets those needs).</p>
+<p><strong>Profile</strong></p>
+<p>Here is a template you can use when starting to evaluate a new repository platform:</p>
+<p><em>Platform-Name</em></p>
+<ul>
+<li>Who are the producers of the repository?</li>
+<li>What is the license of the repository’s software?<br />
+</li>
+<li>What are the hardware requirements of the repository?</li>
+<li>What are the related software requirements of the repository (in other words - what is its architecture)?<br />
+</li>
+<li>What is the current release or version number that is available for download?</li>
+<li><ul>
+<li>How often are releases made available?</li>
+</ul></li>
+<li><ul>
+<li>How do repository developers report an error or bug found in a release?</li>
+</ul></li>
+<li>How many people are using the repository? What kinds of data do they curate?</li>
+<li>How is the software modified by those users? (e.g. are there plugins or extensible libraries?)</li>
+<li>What type of data is typically stored in the repository? Does the architecture afford any special features for particular kinds of data (e.g. geospatial data repository software might have a map plugin)</li>
+<li>How customizable is the metadata for the repository? Can new application profiles be easily created and implemented?</li>
+<li>Is the repository interoperable with other types of repositories? (e.g. Does the repository have an easily accessible API?)</li>
+</ul>
+<p><strong>Major Strengths:</strong></p>
+<p><strong>Major weaknesses:</strong></p>
+<p><strong>Overall Assessment:</strong></p>
+</div>
+<div id="exercise-4-data-transformations-and-quality-criteria" class="section level2">
+<h2><span class="header-section-number">5.5</span> Exercise 4: Data Transformations and Quality Criteria</h2>
+<p>In previous exercises we created a policy that specified what kind of data our repository should collect, from whom we would accept data deposits, as well as practical expectations about the size and formats we preferred to collect when collecting new data. In this activity we are going to establish policies for what we do with collected or deposited data.</p>
+<p><strong>Transfer</strong><br />
+In an ideal scenario there is a clear transfer of ownership when data, documentation, and related resources are exchanged between one individual and another. But, often data are acquired, collected, or discovered in less than ideal scenarios. As data curators, we want to set up some general expectations about how data <em>should</em> be packaged or prepared for us to take-over responsibility for its preservation and reuse. Some general questions to consider when developing a data transfer policy:</p>
+<ul>
+<li>How will users or curators upload data to your repository? What kind of authenticity checks would you perform to make sure this data is what it purports to be? Does this include any virus scanning tools? (hint: CKAN provides some easy answers to this)</li>
+<li>How will you identify confidential, sensitive, or private information contained in this data? (in other words, What constitutes private or sensitive information?O What is your policy for removing / redacting / protecting this kind of content?</li>
+<li>How will you apply an identifier to each data collection? What kind? Why?</li>
+<li>What additional metadata (beyond what the depositor provides) should be created at the point of data being transfered to your stewardship?</li>
+<li>Is there any additional documentation that should be created in order to meaningfully preserve or use this data?</li>
+</ul>
+<p><strong>Transformation</strong><br />
+Taking ownership (or stewardship) of a data collection may be just the first step in an extended workflow of preparing the data for being ingested by a repository, stored for long term preservation, or prepared for discovery and meaningful reuse in a data catalog.</p>
+<p>Of course, transforming data to meet the needs of our users is one of the primary (and most time consuming) activities in data curation. The time we spend doing this is a direct function of the perceived value we have for the data we are curating. That means that we should try to establish policies that are appropriate for the sensitivity, uniqueness, and value of the data we are transforming. Consider the following questions as you begin to write out a policy about how data should be transformed for your protocol. Think about writing this section in the spirit of our previous reading on <a href="https://github.com/jtleek/datasharing">‘How to share data with a statistician’</a>.</p>
+<p><em>File / Format</em><br />
+- In what formats should the data be stored? Does this differ from how it should be served to end-users? If so, how might you describe the policy for transforming data from one format to another (e.g. when you will create a CSV from a set of tables in a database)
+- Will you accept data that are stored in proprietary formats? How will you communicate this to users?
+- How will you record, store, and provide end-users information about what changes you’ve made to a dataset? (e.g. When you migrate file formats, or update the data you could then change the version of the dataset from 1.0 to 2.0? Conversely, you could have an “updated_last” field in your metadata, etc.)</p>
+<p><em>Data Values</em><br />
+- What steps should be taken to normalize the data? (hint: You could go through something like <code>common transforms</code> in Refine and come up with an easy (and exhaustive) template). Consider common transformations like: consistent column (variable) names, developing a data dictionary for each dataset, standardizing values for missing or null values, labeling values (by type - e.g. text, number, boolean, categorical, etc.)
+- Return to the principles of Tidy Data (e.g. Each variable you measure should be in one column; Each different observation of that variable should be in a different row; There should be one table for each “kind” of variable; and, If you have multiple tables, they should include a column in the table that allows them to be joined or merged). How would you help ensure that these principles are met for data that you collect?</p>
+</div>
+<div id="exercise-5-data-licensing" class="section level2">
+<h2><span class="header-section-number">5.6</span> Exercise 5: Data Licensing</h2>
+<p><strong>Licenses</strong><br />
+Open data requires a declaration that the information objects (as provided by an individual or institution) are free for consumption, reuse, and/ or repurposing. Licenses further allow us to protect data creators and data stewards by being explicit about the expectations we have for how data should be used, repurposed, etc.</p>
+<p>There are a number of licenses available - each allowing you to achieve different protections for data creators or data stewards.</p>
+<p>Below are a small set of resources that describe data licenses and how to make choices between licenses:
+- Project Open Data’s commentary on <a href="https://project-open-data.cio.gov/open-licenses/">open licenses for open data</a>
+- Cornell Library’s <a href="https://data.research.cornell.edu/content/intellectual-property">IP rights for data management</a> (See in particular their distinction between databases and data)
+- <a href="https://help.data.world/hc/en-us/articles/115006114287-Common-license-types-for-datasets">Data.World’s guide to open licenses</a></p>
+<p><strong>Implications for your protocol</strong></p>
+<p>Here are the basic questions you should answer in this section of your protocol:
+- What licenses will you attach to a dataset, and why? (If your data is already under a license you might explain that here)
+- Will you make any exceptions?</p>
+<p>If you are interested in a primer on data licensing you might consult the following:
+- Carroll, M. W. (2015). Sharing research data and intellectual property law: A primer. PLoS biology, 13(8), e1002235. <a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002235">HTML</a></p>
+</div>
+<div id="exercise-6-metadata-application-profiles" class="section level2">
+<h2><span class="header-section-number">5.7</span> Exercise 6: Metadata Application Profiles</h2>
+<p>Overall goal: Looking at the relevant examples from our <a href="https://github.com/OpenDataLiteracy/LIS-598-DataCuration2-Sp2019/tree/master/Metadata-Examples">metadata folder</a>, and the use cases you developed last week, begin to develop an application profile for your project.</p>
+<p>To complete this exercise, you will need to answer the following questions:
+- What elements are necessary to meet your stakeholders’ expectations?
+- Will an existing schema meet all of these requirements?
+- If not what extensions or modifications are needed?
+- How does this align with the repository software (CKAN) that you have chosen.</p>
+<p>How do I evaluate metadata standards useful for my project? Dian Hillman offers these criteria:</p>
+<ul>
+<li>Look at what others in the domain are using (done!)<br />
+– Stability/volatility of the standard (and whether it really IS a standard) (i.e. How often is the standard changed?)
+– How well does the community for the standard integrates new needs and ideas
+– Startup and maintenance costs for use in an individual project (higher for more complex formats and implementations)</li>
+<li>What is (at most basic level) required for an application profile?</li>
+</ul>
+<p>For each element in your application profile you should (eventually) provide the following:
+- Namespace, and namespace definition
+- Status: Mandatory or optional
+- Permitted encoding scheme for values
+- Any rules for content
+- An example</p>
+<p>Here is an example entry from a previous class: <a href="https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling/protocolReport/metadata" class="uri">https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling/protocolReport/metadata</a></p>
+<p>You should also choose an encoding scheme for your examples (JSON or XML. Note: I don’t expect you to actually produce these records.)</p>
+<p>Remember from our readings: “If an implementor wishes to create ‘new’ elements that do not exist elsewhere then (under this model) they must create their own namespace schema, and take responsibility for ‘declaring’ and maintaining that schema.” You probably don’t want to do this, but if you do let’s discuss the requirements.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tidy-data.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
