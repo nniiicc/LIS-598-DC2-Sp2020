@@ -1,20 +1,20 @@
 # Protocol Assignment
 
 ## Overview & Requirements
-A protocol is like a recipe - it tells you what ingredients, tools, and steps are necessary to produce an end result. So just as you would follow a recipe to bake a cake, you might also follow a protocol to archive, share, or reuse data. In Data Curation I you created a simple protocol for a single dataset. In Data Curation II we have significantly more knowledge and skills to build upon this first protocol. In this assignment, we want to develop a protocol that makes clear how a data collection was assembled, what design choices were made in curating the collection, and some justification for why those choices meet a designated community's expectations. Like any other recipe there are many ways we can achieve each of these steps. For example, our decisions about how to normalize data will depend on who is going to use it, the effort, the expense, etc. 
+A protocol is like a recipe - it tells you what ingredients, tools, and steps are necessary to produce an end result. So just as you would follow a recipe to bake a cake, you might also follow a protocol to archive, share, or reuse data. In Data Curation I you created a simple protocol for a single dataset. In Data Curation II we have significantly more knowledge and skills to develop a more robust curation protocol. Over the course of the quarter you will complete a group or individual project focused on developing a robust protocol for curating a collection of open data. The topic, the audience, the type of data, and the curation tools required are all up for you to decide (note: I provide some examples below). 
 
-Over the course of the quarter you will complete a group or individual project focused on developing a protocol for curating a collection of open data. The topic, the audience, the type of data, and the curation tools required are all up for you to decide (note: I provide some examples below). 
 
 **Goals**
 
-- Gain experience curating data "in the wild" (e.g. on the web).
+- Gain experience curating open data "in the wild" (e.g. on the web).
 - Demonstrate competency in producing or identifying existing best practices for curating various types of data.
 - Practice creating structured and unstructured documentation that improves the accessibility and usability of data.
 - Develop a protocol that shows off your talents and can act as a portfolio for future professional activity.
 
 **Final Deliverable**
 
-Your final deliverable should include the following components:
+Your final deliverable will include the following components. Each week will do an assignment that helps you think through each of these components:
+
 1. Project definition, scope, and audience
 2. User stories that define stakeholders
 4. Metadata needs, and a proposed schema or standard that will be applied to data in your collection
@@ -22,26 +22,49 @@ Your final deliverable should include the following components:
 6. Ingest, Transformation, Licensing, and Preservation Policies that will govern your data collection
 7. Curated Datasets - that is some related data that are normalized and described for a particular audience (This includes documentation for how transformations were performed, how data can and should be used, as well as limitations of the data).
 
-You will be required to produce a written report that *coherently* brings together each of the pieces described above.  Each week we will do an activity that helps you practice and produce a portion of your report. You should, with minimal additional effort, be able to simply combine these activities into one single document and hand it in (along with your data) for a passing grade. Additional information that you choose to include is left to your discretion. The only requirement is to include - at minimum - the elements above.
+You will be required to produce a written report that *coherently* brings together each of the pieces described above. As stated above, each week we will do an assignment that helps you practice and produce a portion of your report. You should, with minimal additional effort, be able to simply combine these assignments into one single document and hand it in (along with your data) for a complete protocol. Additional information that you choose to include is left to your discretion. The only requirement is to include - at minimum - the elements above.
 
 **Form of Final Deliverable**
 
-Your final deliverable could take many forms. You can, as the examples demonstrate, deposit data in an open platform (e.g. Github) and supplement the collection with written documentation. You could also pitch another idea. I am completely open to innovations with this assignment - the only requirements are that you engage with the concepts we are discussing in class, and try to somehow implement these in a real world setting.
+Your final deliverable can take many forms. You can, as the examples below demonstrate, deposit data in an open platform (e.g. Github) and supplement the collection with written documentation. You could also pitch another idea. I am completely open to innovations with this assignment - the only requirements are that you engage with the concepts we are discussing in class, and try to somehow implement these in a real world setting.
 
 **Presentation**          
 
-In Week 10 you will be given the opprotunity to present a 5-10 minute overview of your protocol. This is optional. If you decide to do this, you should plan to explain design choices around each aspect of your final deliverable. How formal you make the presentation (slides, prepared talking points, etc) is up to your group. I will not grade informal presentations and in fact I highly encourage them. 
+In Week 10 you will be given the opportunity to present a 5-10 minute overview of your protocol. This is optional. If you decide to do this, you should plan to explain design choices around each aspect of your final deliverable. How formal you make the presentation (slides, prepared talking points, etc) is up to your group. I will not grade informal presentations and in fact I highly encourage them. There is a [forum](https://canvas.uw.edu/courses/1375713/discussion_topics/5337221) on Canvas where you can post these.
 
 **Example Protocols**
 
 Here are some examples of previous Data Curation 2 protocols:
+
 - Flattened Fauna: [Repository](https://github.com/amckennafoster/flattenedfauna) and [Project Report]( https://flattenedfauna.gitbook.io/practice-space/-Lf0sbd1cy0sxUG-f_Sa/)
 - VaxStats: [Repository](https://github.com/kthrog/VaxStats) and [Project Report](https://vaxstats.gitbook.io/vax-stats/)
 - R3 Recycling: [Repository](https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling) and [Project Report](https://rochellelundy.gitbooks.io/r3-recycling-repository/content/) (Note the lead author on this repository used it as a portfolio for her current job as a data curator) 
 
 
-## Exercise 1: User Stories + Use Cases
-In the third and fifth week of class we read about examples of doing data curation work that are "user centered." Two broad techniques for engineering requirements of these users are through use cases, and user stories. The following exercises may be helpful in the work you plan to do this quarter in building a protocol to satisfy a community of data users. (note: both of these exercises are also listed on our canvas pages).
+## Pre-Protocol Assignment: Data Pitch
+
+This assignment is more valuable and enjoyable if you work in a group. This is not a requirement, but I highly encourage it. To form groups we will 'pitch' ideas about what kind of data and what kind of audience you would like to create a protocol for... Even if you do not plan to join a group please post your idea (directions below).  
+
+Here are the requirements:
+
+- In 2-3 sentences explain what your topic is and why you think it is important.
+- In 1-2 sentences describe a potential audience for this protocol.
+- Provide a link(s) and a short description (1-2 sentences) of relevant open data that you could curate for the project. The data must be publicly accessible such that anyone can, with minimal effort, access it.
+
+On Canvas I have created a [forum where you can post your data pitch](https://canvas.uw.edu/courses/1375713/discussion_topics/5337221). Please post these by the end of Week 2 (April 2nd, 2020).  
+
+## Assignment 0: Project definition, scope, and audience
+Your first assignment will be to write a group definition and statement of work. This should include the following elements:
+
+- Group name
+- Group members
+- The topic of your curation protocol (e.g. transportation data)
+- The target audience for your protocol (e.g. who would use or consult your protocol)
+- Write a three to five sentence statement about your collective goals for the protocol (e.g. what do you want to work on and learn about through the activity)
+- Provide a link to any relevant data sources you have identified.
+
+## Assignment 1: User Stories + Use Cases
+Throughout class we will read examples data curation work that are "user centered." Two broad techniques for developing requirements of systems that are "human centered" are through use cases, and user stories. The following exercises may be helpful in the work you plan to do this quarter in building a protocol to satisfy a community of data users.
 
 ### User Stories
 User stories are a simple, but powerful way to capture requirements when doing systems analysis and development.
@@ -100,7 +123,7 @@ Your should begin with a brief 3-5 sentence overview of the data, publisher, and
 - Challenges that will face data publishers, users, or meeting best practices over time. See: https://www.w3.org/TR/dwbp-ucr/#general-challenges
 - Requirements for DWBP: Select two requirements for your data source, and justify why this is a requirement (~3 sentences) (See: https://www.w3.org/TR/dwbp-ucr/#requirements-1
 
-## Exercise 2: Data Collection Policies
+## Assignment 2: Data Collection Policies
 
 **Intro**        
 Most data repositories draw a distinction between self-deposit, submission-based, and opportunistic data collecting.
@@ -130,7 +153,7 @@ Establish the policies that will govern your data collection policy. This should
 
 You should feel free to LIBERALLY borrow from existing repository policies or protocols that we have looked at this quarter. You should also feel empowered to look at other protocols, or other repositories and decide how to answer some of these questions.
 
-## Exercise 3: Repository Architectures
+## Assignment 3: Repository Architectures
 
 Most of us will never design a new data curation system from the ground up. We will, by and large, develop on top of existing software platforms that provide basic features. This means we can focus our time and attention on **configuring** these architectures to meet our specific needs.  
 
@@ -192,7 +215,7 @@ Here is a template you can use when starting to evaluate a new repository platfo
 
 **Overall Assessment:**
 
-## Exercise 4: Data Transformations and Quality Criteria
+## Assignment 4: Data Transformations and Quality Criteria
 
 In previous exercises we created a policy that specified what kind of data our repository should collect, from whom we would accept data deposits, as well as practical expectations about the size and formats we preferred to collect when collecting new data. In this activity we are going to establish policies for what we do with collected or deposited data.
 
@@ -219,7 +242,7 @@ Of course, transforming data to meet the needs of our users is one of the primar
 - What steps should be taken to normalize the data? (hint: You could go through something like `common transforms` in Refine and come up with an easy (and exhaustive) template). Consider common transformations like: consistent column (variable) names, developing a data dictionary for each dataset, standardizing values for missing or null values, labeling values (by type - e.g. text, number, boolean, categorical, etc.)
 - Return to the principles of Tidy Data (e.g. Each variable you measure should be in one column; Each different observation of that variable should be in a different row; There should be one table for each "kind" of variable; and, If you have multiple tables, they should include a column in the table that allows them to be joined or merged). How would you help ensure that these principles are met for data that you collect?
 
-## Exercise 5: Data Licensing
+## Assignment 5: Data Licensing
 
 **Licenses**      
 Open data requires a declaration that the information objects (as provided by an individual or institution) are free for consumption, reuse, and/ or repurposing. Licenses further allow us to protect data creators and data stewards by being explicit about the expectations we have for how data should be used, repurposed, etc.
@@ -240,7 +263,7 @@ Here are the basic questions you should answer in this section of your protocol:
 If you are interested in a primer on data licensing you might consult the following:
 - Carroll, M. W. (2015). Sharing research data and intellectual property law: A primer. PLoS biology, 13(8), e1002235. [HTML](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002235)
 
-## Exercise 6: Metadata Application Profiles
+## Assignment 6: Metadata Application Profiles
 
 Overall goal: Looking at the relevant examples from our [metadata folder](https://github.com/OpenDataLiteracy/LIS-598-DataCuration2-Sp2019/tree/master/Metadata-Examples), and the use cases you developed last week, begin to develop an application profile for your project.
 

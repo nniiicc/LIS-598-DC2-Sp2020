@@ -10,7 +10,9 @@ To review: Procedural knowledge is *how* to do something, and declarative knowle
 
 ![Image 1 Caption: Visual depiction of distributions in 'flattening the curve' of infections related to Covid-19. This image is courtesy of the CDC and Huffington Post's data vizualization team](https://img.huffingtonpost.com/asset/5e6ac2ab260000f92cb66874.jpeg)
 
-**Procedurally** - How do we flatten a curve? Well, we employ techniques like social distancing, we wash our hands, we shut down broad sectors of the economy, we adhere to recommendations from the CDC, etc. It is only through knowing how to effectively combat viral outbreaks that we can put our declarative knowledge into practice.
+**Procedurally** - How do we flatten a curve? Well, we employ techniques like social distancing, we wash our hands, we shut down broad sectors of the economy, we adhere to recommendations from the CDC, etc. It is only through knowing how to effectively combat viral outbreaks that we can put our declarative knowledge into practice. And, we can use realtime data to see whether or not we are actually achieving a 'flattening of the curve'.
+
+![Image 2 Caption: Ben Baldwin created this helpful graph showing the mortality progressions of each state over time. You can see his data here https://github.com/guga31bb/covid19](https://raw.githubusercontent.com/guga31bb/covid19/master/figures/deaths_us_states.png)
 
 Data curation is not so different from this example. We often need to first obtain some declarative knowledge about data and the ways way that it was collected, organized, and analyzed. Understanding the intricacies of these issues helps us to understand how we can design effective interventions. In other words, only after we obtain some declarative knowledge about data can we start to employ procedural techniques for preparing data to be managed and used effectively over time.
 
@@ -54,7 +56,5 @@ A further important distinction that we made about metadata is that it can be ap
 
 **Data Quality**: From the ISO 8000 definition we assume data quality are "...the degree to which a set of characteristics of data fulfills stated requirements.” In simpler terms this is the degree to which a set of data or metadata are fit for use. Examples of data quality characteristics include completeness, validity, accuracy, consistency, availability and timeliness.
 
-## Summary 
+## Summary
 These basic concepts give us some of the declarative knowledge we need to begin to do data curation work. Over the next ten weeks I will continue to offer working definitions about basic concepts related to DC II readings and topics. It's important to keep in mind these are "working definitions" - they may have important qualifications or need refinement in any particular context. The point of this long review isn't to ask you to memorize these concepts, but instead provide something like a 'term of reference' or knowledge base that we can continue to refine and improve over the course.    
-
-

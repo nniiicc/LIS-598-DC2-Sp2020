@@ -1,8 +1,12 @@
 # Tidy Data
 
+## Chapter 
+
 Chapter forthcoming
 
 ## Lecture
+
+Forthcoming
 
 ## Readings
 

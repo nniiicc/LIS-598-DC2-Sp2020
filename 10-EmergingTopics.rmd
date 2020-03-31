@@ -1,9 +1,13 @@
 # Emerging Topics
 
 ## Chapter
-
-## Exercise
+Forthcoming
 
 ## Lecture
+Forthcoming
+
+## Exercise
+Forthcoming 
 
 ## Reading
+Forthcoming 

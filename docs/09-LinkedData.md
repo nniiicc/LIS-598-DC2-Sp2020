@@ -1,9 +1,13 @@
 # Ontologies and Linked Data
 
 ## Chapter
-
-## Exercise
+Forthcoming
 
 ## Lecture
+Forthcoming
+
+## Exercise
+Forthcoming 
 
 ## Reading
+Forthcoming 

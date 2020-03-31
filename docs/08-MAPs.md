@@ -1,9 +1,13 @@
 # Metadata Application Profiles
 
 ## Chapter
-
-## Exercise
+Forthcoming
 
 ## Lecture
+Forthcoming
+
+## Exercise
+Forthcoming 
 
 ## Reading
+Forthcoming 

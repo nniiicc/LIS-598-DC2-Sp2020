@@ -1,9 +1,13 @@
 # Data Acquisition, Search, and Discovery
 
 ## Chapter
-
-## Exercise
+Forthcoming
 
 ## Lecture
+Forthcoming
+
+## Exercise
+Forthcoming 
 
 ## Reading
+Forthcoming 

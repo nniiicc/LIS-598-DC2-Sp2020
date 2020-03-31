@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Data Integration | LIS 598 - Data Curation II</title>
+  <meta name="description" content="Chapter 5 Data Integration | LIS 598 - Data Curation II" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Data Integration | LIS 598 - Data Curation II" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html" />
+  <meta property="og:image" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html/covidsequence.png" />
+  
+  <meta name="github-repo" content="OpenDataLiteracy/LIS598-Sp2020-DC2" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Data Integration | LIS 598 - Data Curation II" />
+  
+  
+  <meta name="twitter:image" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html/covidsequence.png" />
+
+<meta name="author" content="Nicholas Weber and Bree Norlander" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tidy-data.html"/>
+<link rel="next" href="data-packaging.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Bookdown Book</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#graduate-school-during-a-pandemic"><i class="fa fa-check"></i><b>1.1</b> Graduate school during a pandemic</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#how-this-class-is-organized"><i class="fa fa-check"></i><b>1.2</b> How this class is organized</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#weekly-overview"><i class="fa fa-check"></i><b>1.3</b> Weekly Overview</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#grades"><i class="fa fa-check"></i><b>1.4</b> Grades</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html"><i class="fa fa-check"></i><b>2</b> Data Curation II - Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#types-of-knowledge"><i class="fa fa-check"></i><b>2.1</b> Types of Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#working-defintions"><i class="fa fa-check"></i><b>2.2</b> Working Defintions</a></li>
+<li class="chapter" data-level="2.3" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#summary"><i class="fa fa-check"></i><b>2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html"><i class="fa fa-check"></i><b>3</b> Tables, Trees, and Triples</a><ul>
+<li class="chapter" data-level="3.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#readings"><i class="fa fa-check"></i><b>3.1</b> Readings</a></li>
+<li class="chapter" data-level="3.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#exercise"><i class="fa fa-check"></i><b>3.2</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4</b> Tidy Data</a><ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html#lecture"><i class="fa fa-check"></i><b>4.1</b> Lecture</a></li>
+<li class="chapter" data-level="4.2" data-path="tidy-data.html"><a href="tidy-data.html#readings-1"><i class="fa fa-check"></i><b>4.2</b> Readings</a></li>
+<li class="chapter" data-level="4.3" data-path="tidy-data.html"><a href="tidy-data.html#exercise-1"><i class="fa fa-check"></i><b>4.3</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-integration.html"><a href="data-integration.html"><i class="fa fa-check"></i><b>5</b> Data Integration</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-integration.html"><a href="data-integration.html#chapter"><i class="fa fa-check"></i><b>5.1</b> Chapter</a></li>
+<li class="chapter" data-level="5.2" data-path="data-integration.html"><a href="data-integration.html#lecture-1"><i class="fa fa-check"></i><b>5.2</b> Lecture</a></li>
+<li class="chapter" data-level="5.3" data-path="data-integration.html"><a href="data-integration.html#readings-2"><i class="fa fa-check"></i><b>5.3</b> Readings</a></li>
+<li class="chapter" data-level="5.4" data-path="data-integration.html"><a href="data-integration.html#exercise-2"><i class="fa fa-check"></i><b>5.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-packaging.html"><a href="data-packaging.html"><i class="fa fa-check"></i><b>6</b> Data Packaging</a><ul>
+<li class="chapter" data-level="6.1" data-path="data-packaging.html"><a href="data-packaging.html#chapter-1"><i class="fa fa-check"></i><b>6.1</b> Chapter</a></li>
+<li class="chapter" data-level="6.2" data-path="data-packaging.html"><a href="data-packaging.html#lecture-2"><i class="fa fa-check"></i><b>6.2</b> Lecture</a></li>
+<li class="chapter" data-level="6.3" data-path="data-packaging.html"><a href="data-packaging.html#readings-3"><i class="fa fa-check"></i><b>6.3</b> Readings</a></li>
+<li class="chapter" data-level="6.4" data-path="data-packaging.html"><a href="data-packaging.html#exercise-3"><i class="fa fa-check"></i><b>6.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="repository-architectures.html"><a href="repository-architectures.html"><i class="fa fa-check"></i><b>7</b> Repository Architectures</a><ul>
+<li class="chapter" data-level="7.1" data-path="repository-architectures.html"><a href="repository-architectures.html#chapter-2"><i class="fa fa-check"></i><b>7.1</b> Chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="repository-architectures.html"><a href="repository-architectures.html#exercise-4"><i class="fa fa-check"></i><b>7.2</b> Exercise</a></li>
+<li class="chapter" data-level="7.3" data-path="repository-architectures.html"><a href="repository-architectures.html#lecture-3"><i class="fa fa-check"></i><b>7.3</b> Lecture</a></li>
+<li class="chapter" data-level="7.4" data-path="repository-architectures.html"><a href="repository-architectures.html#reading"><i class="fa fa-check"></i><b>7.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html"><i class="fa fa-check"></i><b>8</b> Data Acquisition, Search, and Discovery</a><ul>
+<li class="chapter" data-level="8.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#chapter-3"><i class="fa fa-check"></i><b>8.1</b> Chapter</a></li>
+<li class="chapter" data-level="8.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#exercise-5"><i class="fa fa-check"></i><b>8.2</b> Exercise</a></li>
+<li class="chapter" data-level="8.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#lecture-4"><i class="fa fa-check"></i><b>8.3</b> Lecture</a></li>
+<li class="chapter" data-level="8.4" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#reading-1"><i class="fa fa-check"></i><b>8.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html"><i class="fa fa-check"></i><b>9</b> Metadata Application Profiles</a><ul>
+<li class="chapter" data-level="9.1" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#chapter-4"><i class="fa fa-check"></i><b>9.1</b> Chapter</a></li>
+<li class="chapter" data-level="9.2" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#exercise-6"><i class="fa fa-check"></i><b>9.2</b> Exercise</a></li>
+<li class="chapter" data-level="9.3" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#lecture-5"><i class="fa fa-check"></i><b>9.3</b> Lecture</a></li>
+<li class="chapter" data-level="9.4" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#reading-2"><i class="fa fa-check"></i><b>9.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html"><i class="fa fa-check"></i><b>10</b> Ontologies and Linked Data</a><ul>
+<li class="chapter" data-level="10.1" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#chapter-5"><i class="fa fa-check"></i><b>10.1</b> Chapter</a></li>
+<li class="chapter" data-level="10.2" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#exercise-7"><i class="fa fa-check"></i><b>10.2</b> Exercise</a></li>
+<li class="chapter" data-level="10.3" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#lecture-6"><i class="fa fa-check"></i><b>10.3</b> Lecture</a></li>
+<li class="chapter" data-level="10.4" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#reading-3"><i class="fa fa-check"></i><b>10.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="emerging-topics.html"><a href="emerging-topics.html"><i class="fa fa-check"></i><b>11</b> Emerging Topics</a><ul>
+<li class="chapter" data-level="11.1" data-path="emerging-topics.html"><a href="emerging-topics.html#chapter-6"><i class="fa fa-check"></i><b>11.1</b> Chapter</a></li>
+<li class="chapter" data-level="11.2" data-path="emerging-topics.html"><a href="emerging-topics.html#exercise-8"><i class="fa fa-check"></i><b>11.2</b> Exercise</a></li>
+<li class="chapter" data-level="11.3" data-path="emerging-topics.html"><a href="emerging-topics.html#lecture-7"><i class="fa fa-check"></i><b>11.3</b> Lecture</a></li>
+<li class="chapter" data-level="11.4" data-path="emerging-topics.html"><a href="emerging-topics.html#reading-4"><i class="fa fa-check"></i><b>11.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="protocol-assignment.html"><a href="protocol-assignment.html"><i class="fa fa-check"></i><b>12</b> Protocol Assignment</a><ul>
+<li class="chapter" data-level="12.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#overview-requirements"><i class="fa fa-check"></i><b>12.1</b> Overview &amp; Requirements</a></li>
+<li class="chapter" data-level="12.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-1-user-stories-use-cases"><i class="fa fa-check"></i><b>12.2</b> Exercise 1: User Stories + Use Cases</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#user-stories"><i class="fa fa-check"></i><b>12.2.1</b> User Stories</a></li>
+<li class="chapter" data-level="12.2.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#use-cases-best-practices"><i class="fa fa-check"></i><b>12.2.2</b> Use Cases (Best Practices)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-2-data-collection-policies"><i class="fa fa-check"></i><b>12.3</b> Exercise 2: Data Collection Policies</a></li>
+<li class="chapter" data-level="12.4" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-3-repository-architectures"><i class="fa fa-check"></i><b>12.4</b> Exercise 3: Repository Architectures</a></li>
+<li class="chapter" data-level="12.5" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-4-data-transformations-and-quality-criteria"><i class="fa fa-check"></i><b>12.5</b> Exercise 4: Data Transformations and Quality Criteria</a></li>
+<li class="chapter" data-level="12.6" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-5-data-licensing"><i class="fa fa-check"></i><b>12.6</b> Exercise 5: Data Licensing</a></li>
+<li class="chapter" data-level="12.7" data-path="protocol-assignment.html"><a href="protocol-assignment.html#exercise-6-metadata-application-profiles"><i class="fa fa-check"></i><b>12.7</b> Exercise 6: Metadata Application Profiles</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">LIS 598 - Data Curation II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-integration" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Data Integration</h1>
+<div id="chapter" class="section level2">
+<h2><span class="header-section-number">5.1</span> Chapter</h2>
+</div>
+<div id="lecture-1" class="section level2">
+<h2><span class="header-section-number">5.2</span> Lecture</h2>
+</div>
+<div id="readings-2" class="section level2">
+<h2><span class="header-section-number">5.3</span> Readings</h2>
+<p>Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get a pass on readings this week. The chapter is the only thing you are required to read. However, let me make a plug for the Wikipedia article on <a href="https://en.wikipedia.org/wiki/Data_integration">data integration</a> - this is a phenomenal overview that should compliment my writing above.</p>
+<p>If you are interested in the history of this topic from the perspective of databases I also highly recommend the following:</p>
+<ul>
+<li>Halevy, A., Rajaraman, A., &amp; Ordille, J. (2006, September). Data integration: The teenage years. In Proceedings of the 32nd international conference on Very large data bases (pp. 9-16). <a href="https://www.cin.ufpe.br/~if696/referencias/integracao/_Data_Integration-The_Teenage_Years.pdf">PDF</a></li>
+</ul>
+<p>For a bit of historical background, Ch 1 of this book (pages 1-13) provides an excellent overview of how data were originally made compliant with web standards:</p>
+<ul>
+<li>Abiteboul, S., Buneman, P., &amp; Suciu, D. (2000). Data on the Web: from relations to semistructured data and XML. Morgan Kaufmann. <a href="https://homepages.dcc.ufmg.br/~laender/material/Data-on-the-Web-Skeleton.pdf">PDF</a></li>
+</ul>
+</div>
+<div id="exercise-2" class="section level2">
+<h2><span class="header-section-number">5.4</span> Exercise</h2>
+<p>The exercise this week comes from an interesting analysis of New York City 311 data by <a href="https://t.co/J7X3FMUvQc?amp=1">Chris Whong</a>. What he observes is a 1000% increase in “Consumer Complaint” 311 requests since the first recorded case of Covid-19 infection in NYC. This is not without some important external conditions - After this recorded infection there was a more concerted effort by NYC residents to stockpile supplies. Having heard numerous informal complaints of price-gouging the city recommended that consumers report businesses using a 311 hotline.</p>
+<p>A simple graph makes this more compelling than the narrative description - we see a huge spike in complaints beginning March 1st.
+<img src="https://pbs.twimg.com/media/ETapolDX0AAt9Ye?format=png&amp;name=900x900" /></p>
+<p>As savvy data curators, we might ask whether or not this trend holds across cities throughout the USA. And at its core, this is a data integration challenge. IF we can find other city’s 311 data we should be able to reliably compare rates of 311 complaints over time. The challenge will be finding data that has the same kinds of variables, and normalizing values to have a one to one comparison between cities.</p>
+<p>Lucky for us, there is an existing repository of <a href="https://andrew-friedman.github.io/jkan/datasets/">311 city data</a>.</p>
+<p>Your exercise this week is to choose two cities from this repository and attempt to integrate a subset of their data. This will be challenging. Here are my recommendations:</p>
+<ul>
+<li>Choose cities that have “up-to-date” data</li>
+<li>Subset this data so that it only includes 311 complains from March 1 forward</li>
+<li>Try to eliminate any unnecessary variables from your dataset. That is - we don’t need all of the information about the data - we only need a record of the complaint and the date.</li>
+</ul>
+<p>What to turn in:</p>
+<ul>
+<li>Provide us a table of your data from two cities (a Google Sheet or Excel document is fine). If you are able to integrate the data, provide just one sheet. If you cannot - give us two separate sheets.</li>
+<li>Provide an explanation (1 paragraph) of which cities you selected, what you tried to integrate the data, and why this was or was not challenging.</li>
+<li>You do not need to create a graph or any form of analysis - but if you do it would be very interesting to see your results!</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tidy-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-packaging.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

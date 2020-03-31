@@ -10,7 +10,9 @@ To review: Procedural knowledge is *how* to do something, and declarative knowle
 
 ![Image 1 Caption: Visual depiction of distributions in 'flattening the curve' of infections related to Covid-19. This image is courtesy of the CDC and Huffington Post's data vizualization team](https://img.huffingtonpost.com/asset/5e6ac2ab260000f92cb66874.jpeg)
 
-**Procedurally** - How do we flatten a curve? Well, we employ techniques like social distancing, we wash our hands, we shut down broad sectors of the economy, we adhere to recommendations from the CDC, etc. It is only through knowing how to effectively combat viral outbreaks that we can put our declarative knowledge into practice.
+**Procedurally** - How do we flatten a curve? Well, we employ techniques like social distancing, we wash our hands, we shut down broad sectors of the economy, we adhere to recommendations from the CDC, etc. It is only through knowing how to effectively combat viral outbreaks that we can put our declarative knowledge into practice. And, we can use realtime data to see whether or not we are actually achieving a 'flattening of the curve'.
+
+![Image 2 Caption: Ben Baldwin created this helpful graph showing the mortality progressions of each state over time. You can see his data here https://github.com/guga31bb/covid19](https://raw.githubusercontent.com/guga31bb/covid19/master/figures/deaths_us_states.png)
 
 Data curation is not so different from this example. We often need to first obtain some declarative knowledge about data and the ways way that it was collected, organized, and analyzed. Understanding the intricacies of these issues helps us to understand how we can design effective interventions. In other words, only after we obtain some declarative knowledge about data can we start to employ procedural techniques for preparing data to be managed and used effectively over time.
 
@@ -24,9 +26,12 @@ Before we begin diving into the content of DC II, it will help to revisit some d
 
 **Data**: Data are various types of digital objects playing the role of evidence. Type and role distinctions have to do with the relational nature of data. A type is rigid (such as a file format) and a role is fluid (it can change given a context). A simple example will help make this clear: I am a person. This is a type. Regardless of any external circumstances I will remain a person. I am also a professor. This is a role that I play. I might, depending on the success of my tenure case, not be a professor in the future. This is simply a professional title that I have for a small amount of time. Data have similar rigid and fluid properties - A tabular dataset will have a type of structure (rows, columns, and values). Unless we take some purposeful action to transform this data it will remain tabular as a type. But, this tabular data might be evidence of some real world phenmena - it might be set of species occurrence records, the perciptation and temperature of a particular place, etc. This evidential role can shift and change depending on who is using the data, and for what purpose.
 
+**FAIR Data**: An emerging shorthand description for open research data - that is applicable to any sector - is the concept of F.A.I.R. FAIR data should be Findable, Accessible, Interoperable, and Reusable. We will discuss this concept in a bit more depth throughout this quarter.
+
 **Data curation**: Data curation is the active and ongoing management of data throughout a lifecycle of use, including its reuse in unanticipated contexts. This definition emphasizes that curation is not one narrow set of activities, but is an ongoing *process* that takes into account both material aspects of data, as well as the surrounding community of users that employ different practices while interacting with data and informaiton infrastructures.
 
 **Metadata**: Metadata is most simply a set of standardized attribute-value pairs that provide contextual information about an object or artifact. Metadata, at an abstract level, has some features which are helpful for unpacking and making sense of the ways that descriptive, technical, and administrative information become useful for a digital object playing the role of evidence. Metadata can and often does include the following:  
+
 - Classes -
 - Sub-classes -
 - Instances - are observations or concrete examples of a class. For example, my dog `Yael` is an instance of the sub-class Saluki. A Saluki is an instance of the sub-class Canine, which is an instance of a class of Mammals. A class or sub-class instance also has attributes or properties that define it is a member of that class or sub-class.
@@ -54,7 +59,5 @@ A further important distinction that we made about metadata is that it can be ap
 
 **Data Quality**: From the ISO 8000 definition we assume data quality are "...the degree to which a set of characteristics of data fulfills stated requirements.” In simpler terms this is the degree to which a set of data or metadata are fit for use. Examples of data quality characteristics include completeness, validity, accuracy, consistency, availability and timeliness.
 
-## Summary 
+## Summary
 These basic concepts give us some of the declarative knowledge we need to begin to do data curation work. Over the next ten weeks I will continue to offer working definitions about basic concepts related to DC II readings and topics. It's important to keep in mind these are "working definitions" - they may have important qualifications or need refinement in any particular context. The point of this long review isn't to ask you to memorize these concepts, but instead provide something like a 'term of reference' or knowledge base that we can continue to refine and improve over the course.    
-
-
