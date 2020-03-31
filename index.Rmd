@@ -12,7 +12,9 @@ url: 'http\://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html'
 description: ""
 ---
 
-# Overview
+Data Curation II examines a broad range of practical and conceptual issues in the field of data curation. As the second in a sequence of courses offered at the UW iSchool, Data Curation II offers an in-depth study of the semantics and structure of data as an information object used in scholarship and society. This knowledge will be useful when applied to practical activities such as data normalization, cleaning, or packaging for sharing and reuse. We will also pay particular attention to the repository architectures  (technical design) and information infrastructures (technological and social connectivity) that  constrain and afford data access. Throughout the quarter we will draw on research, case studies, and practical working examples in order to examine key challenges in the field.
+
+# Course Overview
 
 ## Graduate school during a pandemic       
 There is no easy way to put this - its going to be a challenging quarter. I usually put a note in my syllabus that says something along the lines of "...coursework occasionally needs to take a second, third, or fourth priority in your life. All of us have commitments that exceed the expectation of being fully present each week, and I don't expect you to be operating at 100% engagement each day." Even this qualification seems out of touch given the current climate we are operating in for the Spring 2020 quarter. There will be demands on your time, attention, emotions, and cognitive ability to engage with substantive material over the next 10 weeks. There are many unknowns that we are each managing. I have relaxed my own personal expectations for this quarter, and I encourage you all to do the same. This doesn't mean that I will give anything short of 100% effort to delivering a high quality course, but lets operate with a healthy and charitable amount of **good will** towards each other and towards ourselves for the next 10 weeks.
@@ -24,8 +26,6 @@ Here is my adjusted plan to help us navigate the next 10 weeks:
 **Accessibility**       
 
 - I have created this book in place of a traditional course site hosted on canvas. I am doing this so I can provide most of the text for what are typically lectures (audio and slides) in a form of written chapters. This makes skimming and digesting the material much easier, and will provide a sustainable resource that you can return to at any time in the future. This book will be downloadable, and all of the course content will remain accessible to you regardless of your being enrolled as a student at UW.
-
-![](https://i.imgflip.com/3ukrj1.jpg)
 
 - I will provide a short and hopefully helpful lecture each week, but the majority of the substantive content I am trying to  create for the course will be in the form of written chapters.
 
@@ -88,6 +88,6 @@ Your grade for this course is made up of three different components: Exercises, 
 
 - Protocol Assignments: Most weeks also have a protocol related assignment. If you complete these before our weekly meetings I can give you feedback and help you structure these so that they are useful to your final deliverable. You only need to complete these by including them in your final protocol deliverable. (20% of your final grade)
 
-- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](). In short, the assignment asks you to envision curating and archiving a set of open data that are topically relevant. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
+- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
 
 I will have a very liberal approach to grading this quarter. Give me your best effort, and I guarantee that I will reciprocate.
