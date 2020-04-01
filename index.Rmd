@@ -1,6 +1,6 @@
 ---
 title: "LIS 598 - Data Curation II"
-author: "Nicholas Weber and Bree Norlander"
+author: "Nicholas Weber"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -12,9 +12,8 @@ url: 'http\://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html'
 description: ""
 ---
 
-Data Curation II examines a broad range of practical and conceptual issues in the field of data curation. As the second in a sequence of courses offered at the UW iSchool, Data Curation II offers an in-depth study of the semantics and structure of data as an information object used in scholarship and society. This knowledge will be useful when applied to practical activities such as data normalization, cleaning, or packaging for sharing and reuse. We will also pay particular attention to the repository architectures  (technical design) and information infrastructures (technological and social connectivity) that  constrain and afford data access. Throughout the quarter we will draw on research, case studies, and practical working examples in order to examine key challenges in the field.
-
 # Course Overview
+Data Curation II examines a broad range of practical and conceptual issues in the field of data curation. As the second in a sequence of courses offered at the UW iSchool, Data Curation II offers an in-depth study of the semantics and structure of data as an information object used in scholarship and society. This knowledge will be useful when applied to practical activities such as data normalization, cleaning, or packaging for sharing and reuse. We will also pay particular attention to the repository architectures  (technical design) and information infrastructures (technological and social connectivity) that  constrain and afford data access. Throughout the quarter we will draw on research, case studies, and practical working examples in order to examine key challenges in the field.
 
 ## Graduate school during a pandemic       
 There is no easy way to put this - its going to be a challenging quarter. I usually put a note in my syllabus that says something along the lines of "...coursework occasionally needs to take a second, third, or fourth priority in your life. All of us have commitments that exceed the expectation of being fully present each week, and I don't expect you to be operating at 100% engagement each day." Even this qualification seems out of touch given the current climate we are operating in for the Spring 2020 quarter. There will be demands on your time, attention, emotions, and cognitive ability to engage with substantive material over the next 10 weeks. There are many unknowns that we are each managing. I have relaxed my own personal expectations for this quarter, and I encourage you all to do the same. This doesn't mean that I will give anything short of 100% effort to delivering a high quality course, but lets operate with a healthy and charitable amount of **good will** towards each other and towards ourselves for the next 10 weeks.
@@ -88,3 +87,13 @@ Your grade for this course is made up of three different components: Exercises, 
 - Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
 
 I will have a very liberal approach to grading this quarter. Give me your best effort, and I guarantee that I will reciprocate.
+
+
+## What to do if you find a mistake in this text
+
+This is a work in progress textbook. There will be many spelling, grammar, and (hopefully minimal) content mistakes. If you find a mistake or want to make a recommendation for improvement please send me an email `nmweber@uw.edu` or file an issue directly on [Github](https://github.com/nniiicc/LIS-598-DC2-Sp2020/issues/new/choose)
+
+
+**Acknowledgements** 
+
+I have had a lot of help putting together these materials. Where possible I have documented these individuals and resources throughout. Some explicit thanks is necessary - Jackson Brown, Andrea Thomer, Peter Organisciak, Katrina Fenlon, and Alex Garnett have contributed ideas for exercises, readings, and reviewed portions of each chapter. Yihui Xie and developers at R Studio developed and provided extensive documentation for using `bookdown` - which is the R library used to generate this text. Special thanks to Sean Kross for making the publishing process on Github so smooth. Extra special thanks to Bree Norlander for her help in many aspects of putting together the curriculum, preparing chapters, and being willing to brainstorm at any hour of the day. 
