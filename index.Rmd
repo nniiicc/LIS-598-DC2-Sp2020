@@ -80,11 +80,11 @@ There are two aspect of this class that will require your time and attention.
 
 Your grade for this course is made up of three different components: Exercises, Protocol Assignments, and your final Protocol.
 
-- Exercises: Many weeks have a practical exercise component that asks you to apply some concept that is covered in the Chapter or Lecture. You need to complete these by following the directions in each exercise. Completing each exercise is a credit / no-credit mark. Give an earnest effort and you will receive credit. (40% of your final grade)
+- Exercises: Many weeks have a practical exercise component that asks you to apply some concept that is covered in the Chapter or Lecture. You need to complete these by following the directions in each exercise. Completing each exercise is a credit / no-credit mark. Give an earnest effort and you will receive credit. (20% of your final grade)
 
 - Protocol Assignments: Most weeks also have a protocol related assignment. If you complete these before our weekly meetings I can give you feedback and help you structure these so that they are useful to your final deliverable. You only need to complete these by including them in your final protocol deliverable. (20% of your final grade)
 
-- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
+- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (60% of your final grade)
 
 I will have a very liberal approach to grading this quarter. Give me your best effort, and I guarantee that I will reciprocate.
 
