@@ -1,8 +1,10 @@
 # Data Integration
 
 ## Chapter
+Forthcoming
 
 ## Lecture
+Forthcoming
 
 ## Readings
 Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get a pass on readings this week. The chapter is the only thing you are required to read. However, let me make a plug for the Wikipedia article on [data integration](https://en.wikipedia.org/wiki/Data_integration) - this is a phenomenal overview that should compliment my writing above.

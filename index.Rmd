@@ -51,33 +51,30 @@ Here is my adjusted plan to help us navigate the next 10 weeks:
 There are two aspect of this class that will require your time and attention.
 
 1. Class sessions (Weeks 1-10) follow the typical structure of an iSchool online course.
-2. Your `Protocol` assignment has a weekly activity or assignment that you will complete (either as a group or individually). The assignments vary in terms of the effort that will be required - some are involved and will take hours to complete, others are simple reading and thinking about your protocol.  
+2. Your `Protocol` assignment has a weekly activity or assignment that you will complete (either as a group or individually). The assignments vary in terms of the effort that will be required - some are involved and will take hours to complete, others are simple readings that will help you think about your protocol.  
 
-**Weekly content**: each week of the course will consist of four components: 1. Readings (required and optional); 2. Written chapters; 3. Recorded lectures; 4. Open discussion.  
+**Weekly content**: each week of the course will consist of four components: 1. Readings (required and optional); 2. Written chapters; 3. Recorded lectures; 4. Exercises.  
 
 - Readings are meant to reinforce concepts and offer practical applications or extensions of the concept / topic we are discussing each week.
 - Written explanations act like an informal textbook chapter. They are an extended narrative where I attempt to explain, define, and introduce concepts related to data curation. You should read these thoroughly - but also feel free to return to these as a reference resource in the future.
-- Short lecture reinforce important points from the chapter and provide an opportunity to present more dynamic content. Where possible I will provide links to slides that are used, and all lectures will be accessible as an MP4 that you can view on any device or with any program of your choosing.
-- Open discussions have two forms - you can participate in a Canvas discussion with your colleagues (I have created a discussion thread for each of week of class), and I will host an open office hour each week. As the quarter progresses I will also set up a time to meet individually with your `Protocol` group to discuss your progress.
+- Short lectures reinforce important points from the chapter and provide an opportunity to present more dynamic content. Where possible I will provide links to slides that are used, and all lectures will be accessible as an MP4 that you can view on any device or with any program of your choosing.
+- Excesises: Most weeks I will post an exercise that asks you to engage with open data in some practical way. This might include restructuring a dataset, using a tool, or practicing some skill that is applicable to our weekly topic. A list of exercises are found below. Note that in some weeks there will simply be a demonstration that does not require you to do anything other than watch and engage with the demo. For exercises there is an open discussion forum on Canvas. I encourage you to (following the directions of each excerise) post your response there. Disucssing and debating these exercises is not required but makes for a more enjoyable and interactive course. 
 
-**Exercises**: Most weeks I will post an exercise that asks you to engage with open data. This might include restructuring a dataset, using a tool, or practicing some skill that is applicable to our weekly topic. A list of exercises are found below. Note that in some weeks there will simply be a demonstration that does not require you to do anything other than watch and engage with the demo.
+**Protocol Assignments**: Most weeks I will post an assignment activity that you or your group are to complete. The requirements and effort for completing these, as I said earlier, will be variable. These assignments are in service of a final project deliverable. By combining these different assignments you can create a rather comprehensive protocol that will be valuable to your professional portfolio (more below). You can share the protocol assignments with me in advance of our weekly meeting for feedback. I will give you explicit directions on how to do this.
 
-**Protocol Assignments**: Most weeks I will post an exercise that you or your group are to complete. The requirements and effort for completing these, as I said earlier, will be variable. These assignments are in service of a final project deliverable. By combining these different assignments you can create a rather comprehensive protocol that will be valuable to your professional portfolio (more below). You can share the protocol assignments with me in advance of our weekly meeting for feedback. I will give you explicit directions on how to do this.
-
-## Weekly Overview
-
-| Week | Topic                                   | Readings | Exercises             | Chapter | Lecture |
-|------|-----------------------------------------|----------|-----------------------|---------|---------|
-| 0    | Class Introduction                      | None     | Read Syllabus         |  [0]()  |         |
-| 1    | Tables, Trees, and Triples              |          | [Cookie Recipes]()    |         |         |
-| 2    | Tidy Data                               |          | [Tidy cookie data]()  |         |         |
-| 3    | Data Integration                        |          | [311 data]()          |         |         |
-| 4    | Data Packaging                          |          | [Data Packegr]()      |         |         |
-| 5    | Human Factors in Data Curation          |          |                       |         |         |
-| 6    | Data Acquisition, Search, and Discovery |          |                       |         |         |
-| 7    | Metadata Application Profiles           |          |                       |         |         |
-| 8    | Ontologies and Linked Data              |          |                       |         |         |
-| 9    | Emerging Topics                         |          |                       |         |         |
+## Topic Overview
+| Week | Topic                                   | Exercise                                                                                              | Protocol Assignment                                                                                                                                              |
+|------|-----------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0    | Class Introduction                      | Read Syllabus                                                                                         | None                                                                                                                                                             |
+| 1    | Tables, Trees, and Triples              | [Cookie Recipes](https://nniiicc.github.io/LIS-598-DC2-Sp2020/tables-trees-and-triples.html#exercise) | [Data Pitch](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#pre-protocol-assignment-data-pitch)                                           |
+| 2    | Tidy Data                               | [Messy recipe data](https://nniiicc.github.io/LIS-598-DC2-Sp2020/tidy-data.html#exercise-1)           | [Definition and Scope](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-0-project-definition-scope-and-audience)                 |
+| 3    | Data Integration                        | [311 data](https://nniiicc.github.io/LIS-598-DC2-Sp2020/data-integration.html#exercise-2)             | [User Stories](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-1-user-stories-use-cases)                                        |
+| 4    | Data Packaging                          | Data Curator Demo - See coursebook                                                                    | [Data Collection Policies](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-2-data-collection-policies)                          |
+| 5    | Repository Architectures                | TBD                                                                                                   | [Repository Selection](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-3-repository-architectures)                              |
+| 6    | Data Acquisition, Search, and Discovery | APIs - See coursebook                                                                                 | [Data Transformations and Quality](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-4-data-transformations-and-quality-criteria) |
+| 7    | Metadata Application Profiles           | None                                                                                                  | [MAPs](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-6-metadata-application-profiles)                                         |
+| 8    | Ontologies and Linked Data              | None                                                                                                  | [Data Licenses](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-5-data-licensing)                                               |
+| 9    | Emerging Topics                         | None                                                                                                  | Presentation (optional)                                                                                                                                          |                                                |
 
 
 ## Grades  
@@ -88,6 +85,6 @@ Your grade for this course is made up of three different components: Exercises, 
 
 - Protocol Assignments: Most weeks also have a protocol related assignment. If you complete these before our weekly meetings I can give you feedback and help you structure these so that they are useful to your final deliverable. You only need to complete these by including them in your final protocol deliverable. (20% of your final grade)
 
-- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
+- Protocol: The final assignment that is due on or before `June 06 2020` - The assignment is described in detail in the [final chapter of this book](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html). In short, the assignment asks you to envision curating and archiving a set of open data that is focused on a particular topic of interest to a particular audience. This builds upon your experience in developing a protocol in DC I. The final protocol can be turned in a variety of formats, but must include all of the components (described in the final chapter) to be given full credit. (40% of your final grade)
 
 I will have a very liberal approach to grading this quarter. Give me your best effort, and I guarantee that I will reciprocate.
