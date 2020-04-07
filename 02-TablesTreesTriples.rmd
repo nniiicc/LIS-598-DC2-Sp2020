@@ -221,7 +221,8 @@ Creating a logically coherent RDF schema is an incredibly difficult task. Triple
 We will return to the concept of the Semantic Web and RDF in the 9th week of class, but its helpful to have this logical level data reprenseation in mind as we work through the quarter. In part, because RDF and the Semantic Web are an emergent way of curating data to provide meaning for end users. At the same time, the Semantic Web has been "five years away" since 1998.    
 
 ### Summary
-In this chapter I introduced a number of concepts:
+In this chapter I introduced a number of concepts. Here's a brief review:
+
 - Levels of abstraction. These include a separation between how we represent data in terms of concepts, logic, and physical storage (See Figure 1 for a quick overview).
 - Data Independence is the ability to separate data encodings from the logical level where it is managed and made accessible to users. By making data independent from its storage we can easily modify, and add data at the logical level.
 - Notation languages, such as XML, JSON, and RDF all have tradeoffs. In DC 1 we described these tradeoffs in terms of expressivity and tractability. In DC 2 we introduce the idea of "intelligence" to data reprensetation, but we hold this at arms length because it comes at such a high curation cost.
