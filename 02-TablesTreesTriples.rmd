@@ -212,11 +212,8 @@ If we also know that `Homer` has a son `Bart` we can also infer some more inform
 
 The natural language expressions that appear above have simple logical syntax that are the basis of a notation language known as "RDF" or the Resource Description Framework. In RDF, a **triple** is the formalization of a natural language statement that consist of three components: 1. Subject; 2. Object; and, 3. Predicate. An example of an RDF triple statement like "Lisa has a brother Bart" contains the `subject:Lisa`, the `object:Bart`, and the `predicate:has_a-brother`. In an RDF schema, we could define the logic of a predicate like `has_a_brother` such that :all brothers are male", and "all brothers have a sibling", and "all brothers and sisters share at least one parent". This declaration in our scehma let's our computers infer that a statement like "Lisa has a brother Bart" means, without explicitly stating it, that Bart identifies with the gender Male, and that he shares at least one parent with Lisa.
 
-RDF triples, by using logic to define relationships between instances and classes, becomes the most powerful of all three choices we have at the logical level of data representation.
-
-Do you anticipate a "but..." coming?
-
-Creating a logically coherent RDF schema is an incredibly difficult task. Triples, and all of their inferential power, are both computationally expensive to retrieve, and descriptively difficult to create and maintain. The tradeoff that we face between tables, trees, and triples presents a modification to the one I've discussed thus far -  between tractability and expressiveness. The new tradeoff we have is inference, or intelligence: If we want a logical level data representation that is "artificially intelligent" - that is it can infer without explicit directions - then we have to sacrifice some expressivity and a lot of tractability.
+RDF triples, by using logic to define relationships between instances and classes, becomes the most powerful of all three choices we have at the logical level of data representation^[
+Do you anticipate a "but..." coming?]Do you anticipate a "but..." coming?]. But, creating a logically coherent RDF schema is an incredibly difficult task. Triples, and all of their inferential power, are both computationally expensive to retrieve, and descriptively difficult to create and maintain. The tradeoff that we face between tables, trees, and triples presents a modification to the one I've discussed thus far -  between tractability and expressiveness. The new tradeoff we have is inference, or intelligence: If we want a logical level data representation that is "artificially intelligent" - that is it can infer without explicit directions - then we have to sacrifice some expressivity and a lot of tractability.
 
 We will return to the concept of the Semantic Web and RDF in the 9th week of class, but its helpful to have this logical level data reprenseation in mind as we work through the quarter. In part, because RDF and the Semantic Web are an emergent way of curating data to provide meaning for end users. At the same time, the Semantic Web has been "five years away" since 1998.    
 
@@ -229,7 +226,7 @@ In this chapter I introduced a number of concepts. Here's a brief review:
 
 ## Lecture
 
-Forthcoming 
+<iframe width=853 height=482 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYfjoMaTLS&v=5&ff=1" allowfullscreen="true"></iframe> 
 
 ---
 
