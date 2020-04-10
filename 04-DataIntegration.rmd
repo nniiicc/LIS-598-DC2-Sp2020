@@ -1,13 +1,19 @@
 # Data Integration
 
 ## Chapter
-Forthcoming
+The idea of Tidy data underlies principles in data management, and database administration that have been around for decades. Hadley Wickham, in 2014, started to formalize some of these rules in what he called "Principles for Tidy Data" These principles are focused mainly on how to follow some simple conventions for structuring data in a matrix (or table) to use in the statistical programming language `R` 
 
 ## Lecture
 Forthcoming
 
 ## Readings
-Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get a pass on readings this week. The chapter is the only thing you are required to read. However, let me make a plug for the Wikipedia article on [data integration](https://en.wikipedia.org/wiki/Data_integration) - this is a phenomenal overview that should compliment my writing above.
+Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get somewhat of a pass on readings this week. 
+
+Please read this blog post for discussion (if you chose) on the Canvas forum: 
+
+- Whong, Chris (2020) "Taming the MTA’s Unruly Turnstile Data" [Medium]( https://medium.com/qri-io/taming-the-mtas-unruly-turnstile-data-c945f5f96ba0)
+
+Let me also make a plug for the Wikipedia article on [data integration](https://en.wikipedia.org/wiki/Data_integration) - this is a phenomenal overview that should compliment my writing above.
 
 If you are interested in the history of this topic from the perspective of databases I also highly recommend the following:
 

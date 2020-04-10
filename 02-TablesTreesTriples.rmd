@@ -238,9 +238,11 @@ Our readings this week are from the W3C standard for `Data on the Web`. W3C is t
 
 In future weeks we will use the Data on the Web primer for activities related to our data curation protocol.
 
+**Optional Readings**
+
 For a bit of historical background, Ch 1 of this book (pages 1-13) provides an excellent overview of how data were originally made compliant with web standards. The rest of the book also provides a great overview of data models and database integration more generally, but it is very much a lengthy and time intensive read:
 
-- Abiteboul, S., Buneman, P., & Suciu, D. (2000). Data on the Web: from relations to semistructured data and XML. Morgan Kaufmann. [PDF](https://homepages.dcc.ufmg.br/~laender/material/Data-on-the-Web-Skeleton.pdf)
+- Abiteboul, S., Buneman, P., & Suciu, D. (2000). Data on the Web: from relations to semistructured data and XML. Morgan Kaufmann. [PDF](https://github.com/OpenDataLiteracy/LIS-598-Sp2020-DC2/blob/master/Readings/Data-on-the-Web-Skeleton.pdf)
 
 ## Exercise
 Chances are if you are living under quarantine (Spoiler: We all are!) you have taken up a new hobby to preoccupy yourself. Maybe this is something productive like knitting or pilates. Maybe it is something like baking sourdough bread (Spoiler: So is the rest of the internet!). 
