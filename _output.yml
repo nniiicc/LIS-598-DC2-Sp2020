@@ -3,6 +3,7 @@ bookdown::gitbook:
       in_header: hypothesis.html
   css: style.css
   split_by: chapter
+  highlight: tango
   config:
     toc:
       collapse: subsection
