@@ -2,7 +2,7 @@ book_filename: "Data Curation II - Spring 2020"
 chapter_name: "Chapter "
 repo: https://github.com/nniiicc/LIS-598-DC2-Sp2020 
 output_dir: docs
-rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-TablesTreesTriples.rmd", "03-TidyData.rmd" , "04-DataIntegration.rmd", "05-DataPackaging.rmd", "06-RepoArch.rmd", "07-DataGET.rmd", "08-MAPs.rmd", "09-LinkedData.rmd", "10-EmergingTopics.rmd", "11-ProtocolAssignment.rmd"]
+rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-TablesTreesTriples.rmd", "03-TidyData.rmd" , "04-DataIntegration.rmd", "05-DataPackaging.rmd", "06-RepoArch.rmd", "07-DataGET.rmd", "08-MAPs.rmd", "09-LinkedData.rmd", "10-EmergingTopics.rmd", "11-ProtocolAssignment.rmd", "12-Appendix.rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
 highlight: pygments 
