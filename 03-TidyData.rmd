@@ -1,4 +1,6 @@
-# Chapter
+# Tidy Data 
+
+## Chapter
 The idea of "tidy data" underlies principles in data management, and database administration that have been around for decades. In 2014, Hadley Wickham started to formalize some of these rules in what he called "Principles for Tidy Data." 
 
 These principles are focused mainly on how to follow some simple conventions for structuring data in a matrix (or table) to use in the statistical programming language `R`. 
