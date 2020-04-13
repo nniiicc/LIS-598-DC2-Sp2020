@@ -953,7 +953,7 @@ This solution is far from perfect, and we can imagine this going quickly overboa
 
 In future chapters we will further explore the idea of appealing to an "authority control" when making these types of decisions around tidying data and metadata. 
 
-## Summary
+### Summary
 In this chapter we've gone full tilt on the boring aspects of data structuring In doing so, we tried to adhere to a set of principles for tidying data:
 
 - Observations are rows that have variables containing values. 
