@@ -26,6 +26,8 @@ For this coursebook I have implemented an annotation tool - Hypothes.is - so tha
 
 Additional tips:
 
+- All annotations created with hypothes.is also have a unique link. This means that you can share annotations or refer to them in other places. For example, the image above showing my annotation in Chapter 3 can also be found [here](https://hyp.is/gEwxjHwIEeqzMG8LvDfBOw/nniiicc.github.io/LIS-598-DC2-Sp2020/tables-trees-and-triples.html). To find the link for any annotation go to the link icon at the bottom of your annotation.  
+
 - If you don't want to see highlighted annotations in the text you can simply click on the "eye" icon and this will hide any annotations as you read.
 
 ![](https://raw.githubusercontent.com/OpenDataLiteracy/LIS-598-Sp2020-DC2/master/Images/EyeIconOff.png)
