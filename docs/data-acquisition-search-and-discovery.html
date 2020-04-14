@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Data Acquisition, Search, and Discovery | LIS 598 - Data Curation II</title>
+  <meta name="description" content="Chapter 8 Data Acquisition, Search, and Discovery | LIS 598 - Data Curation II" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Data Acquisition, Search, and Discovery | LIS 598 - Data Curation II" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html" />
+  
+  
+  <meta name="github-repo" content="OpenDataLiteracy/LIS598-Sp2020-DC2" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Data Acquisition, Search, and Discovery | LIS 598 - Data Curation II" />
+  
+  
+  
+
+<meta name="author" content="Nicholas Weber" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="repository-architectures.html"/>
+<link rel="next" href="metadata-application-profiles.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="https://hypothes.is/embed.js" async></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Curation II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Course Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#graduate-school-during-a-pandemic"><i class="fa fa-check"></i><b>1.1</b> Graduate school during a pandemic</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#how-this-class-is-organized"><i class="fa fa-check"></i><b>1.2</b> How this class is organized</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#topic-overview"><i class="fa fa-check"></i><b>1.3</b> Topic Overview</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#grades"><i class="fa fa-check"></i><b>1.4</b> Grades</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#what-to-do-if-you-find-a-mistake-in-this-text"><i class="fa fa-check"></i><b>1.5</b> What to do if you find a mistake in this text</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html"><i class="fa fa-check"></i><b>2</b> Data Curation II - Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#types-of-knowledge"><i class="fa fa-check"></i><b>2.1</b> Types of Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#working-defintions"><i class="fa fa-check"></i><b>2.2</b> Working Defintions</a></li>
+<li class="chapter" data-level="2.3" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#summary"><i class="fa fa-check"></i><b>2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html"><i class="fa fa-check"></i><b>3</b> Tables, Trees, and Triples</a><ul>
+<li class="chapter" data-level="3.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#chapter"><i class="fa fa-check"></i><b>3.1</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#introduction"><i class="fa fa-check"></i><b>3.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#levels-of-abstraction"><i class="fa fa-check"></i><b>3.1.2</b> Levels of abstraction</a></li>
+<li class="chapter" data-level="3.1.3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#tables"><i class="fa fa-check"></i><b>3.1.3</b> Tables</a></li>
+<li class="chapter" data-level="3.1.4" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#trees"><i class="fa fa-check"></i><b>3.1.4</b> Trees</a></li>
+<li class="chapter" data-level="3.1.5" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#data-independence"><i class="fa fa-check"></i><b>3.1.5</b> Data Independence</a></li>
+<li class="chapter" data-level="3.1.6" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#trees-and-tables"><i class="fa fa-check"></i><b>3.1.6</b> Trees and Tables</a></li>
+<li class="chapter" data-level="3.1.7" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#triples"><i class="fa fa-check"></i><b>3.1.7</b> Triples</a></li>
+<li class="chapter" data-level="3.1.8" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#summary-1"><i class="fa fa-check"></i><b>3.1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#lecture"><i class="fa fa-check"></i><b>3.2</b> Lecture</a></li>
+<li class="chapter" data-level="3.3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#readings"><i class="fa fa-check"></i><b>3.3</b> Readings</a></li>
+<li class="chapter" data-level="3.4" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#exercise"><i class="fa fa-check"></i><b>3.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4</b> Tidy Data</a><ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html#chapter-1"><i class="fa fa-check"></i><b>4.1</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="tidy-data.html"><a href="tidy-data.html#tidy-data-principles"><i class="fa fa-check"></i><b>4.1.1</b> Tidy Data Principles</a></li>
+<li class="chapter" data-level="4.1.2" data-path="tidy-data.html"><a href="tidy-data.html#pivoting-data"><i class="fa fa-check"></i><b>4.1.2</b> Pivoting data</a></li>
+<li class="chapter" data-level="4.1.3" data-path="tidy-data.html"><a href="tidy-data.html#separating-and-gathering"><i class="fa fa-check"></i><b>4.1.3</b> Separating and Gathering</a></li>
+<li class="chapter" data-level="4.1.4" data-path="tidy-data.html"><a href="tidy-data.html#tidy-data-in-practice"><i class="fa fa-check"></i><b>4.1.4</b> Tidy Data in Practice</a></li>
+<li class="chapter" data-level="4.1.5" data-path="tidy-data.html"><a href="tidy-data.html#extending-tidy-data-beyond-the-traditional-observation"><i class="fa fa-check"></i><b>4.1.5</b> Extending Tidy Data Beyond the Traditional Observation</a></li>
+<li class="chapter" data-level="4.1.6" data-path="tidy-data.html"><a href="tidy-data.html#summary-2"><i class="fa fa-check"></i><b>4.1.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="tidy-data.html"><a href="tidy-data.html#lecture-1"><i class="fa fa-check"></i><b>4.2</b> Lecture</a></li>
+<li class="chapter" data-level="4.3" data-path="tidy-data.html"><a href="tidy-data.html#readings-1"><i class="fa fa-check"></i><b>4.3</b> Readings</a></li>
+<li class="chapter" data-level="4.4" data-path="tidy-data.html"><a href="tidy-data.html#exercise-1"><i class="fa fa-check"></i><b>4.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-integration.html"><a href="data-integration.html"><i class="fa fa-check"></i><b>5</b> Data Integration</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-integration.html"><a href="data-integration.html#chapter-2"><i class="fa fa-check"></i><b>5.1</b> Chapter</a></li>
+<li class="chapter" data-level="5.2" data-path="data-integration.html"><a href="data-integration.html#lecture-2"><i class="fa fa-check"></i><b>5.2</b> Lecture</a></li>
+<li class="chapter" data-level="5.3" data-path="data-integration.html"><a href="data-integration.html#readings-2"><i class="fa fa-check"></i><b>5.3</b> Readings</a></li>
+<li class="chapter" data-level="5.4" data-path="data-integration.html"><a href="data-integration.html#exercise-2"><i class="fa fa-check"></i><b>5.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-packaging.html"><a href="data-packaging.html"><i class="fa fa-check"></i><b>6</b> Data Packaging</a><ul>
+<li class="chapter" data-level="6.1" data-path="data-packaging.html"><a href="data-packaging.html#chapter-3"><i class="fa fa-check"></i><b>6.1</b> Chapter</a></li>
+<li class="chapter" data-level="6.2" data-path="data-packaging.html"><a href="data-packaging.html#lecture-3"><i class="fa fa-check"></i><b>6.2</b> Lecture</a></li>
+<li class="chapter" data-level="6.3" data-path="data-packaging.html"><a href="data-packaging.html#readings-3"><i class="fa fa-check"></i><b>6.3</b> Readings</a></li>
+<li class="chapter" data-level="6.4" data-path="data-packaging.html"><a href="data-packaging.html#exercise-3"><i class="fa fa-check"></i><b>6.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="repository-architectures.html"><a href="repository-architectures.html"><i class="fa fa-check"></i><b>7</b> Repository Architectures</a><ul>
+<li class="chapter" data-level="7.1" data-path="repository-architectures.html"><a href="repository-architectures.html#chapter-4"><i class="fa fa-check"></i><b>7.1</b> Chapter</a></li>
+<li class="chapter" data-level="7.2" data-path="repository-architectures.html"><a href="repository-architectures.html#lecture-4"><i class="fa fa-check"></i><b>7.2</b> Lecture</a></li>
+<li class="chapter" data-level="7.3" data-path="repository-architectures.html"><a href="repository-architectures.html#readings-4"><i class="fa fa-check"></i><b>7.3</b> Readings</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html"><i class="fa fa-check"></i><b>8</b> Data Acquisition, Search, and Discovery</a><ul>
+<li class="chapter" data-level="8.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#chapter-5"><i class="fa fa-check"></i><b>8.1</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#how-to-use-an-api-and-what-is-it-anyway"><i class="fa fa-check"></i><b>8.1.1</b> How to use an API (And what is it anyway?)</a></li>
+<li class="chapter" data-level="8.1.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#simple-rest-example"><i class="fa fa-check"></i><b>8.1.2</b> Simple REST Example</a></li>
+<li class="chapter" data-level="8.1.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#json-parser-with-api"><i class="fa fa-check"></i><b>8.1.3</b> JSON Parser with API</a></li>
+<li class="chapter" data-level="8.1.4" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#programmatic-access-to-apis"><i class="fa fa-check"></i><b>8.1.4</b> Programmatic Access to APIs</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#lecture-5"><i class="fa fa-check"></i><b>8.2</b> Lecture</a></li>
+<li class="chapter" data-level="8.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#exercise-4"><i class="fa fa-check"></i><b>8.3</b> Exercise</a></li>
+<li class="chapter" data-level="8.4" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#reading"><i class="fa fa-check"></i><b>8.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html"><i class="fa fa-check"></i><b>9</b> Metadata Application Profiles</a><ul>
+<li class="chapter" data-level="9.1" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#chapter-6"><i class="fa fa-check"></i><b>9.1</b> Chapter</a></li>
+<li class="chapter" data-level="9.2" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#lecture-6"><i class="fa fa-check"></i><b>9.2</b> Lecture</a></li>
+<li class="chapter" data-level="9.3" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#exercise-5"><i class="fa fa-check"></i><b>9.3</b> Exercise</a></li>
+<li class="chapter" data-level="9.4" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#reading-1"><i class="fa fa-check"></i><b>9.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html"><i class="fa fa-check"></i><b>10</b> Ontologies and Linked Data</a><ul>
+<li class="chapter" data-level="10.1" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#chapter-7"><i class="fa fa-check"></i><b>10.1</b> Chapter</a></li>
+<li class="chapter" data-level="10.2" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#lecture-7"><i class="fa fa-check"></i><b>10.2</b> Lecture</a></li>
+<li class="chapter" data-level="10.3" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#exercise-6"><i class="fa fa-check"></i><b>10.3</b> Exercise</a></li>
+<li class="chapter" data-level="10.4" data-path="ontologies-and-linked-data.html"><a href="ontologies-and-linked-data.html#reading-2"><i class="fa fa-check"></i><b>10.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="emerging-topics.html"><a href="emerging-topics.html"><i class="fa fa-check"></i><b>11</b> Emerging Topics</a><ul>
+<li class="chapter" data-level="11.1" data-path="emerging-topics.html"><a href="emerging-topics.html#chapter-8"><i class="fa fa-check"></i><b>11.1</b> Chapter</a></li>
+<li class="chapter" data-level="11.2" data-path="emerging-topics.html"><a href="emerging-topics.html#lecture-8"><i class="fa fa-check"></i><b>11.2</b> Lecture</a></li>
+<li class="chapter" data-level="11.3" data-path="emerging-topics.html"><a href="emerging-topics.html#exercise-7"><i class="fa fa-check"></i><b>11.3</b> Exercise</a></li>
+<li class="chapter" data-level="11.4" data-path="emerging-topics.html"><a href="emerging-topics.html#reading-3"><i class="fa fa-check"></i><b>11.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="protocol-assignment.html"><a href="protocol-assignment.html"><i class="fa fa-check"></i><b>12</b> Protocol Assignment</a><ul>
+<li class="chapter" data-level="12.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#overview-requirements"><i class="fa fa-check"></i><b>12.1</b> Overview &amp; Requirements</a></li>
+<li class="chapter" data-level="12.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#pre-protocol-assignment-data-pitch"><i class="fa fa-check"></i><b>12.2</b> Pre-Protocol Assignment: Data Pitch</a></li>
+<li class="chapter" data-level="12.3" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-0-project-definition-scope-and-audience"><i class="fa fa-check"></i><b>12.3</b> Assignment 0: Project definition, scope, and audience</a></li>
+<li class="chapter" data-level="12.4" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-1-user-stories-use-cases"><i class="fa fa-check"></i><b>12.4</b> Assignment 1: User Stories + Use Cases</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#user-stories"><i class="fa fa-check"></i><b>12.4.1</b> User Stories</a></li>
+<li class="chapter" data-level="12.4.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#use-cases-best-practices"><i class="fa fa-check"></i><b>12.4.2</b> Use Cases (Best Practices)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-2-data-collection-policies"><i class="fa fa-check"></i><b>12.5</b> Assignment 2: Data Collection Policies</a></li>
+<li class="chapter" data-level="12.6" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-3-repository-architectures"><i class="fa fa-check"></i><b>12.6</b> Assignment 3: Repository Architectures</a></li>
+<li class="chapter" data-level="12.7" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-4-data-transformations-and-quality-criteria"><i class="fa fa-check"></i><b>12.7</b> Assignment 4: Data Transformations and Quality Criteria</a></li>
+<li class="chapter" data-level="12.8" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-5-data-licensing"><i class="fa fa-check"></i><b>12.8</b> Assignment 5: Data Licensing</a></li>
+<li class="chapter" data-level="12.9" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-6-metadata-application-profiles"><i class="fa fa-check"></i><b>12.9</b> Assignment 6: Metadata Application Profiles</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>13</b> Appendix</a><ul>
+<li class="chapter" data-level="13.1" data-path="appendix.html"><a href="appendix.html#hypothes.is"><i class="fa fa-check"></i><b>13.1</b> Hypothes.is</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">LIS 598 - Data Curation II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-acquisition-search-and-discovery" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Data Acquisition, Search, and Discovery</h1>
+<div id="chapter-5" class="section level2">
+<h2><span class="header-section-number">8.1</span> Chapter</h2>
+<p>Forthcoming</p>
+<div id="how-to-use-an-api-and-what-is-it-anyway" class="section level3">
+<h3><span class="header-section-number">8.1.1</span> How to use an API (And what is it anyway?)</h3>
+<pre><code>Author: Bree Norlander
+Date: 2020-03-28</code></pre>
+<hr />
+<p>API is the acronym for Application Programming Interface. An API does the work of retrieving data in a variety of forms from its original home to a source that is requesting that data using a specific set of rules. The source may be you making a request through the web or it may be a mobile app retrieving map data from Google. A search for What is an API will result in many great tutorials. I found a quick 3-minute video that covers this topic well and will prepare you for the remainder of the tutorial. Note, this video is put out by a company but I do not mean it as an endorsement for the company, I just like their concise description. Let’s take a look…</p>
+<p><a href="//youtu.be/s7wmiS2mSXY?t=3" title="What is an API?"><img src="Images/YouTubeScreenshot.png" alt="What is an API Youtube Video" /></a></p>
+<p>So why should a data curator be interested in APIs? An API is a common tool for retrieving data.</p>
+<div class="figure">
+<img src="Images/Whyisthisimportant.png" alt="Why is this important?" />
+<p class="caption">Why is this important?</p>
+</div>
+<p>APIs provide the messenger service you need to collect data from sites like <a href="https://developer.twitter.com/en/docs/api-reference-index">Twitter</a>, <a href="https://www.mysportsfeeds.com/data-feeds/">MySportsFeeds</a>, <a href="https://developer.fandango.com/rotten_tomatoes">RottenTomatoes</a>, <a href="https://dev.twitch.tv/docs/api/">Twitch</a>, and more. Most of these sites will require you to apply for an API key and may have restrictions on the use of their data. For example, RottenTomatoes, states “Please note that at this time we no longer support unauthorized use of our data (e.g. unofficial projects, non-user facing data integrations).”</p>
+<p>If you are interested in working with data, whether it be as a Data Curator, a Government Docs Librarian, or a Data Scientist, it will benefit you to be familiar with APIs.</p>
+<p>As is the case with repositories, data portals, and an email from your boss, data retrieved from an API may be presented in a variety of different formats. When you use a “web service” API you will mainly see outputs in the form of eXtensible Markup Language known as XML, JavaScript Object Notation known as JSON (or geoJSON for geographic data), or Comma Separated Values known as CSV. A <strong>web service</strong> as a “<a href="https://rapidapi.com/blog/types-of-apis/">system or software that uses an address, i.e., URL on the World Wide Web, to provide access to its services</a>”. This means that the API output can be viewed directly in a web browser. The three most common types of web service APIs are:
++ simple object access protocol or SOAP which returns an XML object
++ remote procedural call R.P.C. which returns either an XML or JSON object depending on which format they’re using (XML-RPC or JSON-RPC)
++ and the most common right now is REpresentational State Transfer or REST which is not a protocol but rather a set of architectural principles (<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">read</a> the dissertation that coined the phrase)</p>
+<p>REST services tend to offer an easy to parse URL structure consisting primarily of nouns that reflect the logical hierarchical categories of the data on offer. I will show you an example of what that means below. REST APIs usually return JSON or XML but can sometimes also return different formats such as CSV.</p>
+<div class="figure">
+<img src="Images/WebServiceAPIs.png" alt="Web Service APIs" />
+<p class="caption">Web Service APIs</p>
+</div>
+</div>
+<div id="simple-rest-example" class="section level3">
+<h3><span class="header-section-number">8.1.2</span> Simple REST Example</h3>
+<p>Let’s take a look at a simple REST API example. This API is from Paul Hallet and is called <a href="https://swapi/co">SWAPI</a>: The Star Wars API. Paul <a href="https://swapi.co/about">writes</a>, “After hours of watching films and trawling through content online, we present to you all the People, Films, Species, Starships, Vehicles and Planets from Star Wars.” SWAPI is built just to be an API, while other web applications may use the data, this API wasn’t built with any particular application in mind. I did some searching of the backend of website (hosted on <a href="https://github.com/phalt/swapi/">Github</a>) and found that the data are available in six JSON files: films.json, people.json, planets.json, species.json, starships.json, and vehicles.json. You’ll note that these files match with Paul’s list of datasets in the quote above. In <a href="https://restfulapi.net/resource-naming/">REST naming conventions</a>, these datasets are referred to as “Resources” and as we see here, should be a noun indicating what is within the Resource. The SWAPI API, because it’s built using a REST architecture, allows us to view the output from our API query directly in the browser. Let’s check out the People data.</p>
+<p>The <a href="https://swapi.co/documentation#people">SWAPI documentation</a> tells us that queries within the People Resource will result in the following “Attributes”:</p>
+<div class="figure">
+<img src="Images/SWAPI_People.png" alt="SWAPI People Attributes: name, birth_year, eye_color, gener, hair_color, height, mass, skin_color, homeworld, films, species, starships, vehicles, url, created, edited, and you can search in the name field" />
+<p class="caption">SWAPI People Attributes: name, birth_year, eye_color, gener, hair_color, height, mass, skin_color, homeworld, films, species, starships, vehicles, url, created, edited, and you can search in the name field</p>
+</div>
+<p>It also notes that searches will only happen with the Name attribute field.</p>
+<p>The highest level search we can do within the People Resource is also the URL with which we will begin our queries: <a href="https://swapi.co/api/people/"><code>https://swapi.co/api/people/</code></a>. You can go directly to that URL in your broswer to see the first 10 data entries in the People Resource. This API requires you to paginate through the entries in intervals of 10. Fortunately, it tells you exactly how many entries there are and what the API query will be for the next page:</p>
+<div class="figure">
+<img src="Images/SWAPI_People_API_Call.png" alt="SWAPI People API Call: count reveals total People, next reveals URL for next 10 People" />
+<p class="caption">SWAPI People API Call: count reveals total People, next reveals URL for next 10 People</p>
+</div>
+<p>The pagination system is not ideal and makes it more tedious to grab all the data in the People dataset. I don’t think it’s common to see it set up this way. Let’s try a query for Name in the People Resource. We need to follow the REST rules for querying.</p>
+<p>According to the documentation, in order to search within a Resource, we need to append:</p>
+<pre><code>/?search=&lt;search term&gt;</code></pre>
+<p>to the base URL. (Note that you will not need the brackets when you add your search term.)</p>
+<div class="figure">
+<img src="Images/SWAPI_Search_Doc.png" alt="SWAPI Search Documentation" />
+<p class="caption">SWAPI Search Documentation</p>
+</div>
+<p>So try out a search in the People Resource for “Luke”. Your URL should look like: <a href="https://swapi.co/api/people/?search=Luke"><code>https://swapi.co/api/people/?search=Luke</code></a>. You can further refine you search by adding an ampersand (&amp;) and a second query. For example, you can designate a data format (which the documentation calls “encoding”). With this simple API example, your choices are very limited: JSON (which is the default) or wookie. Sadly at the time of this writing, wookie is throwing an “unexpected character error” so just go ahead and try adding JSON format to the last query: <a href="https://swapi.co/api/people/?search=Luke&amp;format=JSON"><code>https://swapi.co/api/people/?search=Luke&amp;format=JSON</code></a>. (Note you do not need to repeat the question mark for the second query.)</p>
+<p>This is a simple example of the concept discussed above that REST services tend to offer an easy to parse URL structure consisting primarily of nouns that reflect the logical hierarchical categories of the data being offered.</p>
+</div>
+<div id="json-parser-with-api" class="section level3">
+<h3><span class="header-section-number">8.1.3</span> JSON Parser with API</h3>
+<p>With the previous example, you may have wondered what to do with the JSON output. We often interact with data in a tabular format when we use products like Microsoft Excel, Google Sheets, and even R and Python. So let’s look at another rest API example and use a JSON editor to make it easier to parse the JSON.</p>
+<p>I discovered this interesting <a href="http://poetrydb.org/index.html">API</a> that retrieves data from a poetry database. I like this example because it provides an example of digital humanities data. Click on <a href="https://github.com/thundercomb/poetrydb/blob/master/README.md">Learn More</a> from the <a href="http://poetrydb.org/index.html">homepage</a>. This brings us to the Github repository hosting the API. The first thing you see is README document with instructions on how to structure the URL in order to retrieve the data you’re interested in. Let’s start with the first example on the page. <a href="http://poetrydb.org/title/Ozymandias/lines.json"><code>http://poetrydb.org/title/Ozymandias/lines.json</code></a> This URL is structured to return the lines of a given poem based on its title. However, I want more than just the lines of data. So with further reading in the README documentation I found that I could just remove the “lines” text from the URL to retrieve more data about the poem. <a href="http://poetrydb.org/title/Ozymandias/.json"><code>http://poetrydb.org/title/Ozymandias/.json</code></a> If you copy/paste this URL into a Firefox browser window, you’ll see that Firefox automatically provided a simple layout for navigating the JSON and even an option for saving, copying, and filtering the data. This won’t be the case with all browsers and sometimes you will simply get the raw output as you can see here:</p>
+<div class="figure">
+<img src="Images/Poetry_JSON_Safari.png" alt="Output of URL as seen in Safari browser" />
+<p class="caption">Output of URL as seen in Safari browser</p>
+</div>
+<p>If this output were considerably longer and contained more nested arrays, it would be easy to get lost in the data. So let’s use a helpful tool called <a href="https://jsonformatter.org/">JSON Formatter</a>, one of many JSON parsers. Click on the Upload Data button in the center of the screen and paste in a URL. Let’s try data about poems by author Bronte using this URL: <a href="http://poetrydb.org/author/Bronte"><code>http://poetrydb.org/author/Bronte</code></a>.</p>
+<div class="figure">
+<img src="Images/JSONFormatter_Load.png" alt="Pop-up Window to paste URL" />
+<p class="caption">Pop-up Window to paste URL</p>
+</div>
+<p>The JSON Formatter allows you to sort data, filter, format, convert, and download data in alternate formats. If you want to use the data within Google Sheets for example, you can convert to csv, download the data, and open in Google Sheets.</p>
+</div>
+<div id="programmatic-access-to-apis" class="section level3">
+<h3><span class="header-section-number">8.1.4</span> Programmatic Access to APIs</h3>
+<p>While the above techniques work well for small datasets, if you want to access large datasets and/or want to wrangle and analyze the data, you can access APIs programmatically. You can access data through Python, R, Javascript, a command line terminal, and more. There are even proprietary software platforms for interacting with APIs. The video below shows a very quick example of accessing Tweets via the Twitter API using a Python script:</p>
+<p><a href="//youtu.be/RY7q3MpRN3s" title="Twitter API with Python"><img src="Images/YouTubeScreenshot2.png" alt="Python Script that captures Tweets. Youtube Video" /></a></p>
+<p>My goal in this tutorial was to introduce you to APIs and how you can start using them today. While some APIs will require a coding background, many do not. I hope you will feel comfortable testing out different APIs and gathering data from sources of interest. As you experiement with gathering data via an API, be sure to look at the documentation for that API. Most documentation will give you all the information you need to format the query just the way you want it.</p>
+</div>
+</div>
+<div id="lecture-5" class="section level2">
+<h2><span class="header-section-number">8.2</span> Lecture</h2>
+<p>Forthcoming</p>
+</div>
+<div id="exercise-4" class="section level2">
+<h2><span class="header-section-number">8.3</span> Exercise</h2>
+<p>Forthcoming</p>
+</div>
+<div id="reading" class="section level2">
+<h2><span class="header-section-number">8.4</span> Reading</h2>
+<p>Forthcoming</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="repository-architectures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="metadata-application-profiles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
