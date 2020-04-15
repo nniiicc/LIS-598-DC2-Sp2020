@@ -519,7 +519,7 @@ Here we have three different representations of a point in time. If we want to t
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-0lax"><span style="font-weight:bold">Date </span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Date_century</span></th>
   </tr>
   <tr>
     <td class="tg-0lax">18</td>
@@ -575,7 +575,7 @@ This data contains a number of different estimates about when a piece of art may
 </colgroup>
   <tr>
     <td class="tg-g7sd">date_early</td>
-    <td class="tg-1wig">data_late</td>
+    <td class="tg-1wig">date_late</td>
   </tr>
   <tr>
     <td class="tg-0lax">1230</td>
@@ -656,7 +656,7 @@ There are many ways to do this with metadata, but a helpful approach might be ju
   </tr>
   <tr>
     <td class="tg-0lax">1999- 01-01</td>
-    <td class="tg-0lax">Data is inferred. The original entry read `1999-01`</td>
+    <td class="tg-0lax">Date is inferred. The original entry read `1999-01`</td>
   </tr>
 </table>
 
@@ -764,7 +764,7 @@ In the variable medium there are actually three values:
 2. The material (or support) that the medium was applied to.
 3. A conservation technique.
 
-This ambiguity likely stems from the fact that art historians often use an informal vocabulary for descriging a variable like medium. 
+This ambiguity likely stems from the fact that art historians often use an informal vocabulary for describing a variable like medium. 
 
 Think of the placard on any museum that you have visited -- Often times the "medium" information on that placard will contain a plain language description. This information is stored in a museum database and used to both identify a work owned by the museum, but also produce things like exhibit catalogues and placards. Here is an example from our dataset. 
 
@@ -960,6 +960,7 @@ In this chapter we've gone full tilt on the boring aspects of data structuring I
 - Variables are columns. Each variable contains only one value, and each value follows a standard unit of measurement.
 
 We focused on three types of transformations for tidying data: 
+
 - Pivots - which are either wide or long. 
 - Separating - which creates new variables 
 - Gathering - which collapses variables  
@@ -999,6 +1000,7 @@ Spreadsheet practices in the wild:
 Formatting data tables in spreadsheets: 
 
 - [Data Carpentry lesson](https://datacarpentry.org/2015-05-03-NDIC/excel-ecology/01-format-data.html)
+
 ## Exercise
 Last week we looked at an [infographic](https://d3vjjov8ymzzxi.cloudfront.net/chefsteps-com-files/chefsteps-cookie-table.pdf) from ChefSteps that provided a "parametric" explanation of different approaches to making a chocolate chip cookie. This week - I present to you the [data](https://docs.google.com/spreadsheets/d/11H6XGUWNVAsIbtUHCrjFsk4iLViELHG4CZKmQEyyWSA/edit#gid=0) behind behind this infographic.
 
