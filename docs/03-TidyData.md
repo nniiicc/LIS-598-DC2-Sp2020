@@ -969,7 +969,7 @@ I also introduced the idea of using "authority control" for normalizing or makin
 
 ## Lecture
 
-Forthcoming
+<iframe width=853 height=477 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYfo0QzbHl&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
 
 ## Readings
 
