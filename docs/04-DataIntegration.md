@@ -42,7 +42,9 @@ To overcome difficulties in combining different data tables we can engage with c
 
 The first activity in data integration is to informally or formally model the structure of a data table. In DC 1 we created data dictionaries which were focused on providing users of data a quick and precise overview of their contents. Data dictionaries are also a method for informally modeling the content of a dataset so that we, as curators, can make informed decisions about restructuring and cleaning.
 
-Here is an example of two data dictionaries for the same conceptual information: 311 service requests of data from the city of [Chicago, IL](https://data.cityofchicago.org/Service-Requests/311-Service-Requests/v6vf-nfxy) and [Austin, TX](https://data.austintexas.gov/City-Government/311-Unified-Data-Test-Site-2019/i26j-ai4z). Intuitively, we would expect that data from these two cities are similar enough in conceptual content that they should be able to be meaningfully combined. Before even looking at the content we can assume there will be: 
+Here is an example of two data dictionaries for the same conceptual information: 311 service requests to the city of [Chicago, IL](https://data.cityofchicago.org/Service-Requests/311-Service-Requests/v6vf-nfxy) and [Austin, TX](https://data.austintexas.gov/City-Government/311-Unified-Data-Test-Site-2019/i26j-ai4z). Intuitively, we would expect that data from these two cities are similar enough in  content that they can be meaningfully combined. 
+
+Before even before looking at the content of either data table we can assume there will be: 
 
 1. A date
 2. A report of some service outage or complaint
@@ -55,19 +57,21 @@ The reality is much messier.
 
 Even though these two cities record the same information about the same concept using the same data infrastructure (each city publishes data using a Socrata-based data repository) there are appreciable differences and challenges in integrating these two datasets. The annotations above point out some of these slight but appreciable differences: 
 
-- Granularity - We can see that the Chicago dataset represents a variable `SR_Status` that includes information about whether or not the request is open, as well as whether or not the request is a duplicate. The Austin dataset contains a similar variable `Status` but instead of also recording a duplicate here, there is a second variable `Duplicate` that contains this information. That is, the Austin dataset is more granular. If duplicate information were important to retain in our integrated dataset we would need to determine a way to tidy these variables or values.
+- Granularity - We can see that the Chicago dataset contains a variable `SR_Status` that includes information about whether or not the request is open, as well as whether or not the request is a duplicate. The Austin dataset contains a similar variable `Status` but instead of also recording a duplicate here, there is a second variable `Duplicate` that contains this information. That is, the Austin dataset is more granular. If duplicate information were important to retain in our integrated dataset we would need to determine a way to tidy these variables or values.
 
 - Semantics - Both datasets include information about the most recent update (response) to the request, but these are variables are labeled in slightly different ways - `Last_Update_Date` and `Last_Modified_Date` ... This should be a simple to tidy by renaming the data variable (but as we will see, this proves to be more more challenging than just renaming the variable).
 
 - Structure - Both datasets also include location information about the report. However, there is both different granularity as well as a different ordering of these variables. To tidy this location information, we would need to determine which variables to retain and which to discard.
 
-The process of modeling our data tables before integration facilitates making accurate decisions, but also creating a way for us to record those decisions and communicate them to end-users. A data dictionary, or a loose description of the contents of both tables, is often our first step in deciding which data cleaning activities we need to undertake for integrating data.
+The process of modeling our data tables before integration facilitates making accurate decisions, but also enables us to record those decisions and communicate them to end-users. A data dictionary, or a loose description of the contents of both tables, is often our first step in deciding which data cleaning activities we need to undertake for integrating data.
 
 #### Determine the Observation Depth  
 
-In integrating a two data tables there will likely be a difference in granularity that is specific to the depth or specificity of reported values. Most simply, this relates to how specific any one variable is recorded, and requires us as curators to make a decision about what specificity is necessary to retain or create in terms of our new combined, or integrated, dataset.
+In integrating two data tables there will likely be a difference in granularity of values. That is, even if the same variable is present in both datasets this does not necessarily mean that the same unit of measurement is used between the two data tables. 
 
-Imagine we have three tables` A`, `B`, and `C`. Each table contains the same variable `X`, but the values for `X` in each table have a different observational depth.  In comparing the values of this variable we could look across the three tables and see a difference in observation depth as follows:
+As curators, value granularity prompts a decision about what specificity is necessary to retain or discard for an integrated table. 
+
+A simple example will make this clear. Imagine we have three tables` A`, `B`, and `C`. Each table contains the same variable `X`, but the values for `X` in each table have a different observational depth.  In comparing the values for this variable we might observe different units of measurement. 
 
 | A-X | B-X | C-X |
 |------|------|-----|
@@ -76,11 +80,13 @@ Imagine we have three tables` A`, `B`, and `C`. Each table contains the same var
 | 1 | 2 | 4.4|
 | 1 | 2 | 3.0|
 
-(Keep in mind - A, B and C represent the three different tables, and X represents the same variable found in all three datasets)
+(Keep in mind - A, B and C represent the three different tables, and X represents the same variable found in all three tables)
 
-This example looks simple at face value, but will require an important decision for integration. Tables `A` and `B` both represent observational values of `X` as integers (whole numbers that are zero, negative, or positive). Table `C` represents the observational values of `X` as an irrational number.
+This example looks simple at face value, but will require an important decision for integration. Tables `A` and `B` both represent observational values of `X` as integers (whole numbers that are zero, negative, or positive). Table `C` represents the observational values of `X` as an irrational number (with a decimal place).
 
-Once we recognize this, our decision is simple - we can either convert the values in `A` and `B` to be irrational (1.0, 2.0, etc) or we can round the values in `C` to create integers. Regardless of our decision it is important to note that we are not just changing the values, but we are also changing their `encoding` - that is whether they represent integers or irrational numbers. We would need to document this change in our model.
+Once we recognize this difference, our decision is simple - we can either convert the values in `A` and `B` to be irrational (1.0, 2.0, etc) or we can round the values in `C` to create integers. 
+
+Regardless of our decision it is important to note that we are not just changing the values, but we are also changing their `encoding` - that is whether they represent integers or irrational numbers. (And we would need to document this change in our documentation).
 
 Let's look at differences in observational depth from two variables in the 311 data described above.
 
@@ -103,19 +109,24 @@ Let's look at differences in observational depth from two variables in the 311 d
 
 Chicago represents time of a 311 report following a `MM-DD-YY HH:MM` form, while Austin represents this same information with `YYYY-MMM-DD HH:MM:SS 12HRM`
 
-The observational depth is greater (has more granularity) in the Austin table. But, we also have some untidy representations of dates in both datasets. If we want to integrate these two tables then we have to decide 1. How to normalize the values; and, 2. Which depth of granularity to retain.
+The observational depth is greater (has more granularity) in the Austin table. But, we also have some untidy representations of `date` in both datasets. 
 
-Regardless of how we decide to normalize this data, what we have to try to retain is a reliable reporting of the date such that the two sets of observations are homogenous. For example, the Chicago data don't include seconds for a 311 request creation. We can either add these are 00 values, or we can remove these from the Austin data. In either decision, we are changing the depth of granularity in our integrated table. (note, we also need to transform the hours so that they either represent a 24 hour cycle, or are marked by a 12HR marking such as `AM` or `PM`).
+If we want to integrate these two tables then we have to decide 
+
+1. How to normalize the values; and, 
+2. Which depth of granularity to retain.
+
+Regardless of how we decide to normalize this data, what we have to try to retain is a reliable reporting of the date such that the two sets of observations are homogenous. For example, the Chicago data doesn't include seconds for a 311 request. So, we can either add these seconds as `00` values in the Chicago table, or we can remove the seconds from the Austin table In either decision, we are changing the depth of granularity in our integrated table. (Note, we also need to transform the hours so that they either represent a 24 hour cycle, or are marked by a 12HR marking such as `AM` or `PM`).
 
 #### Determine Variable Homogeneity
 
-The last integration precursor that we'll discuss has to do with the homogeneity of a variable. In modeling the two or more tables for potential integration we will seek to define and describe which variables are present, but we've not yet identified whether or not two variables can be reliably combined. To make this decision, we need to first determine the goals of the integration. Some general criteria to consider are as follows:
+The last integration precursor that we'll discuss has to do with the homogeneity of a variable. In modeling  two or more tables for potential integration we will seek to define and describe which variables are present, but we've not yet identified whether or not two variables can be reliably combined. To make this decision we need to first determine the goals of the integration. Some general criteria to consider when thinkng about the goals of integration are as follows:
 
 - Analysis and Computation - If we are optimizing data integration for easing analysis then we want high amount of homogeneity in the variables we will combine.
 - Synthesis - If we are optimizing for a more general purpose, such as the ability to synthesize results from two different datasets, then we can likely afford to combine variables that may have less homogeneity
-- Statistical Significance - A combination of synthesis and analysis criteria is what we plan to realistically produce by integrating a dataset. If we expect to create statistical summaries that require significant results (that is we will make some decision or generalization based on our statistical analysis) then it is of the utmost importance that the combined variables have high homogeneity. On the other hand, if all that we require is a rough sense of when or where an observation occurs then low homogeneity is acceptable.
+- Statistical Significance - If we expect to create statistical summaries that require significant results (that is we will make some decision or generalization based on our statistical analysis) then it is of the utmost importance that the combined variables have high homogeneity. But, if all that we require is a rough sense of when or where an observation occurs then low homogeneity is acceptable.
 
-An example of variable homogeneity will help make these points clear. Each table from Austin and Chicago contains a variable that roughly corresponds with the type of 311 request or report being made. In the Austin table this information is more granularly reported - there is code that is used internally `SR_Type_Code`, and a `Description` variable that provides a plain text explanation of the code. In the Chicago table there is simply a variable called `SR_Type`. If we pay attention closely to the values in these two tables we can determine that the `Description` and `SR_Type` are homogenous. That is, the Austin table and the Chicago table have similar information but use slightly different semantic values to control the variable.
+An example of variable homogeneity will help make these points clear. The Austin and Chicago tables each contain a variable that roughly corresponds with the "type" of 311 request or report being made. In the Austin table this information is more granularly reported - there is code that is used internally `SR_Type_Code`, and a `Description` variable that provides a plain text explanation of the code. In the Chicago table there is simply a variable called `SR_Type`. If we pay attention closely to the values in these two tables we can determine that the `Description` and `SR_Type` are homogenous. That is, the Austin table and the Chicago table have similar information but use slightly different semantic values to control the variable.
 
 | Description                         	| SR_Type                               	|
 |-------------------------------------	|---------------------------------------	|
@@ -134,16 +145,18 @@ An example of variable homogeneity will help make these points clear. Each table
 | Street Light Issue- Address         	| Aircraft Noise Complaint              	|
 | Street Light Issue- Address         	| Rodent Baiting/Rat Complaint          	|
 
-Integrating these two variables in the same table seems possible, but we have a decision to make - we can either combine the two variables and leave the semantic value with low homogeneity, or we can create something like a controlled vocabulary for describing the type of 311 request being made and then clean the data so that each value is transformed to be compliant with our vocabulary. For example, `Street Light Issue - Address` in the Austin table, and `Sign Repair Request` both have to do with a report being made about public signage. We could create a broad category like `Public Signage` and then transform (that is, change the values) accordingly. But, we have only determined this step is possible by comparing the two variables directly. When we determine there is a variable homogeneity that matches our intended integration goal we can then take a curation action.  
+Integrating these two variables in the same table seems possible, but we have a decision to make: We can either combine the two variables and leave the semantic value with low homogeneity, or we can create something like a controlled vocabulary for describing the type of 311 request being made and then normalize the data so that each value is transformed to be compliant with our vocabulary. For example, `Street Light Issue - Address` in the Austin table, and `Sign Repair Request` in the Chicago table both have to do with a report being made about public signage. We could create a broad category like `Public Signage` and then transform (that is, change the values) accordingly. But, we have only determined this step is possible by comparing the two variables directly. 
+
+When we determine there is a variable homogeneity that matches our intended integration goal we can then take a curation action. But, it is only through modeling, exploring observational depth, and investigating variable homogeneity that we can arrive at any one proper curation decision. It's worth noting that the first two precursors - modeling and observational depth - don't require us to necessarily have a goal in mind. We can start to engage in these activities before we quite know exactly what, or why we are going to integrate two tables. It is at the final step, variable homogeneity, that we start to formalize our goals and optimize our decisions as a result.   
 
 ### Horizontal and Vertical Table Integration
-Thus far we've described precursors to integrating data tables. Once we've taken these steps we're left with the practical step of actually combining the two tables. Generally, there are two types of table integrations that can be made: Horizontal and Vertical Integration. In practice, combining tables is rather trivial based on the steps we've taken to prepare data for integration.
+Thus far we've described precursors to making decisions and preparing data for integration. Once we've taken these steps we're left with the practical task of combining the two tables. Generally, there are two types of table combinations that can be made: Horizontal and Vertical Integration. 
 
 #### Horizontal data integration 
 
-Horizontal data integration is necessary when we have the same set of observations, but multiple variables *scattered* across two tables. By performing a horizontal data integration we make the table *wider* by adding new variables for each observation. If you have any experience with databases this is also referred to as a **join**. To horizontally integrate data we perform `left_joins` or `right_joins`
+Horizontal data integration is necessary when we have the same set of observations, but multiple variables *scattered* across two tables. By performing a horizontal data integration we make a table *wider* by adding new variables for each observation. If you have any experience with databases this is also referred to as a **join**. To horizontally integrate data we perform `left_joins` or `right_joins`. 
 
-To accurately perform a horizontal data integration manually - that is copying between two datasets - it is necessary to make sure that each dataset has a shared variable (you can copy one variable between the two datasets if they do not already share one) and then simply align the two variables to complete the integration.
+To accurately perform a horizontal data integration manually - that is copying and pasting between two datasets - it is necessary to make sure that each dataset has a shared variable (you can copy one variable between the two datasets if they do not already share one). When we copy and paste one table into another, we can then simply align the two shared variables to complete the integration.
 
 I am also going to show you how how to perform a horizontal data integration using `R` ... You do not have to follow these steps unless you are interested. To follow along you should download and install [RStudio](https://rstudio.com/products/rstudio/download/) (select the RStudio Desktop free installation). These example comes from friends running the [Lost Stats](https://github.com/LOST-STATS) project.
 
@@ -167,13 +180,11 @@ DollarValue2018 <- data.frame(Currency = c("Euro", "Pound", "Yen", "Dollar"),
                               InDollars = c(1.104, 1.256, .00926, 1))
 ```
 
-To horizontally integrate this data we want to join or combine together `GDP2018` and `DollarValue2018`. In doing so we can also convert all the GDPs to dollars and compare them.
+In the initial steps above we have created two data tables and assigned these tables to the name `GDP2018` and `DollarValue2018`. 
 
-There are three kinds of observations we could get in this integration - observations in `GDP2018` but not `DollarValue2018`, observations in `DollarValue2018` but not `GDP2018`, and observations in **both**.
+To horizontally integrate these two tables we want to **join** or combine `GDP2018` and `DollarValue2018`. 
 
 Use `help(join)` to see the types of joins that we can make in R.
-
-The “Yen” observation won’t have a match in both datasets, so we don’t need to keep it. So let’s do a `left_join` and `list GDP2018` first, so it keeps matched observations, plus any observations only in `GDP2018`.
 
 To complete our horizontal data integration we simply do the following:
 
@@ -184,14 +195,15 @@ GDPandExchange <- left_join(GDP2018, DollarValue2018)
 View(GDPandExchange)
 ```
 
-One helpful note about `R`, in this platform the `join` function will automatically detect that the `Currency` variable is shared in both data sets and use it to join them. When `R` detects this similarity, it simply retains just one example of the `Currency` variable. Voila!
+One helpful note about the package `dplyr` that will clarify some of the magic that just happened... the `join` function will automatically detect that the `Currency` variable is shared in both data tables. In recognizing this shared variable `dplyr` will use this, automatically, as the place to perform the left join. And helpfully, when `dplyr` detects this similarity, it simply retains just one example of the `Currency` variables and its values. Voila - a single tidy data table through horizontal data integration !
 
 #### Vertical data integration
-Vertical data integration, which is much more common in curation, is when we have two  tables with the same variables, but different observations. To perform a vertical integration we simply add new observations to one of our existing datasets. This makes our integrated data table *longer* because it contains more observations.  
+Vertical data integration, which is much more common in curation, is when we have two tables with the same variables, but different observations. To perform a vertical integration we simply add new observations to one of our existing datasets. This makes our integrated data table *longer* because it contains more observations.  
 
-In `R` we first will subset a native dataset and then recombine it to see how vertical integration works in practice.
+In `R` we first will subset a native data table (one that is included as an example) and then recombine it to see how vertical integration works in practice.
 
 ```
+# Load the dplyr library so we can use its magic 
 library(dplyr)
 
 # Load in mtcars data - a dataset that is native to R
@@ -204,13 +216,15 @@ View(mtcars)
 mtcars1 <- mtcars[1:10,]
 mtcars2 <- mtcars[11:32,]
 
-#Our memory is now holding the two tables in its memory. If you want to check this try `View(mtcars1)`
+#Our comptuer is now holding the two tables in its memory - mtcars 1 and mtcars2. If you want to check this try 
 
-# Use bind_rows to vertically combine the data sets
+View(mtcars1)
+
+# Use bind_rows to vertically combine the data tables 
 mtcarswhole <- bind_rows(mtcars1, mtcars2)
 
 # The bind_rows command is simply concatenating or combing the two datsets one on top of the other.
-# Now check to see the horizontally combined datasets
+# Now check to see the horizontally combined data tables
 View(mtcarswhole)
 ```
 
@@ -229,9 +243,9 @@ To overcome these challenges I proposed a set of `integration precursors` that i
 
 1. Modeling data content
 2. Determining Observation Depth
-3. Determining Variable Homogeneity
+3. Determining Variable Homogeneity (its at this stage we start to formalize our integration goals)
 
-Once these tasks were complete we looked at practical ways to combine two tables, including horizontal and vertical integrations.
+Once these tasks were complete we looked at practical ways to combine two tables, including horizontal and vertical integration. We also were introduced to the magic of `dplyr` in performing simple data integrations. 
 
 ## Lecture
 Forthcoming
