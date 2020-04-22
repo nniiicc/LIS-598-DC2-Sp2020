@@ -248,7 +248,8 @@ To overcome these challenges I proposed a set of `integration precursors` that i
 Once these tasks were complete we looked at practical ways to combine two tables, including horizontal and vertical integration. We also were introduced to the magic of `dplyr` in performing simple data integrations. 
 
 ## Lecture
-Forthcoming
+
+<iframe width=100% height=100% frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYf3oHAIEB&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
 
 ## Readings
 Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get somewhat of a pass on readings this week. 
