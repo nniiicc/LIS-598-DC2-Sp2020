@@ -139,8 +139,9 @@ Here are some valuable examples:
   - ICPSR: [What should my deposit include?](http://www.icpsr.umich.edu/icpsrweb/deposit/)
   - Cornell: [Content collection policy](http://guides.library.cornell.edu/ecommons/contentpolicy) and also see their valuable [Recommended file formats](http://guides.library.cornell.edu/ecommons/formats)
   - QDR - has a very structured submission process, including a set of helpful [data deposit forms](https://qdr.syr.edu/deposit/process)
-  - Roper Center also has a helpful example of a [deposit forms](https://ropercenter.cornell.edu/polls/deposit-data/)
   - IDEALS - a repository at the University of Illinois has an excellent policy on the preservation grantees they can make for [particular file formats](https://wiki.illinois.edu/wiki/display/IDEALS/Digital+Preservation+Support+Policy#DigitalPreservationSupportPolicy-Category1)
+- SF Open Data [Submission Guidelines](https://datasf.org/publishing/submission-guidelines/)
+- A more general approach is to define the scope of an open data program, see the Seattle Open Data [description](http://www.seattle.gov/tech/initiatives/open-data/about-the-open-data-program) for a helpful example. 
 
 **Protocol Deliverable**      
 Establish the policies that will govern your data collection policy. This should include (at minimum):
