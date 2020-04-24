@@ -36,7 +36,7 @@ In Week 10 you will be given the opportunity to present a 5-10 minute overview o
 
 Here are some examples of previous Data Curation 2 protocols:
 
-- Flattened Fauna: [Repository](https://github.com/amckennafoster/flattenedfauna) and [Project Report]( https://flattenedfauna.gitbook.io/practice-space/-Lf0sbd1cy0sxUG-f_Sa/)
+- Flattened Fauna: [Repository](https://github.com/amckennafoster/flattenedfauna) and [Project Report](https://flattenedfauna.gitbook.io/practice-space/)
 - VaxStats: [Repository](https://github.com/kthrog/VaxStats) and [Project Report](https://vaxstats.gitbook.io/vax-stats/)
 - R3 Recycling: [Repository](https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling) and [Project Report](https://rochellelundy.gitbooks.io/r3-recycling-repository/content/) (Note the lead author on this repository used it as a portfolio for her current job as a data curator) 
 
@@ -153,11 +153,89 @@ Establish the policies that will govern your data collection policy. This should
 
 You should feel free to LIBERALLY borrow from existing repository policies or protocols that we have looked at this quarter. You should also feel empowered to look at other protocols, or other repositories and decide how to answer some of these questions.
 
-## Assignment 3: Repository Architectures
+## Assignment 3: Data Transformations and Quality Criteria
 
+In previous exercises we created a policy that specified what kind of data our repository should collect, from whom we would accept data deposits, as well as practical expectations about the size and formats we preferred to collect when collecting new data. In this activity we are going to establish policies for what we do with collected or deposited data.
+
+**Transfer**        
+In an ideal scenario there is a clear transfer of ownership when data, documentation, and related resources are exchanged between one individual and another. But, often data are acquired, collected, or discovered in less than ideal scenarios. As data curators, we want to set up some general expectations about how data *should* be packaged or prepared for us to take-over responsibility for its preservation and reuse. Some general questions to consider when developing a data transfer policy:    
+
+- How will users or curators upload data to your repository? What kind of authenticity checks would you perform to make sure this data is what it purports to be? Does this include any virus scanning tools? (hint: CKAN provides some easy answers to this)
+- How will you identify confidential, sensitive, or private information contained in this data? (in other words, What constitutes private or sensitive information?O What is your policy for removing / redacting / protecting this kind of content?
+- How will you apply an identifier to each data collection? What kind? Why?
+- What additional metadata (beyond what the depositor provides) should be created at the point of data being transfered to your stewardship?
+- Is there any additional documentation that should be created in order to meaningfully preserve or use this data?
+
+**Transformation**      
+Taking ownership (or stewardship) of a data collection may be just the first step in an extended workflow of preparing the data for being ingested by a repository, stored for long term preservation, or prepared for discovery and meaningful reuse in a data catalog.
+
+Of course, transforming data to meet the needs of our users is one of the primary (and most time consuming) activities in data curation. The time we spend doing this is a direct function of the perceived value we have for the data we are curating. That means that we should try to establish policies that are appropriate for the sensitivity, uniqueness, and value of the data we are transforming. Consider the following questions as you begin to write out a policy about how data should be transformed for your protocol. Think about writing this section in the spirit of our previous reading on ['How to share data with a statistician'](https://github.com/jtleek/datasharing).
+
+*File / Format*    
+- In what formats should the data be stored? Does this differ from how it should be served to end-users? If so, how might you describe the policy for transforming data from one format to another (e.g. when you will create a CSV from a set of tables in a database)
+- Will you accept data that are stored in proprietary formats? How will you communicate this to users?
+- How will you record, store, and provide end-users information about what changes you've made to a dataset? (e.g. When you migrate file formats, or update the data you could then change the version of the dataset from 1.0 to 2.0? Conversely, you could have an "updated_last" field in your metadata, etc.)
+
+*Data Values*           
+- What steps should be taken to normalize the data? (hint: You could go through something like `common transforms` in Refine and come up with an easy (and exhaustive) template). Consider common transformations like: consistent column (variable) names, developing a data dictionary for each dataset, standardizing values for missing or null values, labeling values (by type - e.g. text, number, boolean, categorical, etc.)
+- Return to the principles of Tidy Data (e.g. Each variable you measure should be in one column; Each different observation of that variable should be in a different row; There should be one table for each "kind" of variable; and, If you have multiple tables, they should include a column in the table that allows them to be joined or merged). How would you help ensure that these principles are met for data that you collect?
+
+## Assignment 4: Data Licensing
+
+**Licenses**      
+Open data requires a declaration that the information objects (as provided by an individual or institution) are free for consumption, reuse, and/ or repurposing. Licenses further allow us to protect data creators and data stewards by being explicit about the expectations we have for how data should be used, repurposed, etc.
+
+There are a number of licenses available - each allowing you to achieve different protections for data creators or data stewards.
+
+Below are a small set of resources that describe data licenses and how to make choices between licenses:
+- Project Open Data's commentary on [open licenses for open data](https://project-open-data.cio.gov/open-licenses/)
+- Cornell Library's [IP rights for data management](https://data.research.cornell.edu/content/intellectual-property) (See in particular their distinction between databases and data)
+- [Data.World's guide to open licenses](https://help.data.world/hc/en-us/articles/115006114287-Common-license-types-for-datasets)
+
+**Implications for your protocol**
+
+Here are the basic questions you should answer in this section of your protocol:
+- What licenses will you attach to a dataset, and why? (If your data is already under a license you might explain that here)
+- Will you make any exceptions?
+
+If you are interested in a primer on data licensing you might consult the following:
+- Carroll, M. W. (2015). Sharing research data and intellectual property law: A primer. PLoS biology, 13(8), e1002235. [HTML](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002235)
+
+## Assignment 5: Metadata Application Profiles
+
+Overall goal: Looking at the relevant examples from our [metadata folder](https://github.com/OpenDataLiteracy/LIS-598-DataCuration2-Sp2019/tree/master/Metadata-Examples), and the use cases you developed last week, begin to develop an application profile for your project.
+
+To complete this exercise, you will need to answer the following questions:
+- What elements are necessary to meet your stakeholders' expectations?
+- Will an existing schema meet all of these requirements?
+- If not what extensions or modifications are needed?
+- How does this align with the repository software (CKAN) that you have chosen.
+
+How do I evaluate metadata standards useful for my project? Dian Hillman offers these criteria:
+
+- Look at what others in the domain are using (done!)   
+– Stability/volatility of the standard (and whether it really IS a standard) (i.e. How often is the standard changed?)
+– How well does the community for the standard integrates new needs and ideas
+– Startup and maintenance costs for use in an individual project (higher for more complex formats and implementations)
+- What is (at most basic level) required for an application profile?
+
+For each element in your application profile you should (eventually) provide the following:
+- Namespace, and namespace definition
+- Status: Mandatory or optional
+- Permitted encoding scheme for values
+- Any rules for content
+- An example
+
+Here is an example entry from a previous class: https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling/protocolReport/metadata
+
+You should also choose an encoding scheme for your examples (JSON or XML. Note: I don't expect you to actually produce these records.)
+
+Remember from our readings: "If an implementor wishes to create 'new' elements that do not exist elsewhere then (under this model) they must create their own namespace schema, and take responsibility for 'declaring' and maintaining that schema." You probably don't want to do this, but if you do let's discuss the requirements.
+
+## Assignment OPTIONAL: Repository Architectures
 Most of us will never design a new data curation system from the ground up. We will, by and large, develop on top of existing software platforms that provide basic features. This means we can focus our time and attention on **configuring** these architectures to meet our specific needs.  
 
-As we read and reviewed in class this week - there are many existing open-source data repositories from which we can choose. However, deciding between different repository platforms can be a daunting task. We have to balance time, skills, user needs, and the requirements for both hardware and other related software.
+There are many existing open-source data repositories from which we can choose. However, deciding between different repository platforms can be a daunting task. We have to balance time, skills, user needs, and the requirements for both hardware and other related software.
 
 In this exercise we'll try to use some basic criteria to profile the software underlying a repository platform, and then decide which repository we feel might ultimately be best for our data collections.
 
@@ -214,82 +292,3 @@ Here is a template you can use when starting to evaluate a new repository platfo
 **Major weaknesses:**
 
 **Overall Assessment:**
-
-## Assignment 4: Data Transformations and Quality Criteria
-
-In previous exercises we created a policy that specified what kind of data our repository should collect, from whom we would accept data deposits, as well as practical expectations about the size and formats we preferred to collect when collecting new data. In this activity we are going to establish policies for what we do with collected or deposited data.
-
-**Transfer**        
-In an ideal scenario there is a clear transfer of ownership when data, documentation, and related resources are exchanged between one individual and another. But, often data are acquired, collected, or discovered in less than ideal scenarios. As data curators, we want to set up some general expectations about how data *should* be packaged or prepared for us to take-over responsibility for its preservation and reuse. Some general questions to consider when developing a data transfer policy:    
-
-- How will users or curators upload data to your repository? What kind of authenticity checks would you perform to make sure this data is what it purports to be? Does this include any virus scanning tools? (hint: CKAN provides some easy answers to this)
-- How will you identify confidential, sensitive, or private information contained in this data? (in other words, What constitutes private or sensitive information?O What is your policy for removing / redacting / protecting this kind of content?
-- How will you apply an identifier to each data collection? What kind? Why?
-- What additional metadata (beyond what the depositor provides) should be created at the point of data being transfered to your stewardship?
-- Is there any additional documentation that should be created in order to meaningfully preserve or use this data?
-
-**Transformation**      
-Taking ownership (or stewardship) of a data collection may be just the first step in an extended workflow of preparing the data for being ingested by a repository, stored for long term preservation, or prepared for discovery and meaningful reuse in a data catalog.
-
-Of course, transforming data to meet the needs of our users is one of the primary (and most time consuming) activities in data curation. The time we spend doing this is a direct function of the perceived value we have for the data we are curating. That means that we should try to establish policies that are appropriate for the sensitivity, uniqueness, and value of the data we are transforming. Consider the following questions as you begin to write out a policy about how data should be transformed for your protocol. Think about writing this section in the spirit of our previous reading on ['How to share data with a statistician'](https://github.com/jtleek/datasharing).
-
-*File / Format*    
-- In what formats should the data be stored? Does this differ from how it should be served to end-users? If so, how might you describe the policy for transforming data from one format to another (e.g. when you will create a CSV from a set of tables in a database)
-- Will you accept data that are stored in proprietary formats? How will you communicate this to users?
-- How will you record, store, and provide end-users information about what changes you've made to a dataset? (e.g. When you migrate file formats, or update the data you could then change the version of the dataset from 1.0 to 2.0? Conversely, you could have an "updated_last" field in your metadata, etc.)
-
-*Data Values*           
-- What steps should be taken to normalize the data? (hint: You could go through something like `common transforms` in Refine and come up with an easy (and exhaustive) template). Consider common transformations like: consistent column (variable) names, developing a data dictionary for each dataset, standardizing values for missing or null values, labeling values (by type - e.g. text, number, boolean, categorical, etc.)
-- Return to the principles of Tidy Data (e.g. Each variable you measure should be in one column; Each different observation of that variable should be in a different row; There should be one table for each "kind" of variable; and, If you have multiple tables, they should include a column in the table that allows them to be joined or merged). How would you help ensure that these principles are met for data that you collect?
-
-## Assignment 5: Data Licensing
-
-**Licenses**      
-Open data requires a declaration that the information objects (as provided by an individual or institution) are free for consumption, reuse, and/ or repurposing. Licenses further allow us to protect data creators and data stewards by being explicit about the expectations we have for how data should be used, repurposed, etc.
-
-There are a number of licenses available - each allowing you to achieve different protections for data creators or data stewards.
-
-Below are a small set of resources that describe data licenses and how to make choices between licenses:
-- Project Open Data's commentary on [open licenses for open data](https://project-open-data.cio.gov/open-licenses/)
-- Cornell Library's [IP rights for data management](https://data.research.cornell.edu/content/intellectual-property) (See in particular their distinction between databases and data)
-- [Data.World's guide to open licenses](https://help.data.world/hc/en-us/articles/115006114287-Common-license-types-for-datasets)
-
-**Implications for your protocol**
-
-Here are the basic questions you should answer in this section of your protocol:
-- What licenses will you attach to a dataset, and why? (If your data is already under a license you might explain that here)
-- Will you make any exceptions?
-
-If you are interested in a primer on data licensing you might consult the following:
-- Carroll, M. W. (2015). Sharing research data and intellectual property law: A primer. PLoS biology, 13(8), e1002235. [HTML](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002235)
-
-## Assignment 6: Metadata Application Profiles
-
-Overall goal: Looking at the relevant examples from our [metadata folder](https://github.com/OpenDataLiteracy/LIS-598-DataCuration2-Sp2019/tree/master/Metadata-Examples), and the use cases you developed last week, begin to develop an application profile for your project.
-
-To complete this exercise, you will need to answer the following questions:
-- What elements are necessary to meet your stakeholders' expectations?
-- Will an existing schema meet all of these requirements?
-- If not what extensions or modifications are needed?
-- How does this align with the repository software (CKAN) that you have chosen.
-
-How do I evaluate metadata standards useful for my project? Dian Hillman offers these criteria:
-
-- Look at what others in the domain are using (done!)   
-– Stability/volatility of the standard (and whether it really IS a standard) (i.e. How often is the standard changed?)
-– How well does the community for the standard integrates new needs and ideas
-– Startup and maintenance costs for use in an individual project (higher for more complex formats and implementations)
-- What is (at most basic level) required for an application profile?
-
-For each element in your application profile you should (eventually) provide the following:
-- Namespace, and namespace definition
-- Status: Mandatory or optional
-- Permitted encoding scheme for values
-- Any rules for content
-- An example
-
-Here is an example entry from a previous class: https://github.com/RochelleLundy/INFX-551-Spring2017/tree/master/r3Recycling/protocolReport/metadata
-
-You should also choose an encoding scheme for your examples (JSON or XML. Note: I don't expect you to actually produce these records.)
-
-Remember from our readings: "If an implementor wishes to create 'new' elements that do not exist elsewhere then (under this model) they must create their own namespace schema, and take responsibility for 'declaring' and maintaining that schema." You probably don't want to do this, but if you do let's discuss the requirements.
