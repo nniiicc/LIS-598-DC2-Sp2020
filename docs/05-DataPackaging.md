@@ -167,7 +167,7 @@ In many ways, packaging is a curatorial intervention that not just makes data ea
 
 ## Lecture
 
-Forthcoming
+<iframe width=853 height=508 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhnb3BAeu&v=5&controls=1&ff=1" allowfullscreen="true"></iframe>
 
 ## Readings
 
@@ -182,10 +182,10 @@ Approaches to Research Data Packaging:
 Pick One of following to read or review in-depth:
 
 - BagIT for packaging QDR Data (social science / qualitative data) https://github.com/QualitativeDataRepository/dataverse/wiki/Data-and-Metadata-Packaging-for-Archiving  (and some background reading on BagIT if you are really interested https://tools.ietf.org/pdf/draft-kunze-bagit-14.pdf )
-- Frictionless data (general and open data) https://frictionlessdata.io/data-packages/ 
+- Frictionless data (general and open data) https://frictionlessdata.io/data-package
 - Data Crate (general research data) http://ptsefton.com/2019/07/01/DataCrate-OR2019.htm
-- Data Package (Ecology): https://releases.dataone.org/online/api-documentation-v2.0.1/design/DataPackage.htmlHTRC
-- Data Capsules (Digital Humanities) https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Specifications+and+Usage+Guide
+- Data Package (Ecology): https://releases.dataone.org/online/api-documentation-v2.0.1/design/DataPackage.html
+- HTRC Data Capsules (Digital Humanities) https://wiki.htrc.illinois.edu/display/COM/HTRC+Data+Capsule+Specifications+and+Usage+Guide
 
 ## Exercise
 This week there is no assignment to turn in. Instead we are going to look at a tool `Data Curator` that allows us to describe, validate, and package data using a graphic user interface.
