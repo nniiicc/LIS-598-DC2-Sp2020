@@ -167,7 +167,7 @@ In many ways, packaging is a curatorial intervention that not just makes data ea
 
 ## Lecture
 
-<iframe width=853 height=508 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhnb3BAeu&v=5&controls=1&ff=1" allowfullscreen="true"></iframe>
+<iframe width=853 height=476 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhnb3BAeu&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
 
 ## Readings
 
