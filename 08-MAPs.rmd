@@ -184,7 +184,8 @@ At its core, the 1:1 principle is trying to disentangle the complex relationship
 - Urban, R. J. (2012). Principle paradigms: revisiting the Dublin Core 1: 1 principle (Doctoral dissertation, University of Illinois at Urbana-Champaign). 
 
 ## Lecture
-Forthcoming
+
+<iframe width=853 height=473 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhi29gDkq&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
 
 ## Exercise
 The exercise for this week is to work on your protocol, and in particular [Assignment](https://nniiicc.github.io/LIS-598-DC2-Sp2020/protocol-assignment.html#assignment-5-metadata-application-profiles) 5 which deals with metadata application profiles. Your readings this week describe metadata application profiles in detail. 
