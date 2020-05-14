@@ -254,6 +254,10 @@ Once these tasks were complete we looked at practical ways to combine two tables
 ## Readings
 Data integration is a topic that can be incredibly complex, and much of the published literature fails to make this an approachable or even realistic read for a course like DC II. So, you get somewhat of a pass on readings this week. 
 
+A very helpful overview of the state of current integration challenges for the open web of data: 
+
+- Stonebraker, M., & Ilyas, I. F. (2018). Data Integration: The Current Status and the Way Forward. IEEE Data Eng. Bull., 41(2), 3-9. [PDF](https://cs.uwaterloo.ca/~ilyas/papers/StonebrakerIEEE2018.pdf)
+
 Please read this blog post for discussion (if you chose) on the Canvas forum: 
 
 - Whong, Chris (2020) "Taming the MTA’s Unruly Turnstile Data" [Medium]( https://medium.com/qri-io/taming-the-mtas-unruly-turnstile-data-c945f5f96ba0)
