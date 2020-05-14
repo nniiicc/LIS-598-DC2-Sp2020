@@ -255,7 +255,8 @@ Data search and discovery is a Grand Challenge in data curation because it depen
 Discoverability has come last in our grand challenges for the simple reason that it is dependent upon reliable integration, packaging, and tidy metadata. Information Retrieval concepts like precision and recall are excellent benchmarks for measuring a system's performance, but ultimately the satisfaction of data users comes down to how useful an end-user finds the actual data to be. So, when any one of these grand challenges are not addressed thoroughly the results of our search for and discovery of data will be diminished in terms of end-user satisfaction. 
 
 ## Lecture
-Forthcoming
+
+<iframe width=853 height=508 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYh2Dik1zz&v=5&controls=1&ff=1" allowfullscreen="true"></iframe>
 
 ## Exercise
 Our exercise this week focuses on exploring the concept of an API. This exercise was developed by the estimable data scientist [Bree Norlander](https://tascha.uw.edu/people/bree-norlander/)
