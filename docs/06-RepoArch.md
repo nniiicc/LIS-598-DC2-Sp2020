@@ -94,7 +94,8 @@ Forthcoming
 
 **Required**
 
-Read this very brief description of digital libraries (cyberinfrastructure) from the National Science Foundation program launched in the mid 1990. It provides a nice and very brief description of how data repositories have emerged from early digital library funding: https://www.nsf.gov/news/special_reports/cyber/digitallibraries.jsp 
+Read this very brief description of digital libraries (cyberinfrastructure) from the National Science Foundation program launched in the mid 1990. It provides a nice and very brief description of how data repositories have emerged from early digital library funding: 
+https://web.archive.org/web/20190207233414/https://www.nsf.gov/news/special_reports/cyber/digitallibraries.jsp 
 
 Now, let's fast forward to a current landscape of many different repository software platforms available. The following post from the IQSS staff at Harvard's Dataverse provides an excellent table comparing existing data repository services. Pay attention to the categories being compared, and how this related to the affordances of the software (also see the 'optional readings' section for more literature like this): https://dataverse.org/blog/comparative-review-various-data-repositories
 
