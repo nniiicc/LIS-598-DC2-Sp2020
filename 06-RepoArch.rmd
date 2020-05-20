@@ -88,7 +88,7 @@ This chapter has reviewed the major architectural components of a data repositor
 
 ## Lecture
 
-Forthcoming 
+<iframe width=853 height=509 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhYohkEou&v=5&controls=1&ff=1" allowfullscreen="true"></iframe>
 
 ## Readings
 
