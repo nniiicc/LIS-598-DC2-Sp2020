@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 Linked Data | LIS 598 - Data Curation II</title>
+  <meta name="description" content="Chapter 10 Linked Data | LIS 598 - Data Curation II" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 10 Linked Data | LIS 598 - Data Curation II" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://opendataliteracy.github.io/LIS598-Sp2020-DC2/data.html" />
+  
+  
+  <meta name="github-repo" content="OpenDataLiteracy/LIS598-Sp2020-DC2" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 10 Linked Data | LIS 598 - Data Curation II" />
+  
+  
+  
+
+<meta name="author" content="Nicholas Weber" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="metadata-application-profiles.html"/>
+<link rel="next" href="emerging-topics.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="https://hypothes.is/embed.js" async></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Curation II</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Course Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#graduate-school-during-a-pandemic"><i class="fa fa-check"></i><b>1.1</b> Graduate school during a pandemic</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#how-this-class-is-organized"><i class="fa fa-check"></i><b>1.2</b> How this class is organized</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#topic-overview"><i class="fa fa-check"></i><b>1.3</b> Topic Overview</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#grades"><i class="fa fa-check"></i><b>1.4</b> Grades</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#what-to-do-if-you-find-a-mistake-in-this-text"><i class="fa fa-check"></i><b>1.5</b> What to do if you find a mistake in this text</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html"><i class="fa fa-check"></i><b>2</b> Data Curation II - Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#types-of-knowledge"><i class="fa fa-check"></i><b>2.1</b> Types of Knowledge</a></li>
+<li class="chapter" data-level="2.2" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#working-defintions"><i class="fa fa-check"></i><b>2.2</b> Working Defintions</a></li>
+<li class="chapter" data-level="2.3" data-path="data-curation-ii-introduction.html"><a href="data-curation-ii-introduction.html#summary"><i class="fa fa-check"></i><b>2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html"><i class="fa fa-check"></i><b>3</b> Tables, Trees, and Triples</a><ul>
+<li class="chapter" data-level="3.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#chapter"><i class="fa fa-check"></i><b>3.1</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#introduction"><i class="fa fa-check"></i><b>3.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#levels-of-abstraction"><i class="fa fa-check"></i><b>3.1.2</b> Levels of abstraction</a></li>
+<li class="chapter" data-level="3.1.3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#tables"><i class="fa fa-check"></i><b>3.1.3</b> Tables</a></li>
+<li class="chapter" data-level="3.1.4" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#trees"><i class="fa fa-check"></i><b>3.1.4</b> Trees</a></li>
+<li class="chapter" data-level="3.1.5" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#data-independence"><i class="fa fa-check"></i><b>3.1.5</b> Data Independence</a></li>
+<li class="chapter" data-level="3.1.6" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#trees-and-tables"><i class="fa fa-check"></i><b>3.1.6</b> Trees and Tables</a></li>
+<li class="chapter" data-level="3.1.7" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#triples"><i class="fa fa-check"></i><b>3.1.7</b> Triples</a></li>
+<li class="chapter" data-level="3.1.8" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#summary-1"><i class="fa fa-check"></i><b>3.1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#lecture"><i class="fa fa-check"></i><b>3.2</b> Lecture</a></li>
+<li class="chapter" data-level="3.3" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#readings"><i class="fa fa-check"></i><b>3.3</b> Readings</a></li>
+<li class="chapter" data-level="3.4" data-path="tables-trees-and-triples.html"><a href="tables-trees-and-triples.html#exercise"><i class="fa fa-check"></i><b>3.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4</b> Tidy Data</a><ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html#chapter-1"><i class="fa fa-check"></i><b>4.1</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="tidy-data.html"><a href="tidy-data.html#tidy-data-principles"><i class="fa fa-check"></i><b>4.1.1</b> Tidy Data Principles</a></li>
+<li class="chapter" data-level="4.1.2" data-path="tidy-data.html"><a href="tidy-data.html#pivoting-data"><i class="fa fa-check"></i><b>4.1.2</b> Pivoting data</a></li>
+<li class="chapter" data-level="4.1.3" data-path="tidy-data.html"><a href="tidy-data.html#separating-and-gathering"><i class="fa fa-check"></i><b>4.1.3</b> Separating and Gathering</a></li>
+<li class="chapter" data-level="4.1.4" data-path="tidy-data.html"><a href="tidy-data.html#tidy-data-in-practice"><i class="fa fa-check"></i><b>4.1.4</b> Tidy Data in Practice</a></li>
+<li class="chapter" data-level="4.1.5" data-path="tidy-data.html"><a href="tidy-data.html#extending-tidy-data-beyond-the-traditional-observation"><i class="fa fa-check"></i><b>4.1.5</b> Extending Tidy Data Beyond the Traditional Observation</a></li>
+<li class="chapter" data-level="4.1.6" data-path="tidy-data.html"><a href="tidy-data.html#summary-2"><i class="fa fa-check"></i><b>4.1.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="tidy-data.html"><a href="tidy-data.html#lecture-1"><i class="fa fa-check"></i><b>4.2</b> Lecture</a></li>
+<li class="chapter" data-level="4.3" data-path="tidy-data.html"><a href="tidy-data.html#readings-1"><i class="fa fa-check"></i><b>4.3</b> Readings</a></li>
+<li class="chapter" data-level="4.4" data-path="tidy-data.html"><a href="tidy-data.html#exercise-1"><i class="fa fa-check"></i><b>4.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-integration.html"><a href="data-integration.html"><i class="fa fa-check"></i><b>5</b> Data Integration</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-integration.html"><a href="data-integration.html#chapter-2"><i class="fa fa-check"></i><b>5.1</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-integration.html"><a href="data-integration.html#integration-as-a-grand-challenge"><i class="fa fa-check"></i><b>5.1.1</b> Integration as a Grand Challenge</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-integration.html"><a href="data-integration.html#enumerating-data-integration-challenges"><i class="fa fa-check"></i><b>5.1.2</b> Enumerating data integration challenges</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-integration.html"><a href="data-integration.html#integration-precursors"><i class="fa fa-check"></i><b>5.1.3</b> Integration Precursors</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-integration.html"><a href="data-integration.html#horizontal-and-vertical-table-integration"><i class="fa fa-check"></i><b>5.1.4</b> Horizontal and Vertical Table Integration</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-integration.html"><a href="data-integration.html#summary-3"><i class="fa fa-check"></i><b>5.1.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-integration.html"><a href="data-integration.html#lecture-2"><i class="fa fa-check"></i><b>5.2</b> Lecture</a></li>
+<li class="chapter" data-level="5.3" data-path="data-integration.html"><a href="data-integration.html#readings-2"><i class="fa fa-check"></i><b>5.3</b> Readings</a></li>
+<li class="chapter" data-level="5.4" data-path="data-integration.html"><a href="data-integration.html#exercise-2"><i class="fa fa-check"></i><b>5.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-packaging.html"><a href="data-packaging.html"><i class="fa fa-check"></i><b>6</b> Data Packaging</a><ul>
+<li class="chapter" data-level="6.1" data-path="data-packaging.html"><a href="data-packaging.html#chapter-3"><i class="fa fa-check"></i><b>6.1</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="data-packaging.html"><a href="data-packaging.html#the-concept-of-packaging-data"><i class="fa fa-check"></i><b>6.1.1</b> The Concept of Packaging Data</a></li>
+<li class="chapter" data-level="6.1.2" data-path="data-packaging.html"><a href="data-packaging.html#the-zip-package"><i class="fa fa-check"></i><b>6.1.2</b> The Zip Package</a></li>
+<li class="chapter" data-level="6.1.3" data-path="data-packaging.html"><a href="data-packaging.html#data-packages-for-curation"><i class="fa fa-check"></i><b>6.1.3</b> Data Packages for Curation</a></li>
+<li class="chapter" data-level="6.1.4" data-path="data-packaging.html"><a href="data-packaging.html#bagit"><i class="fa fa-check"></i><b>6.1.4</b> BagIT</a></li>
+<li class="chapter" data-level="6.1.5" data-path="data-packaging.html"><a href="data-packaging.html#why-packages-matter"><i class="fa fa-check"></i><b>6.1.5</b> Why Packages Matter</a></li>
+<li class="chapter" data-level="6.1.6" data-path="data-packaging.html"><a href="data-packaging.html#research-object-bagit"><i class="fa fa-check"></i><b>6.1.6</b> Research Object + BagIT</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="data-packaging.html"><a href="data-packaging.html#lecture-3"><i class="fa fa-check"></i><b>6.2</b> Lecture</a></li>
+<li class="chapter" data-level="6.3" data-path="data-packaging.html"><a href="data-packaging.html#readings-3"><i class="fa fa-check"></i><b>6.3</b> Readings</a></li>
+<li class="chapter" data-level="6.4" data-path="data-packaging.html"><a href="data-packaging.html#exercise-3"><i class="fa fa-check"></i><b>6.4</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="repository-architectures.html"><a href="repository-architectures.html"><i class="fa fa-check"></i><b>7</b> Repository Architectures</a><ul>
+<li class="chapter" data-level="7.1" data-path="repository-architectures.html"><a href="repository-architectures.html#repositories"><i class="fa fa-check"></i><b>7.1</b> Repositories</a></li>
+<li class="chapter" data-level="7.2" data-path="repository-architectures.html"><a href="repository-architectures.html#layers-of-a-data-repository"><i class="fa fa-check"></i><b>7.2</b> Layers of a Data Repository</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="repository-architectures.html"><a href="repository-architectures.html#data-preservation-oais"><i class="fa fa-check"></i><b>7.2.1</b> Data Preservation + OAIS</a></li>
+<li class="chapter" data-level="7.2.2" data-path="repository-architectures.html"><a href="repository-architectures.html#data-repository-frameworks"><i class="fa fa-check"></i><b>7.2.2</b> Data Repository Frameworks</a></li>
+<li class="chapter" data-level="7.2.3" data-path="repository-architectures.html"><a href="repository-architectures.html#summary-4"><i class="fa fa-check"></i><b>7.2.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="repository-architectures.html"><a href="repository-architectures.html#lecture-4"><i class="fa fa-check"></i><b>7.3</b> Lecture</a></li>
+<li class="chapter" data-level="7.4" data-path="repository-architectures.html"><a href="repository-architectures.html#readings-4"><i class="fa fa-check"></i><b>7.4</b> Readings</a></li>
+<li class="chapter" data-level="7.5" data-path="repository-architectures.html"><a href="repository-architectures.html#exercise-4"><i class="fa fa-check"></i><b>7.5</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html"><i class="fa fa-check"></i><b>8</b> Data Acquisition, Search, and Discovery</a><ul>
+<li class="chapter" data-level="8.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#chapter-4"><i class="fa fa-check"></i><b>8.1</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#a-brief-review-of-information-searching"><i class="fa fa-check"></i><b>8.1.1</b> A Brief Review of Information Searching</a></li>
+<li class="chapter" data-level="8.1.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#data-discovery-challenges---by-example"><i class="fa fa-check"></i><b>8.1.2</b> Data Discovery Challenges - By Example</a></li>
+<li class="chapter" data-level="8.1.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#open-data-discovery"><i class="fa fa-check"></i><b>8.1.3</b> Open Data Discovery</a></li>
+<li class="chapter" data-level="8.1.4" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#summary-5"><i class="fa fa-check"></i><b>8.1.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#lecture-5"><i class="fa fa-check"></i><b>8.2</b> Lecture</a></li>
+<li class="chapter" data-level="8.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#exercise-5"><i class="fa fa-check"></i><b>8.3</b> Exercise</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#simple-rest-example"><i class="fa fa-check"></i><b>8.3.1</b> Simple REST Example</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#json-parser-with-api"><i class="fa fa-check"></i><b>8.4</b> JSON Parser with API</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#programmatic-access-to-apis"><i class="fa fa-check"></i><b>8.4.1</b> Programmatic Access to APIs</a></li>
+<li class="chapter" data-level="8.4.2" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#final-tip"><i class="fa fa-check"></i><b>8.4.2</b> Final Tip</a></li>
+<li class="chapter" data-level="8.4.3" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#additional-apis-i-recommend-for-practice"><i class="fa fa-check"></i><b>8.4.3</b> Additional APIs I Recommend for Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="data-acquisition-search-and-discovery.html"><a href="data-acquisition-search-and-discovery.html#reading"><i class="fa fa-check"></i><b>8.5</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html"><i class="fa fa-check"></i><b>9</b> Metadata Application Profiles</a><ul>
+<li class="chapter" data-level="9.0.1" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#introduction-1"><i class="fa fa-check"></i><b>9.0.1</b> Introduction</a></li>
+<li class="chapter" data-level="9.0.2" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#semantics-and-syntax-of-metadata"><i class="fa fa-check"></i><b>9.0.2</b> Semantics and Syntax of Metadata</a></li>
+<li class="chapter" data-level="9.0.3" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#tidy-metadata"><i class="fa fa-check"></i><b>9.0.3</b> Tidy Metadata</a></li>
+<li class="chapter" data-level="9.0.4" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#using-tidy-metadata-principles-for-maps"><i class="fa fa-check"></i><b>9.0.4</b> Using Tidy Metadata Principles for MAPs</a></li>
+<li class="chapter" data-level="9.0.5" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#tidy-metadata-best-practices"><i class="fa fa-check"></i><b>9.0.5</b> Tidy Metadata Best Practices</a></li>
+<li class="chapter" data-level="9.0.6" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#principle-11-relationships"><i class="fa fa-check"></i><b>9.0.6</b> Principle: 1:1 Relationships</a></li>
+<li class="chapter" data-level="9.1" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#lecture-6"><i class="fa fa-check"></i><b>9.1</b> Lecture</a></li>
+<li class="chapter" data-level="9.2" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#exercise-6"><i class="fa fa-check"></i><b>9.2</b> Exercise</a></li>
+<li class="chapter" data-level="9.3" data-path="metadata-application-profiles.html"><a href="metadata-application-profiles.html#reading-1"><i class="fa fa-check"></i><b>9.3</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="linked-data.html"><a href="linked-data.html"><i class="fa fa-check"></i><b>10</b> Linked Data</a><ul>
+<li class="chapter" data-level="10.0.1" data-path="linked-data.html"><a href="linked-data.html#the-early-web"><i class="fa fa-check"></i><b>10.0.1</b> The Early Web</a></li>
+<li class="chapter" data-level="10.0.2" data-path="linked-data.html"><a href="linked-data.html#the-promise-and-failure-of-the-semantic-web"><i class="fa fa-check"></i><b>10.0.2</b> The promise and failure of the Semantic Web</a></li>
+<li class="chapter" data-level="10.0.3" data-path="linked-data.html"><a href="linked-data.html#linked-data-1"><i class="fa fa-check"></i><b>10.0.3</b> Linked Data</a></li>
+<li class="chapter" data-level="10.0.4" data-path="linked-data.html"><a href="linked-data.html#json-ld"><i class="fa fa-check"></i><b>10.0.4</b> JSON-LD</a></li>
+<li class="chapter" data-level="10.0.5" data-path="linked-data.html"><a href="linked-data.html#practical-json-ld"><i class="fa fa-check"></i><b>10.0.5</b> Practical JSON-LD</a></li>
+<li class="chapter" data-level="10.0.6" data-path="linked-data.html"><a href="linked-data.html#linked-data-for-curation"><i class="fa fa-check"></i><b>10.0.6</b> Linked Data for Curation</a></li>
+<li class="chapter" data-level="10.1" data-path="linked-data.html"><a href="linked-data.html#lecture-7"><i class="fa fa-check"></i><b>10.1</b> Lecture</a></li>
+<li class="chapter" data-level="10.2" data-path="linked-data.html"><a href="linked-data.html#reading-2"><i class="fa fa-check"></i><b>10.2</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="emerging-topics.html"><a href="emerging-topics.html"><i class="fa fa-check"></i><b>11</b> Emerging Topics</a><ul>
+<li class="chapter" data-level="11.1" data-path="emerging-topics.html"><a href="emerging-topics.html#chapter-5"><i class="fa fa-check"></i><b>11.1</b> Chapter</a></li>
+<li class="chapter" data-level="11.2" data-path="emerging-topics.html"><a href="emerging-topics.html#lecture-8"><i class="fa fa-check"></i><b>11.2</b> Lecture</a></li>
+<li class="chapter" data-level="11.3" data-path="emerging-topics.html"><a href="emerging-topics.html#exercise-7"><i class="fa fa-check"></i><b>11.3</b> Exercise</a></li>
+<li class="chapter" data-level="11.4" data-path="emerging-topics.html"><a href="emerging-topics.html#reading-3"><i class="fa fa-check"></i><b>11.4</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="protocol-assignment.html"><a href="protocol-assignment.html"><i class="fa fa-check"></i><b>12</b> Protocol Assignment</a><ul>
+<li class="chapter" data-level="12.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#overview-requirements"><i class="fa fa-check"></i><b>12.1</b> Overview &amp; Requirements</a></li>
+<li class="chapter" data-level="12.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#pre-protocol-assignment-data-pitch"><i class="fa fa-check"></i><b>12.2</b> Pre-Protocol Assignment: Data Pitch</a></li>
+<li class="chapter" data-level="12.3" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-0-project-definition-scope-and-audience"><i class="fa fa-check"></i><b>12.3</b> Assignment 0: Project definition, scope, and audience</a></li>
+<li class="chapter" data-level="12.4" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-1-user-stories-use-cases"><i class="fa fa-check"></i><b>12.4</b> Assignment 1: User Stories + Use Cases</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="protocol-assignment.html"><a href="protocol-assignment.html#user-stories"><i class="fa fa-check"></i><b>12.4.1</b> User Stories</a></li>
+<li class="chapter" data-level="12.4.2" data-path="protocol-assignment.html"><a href="protocol-assignment.html#use-cases-best-practices"><i class="fa fa-check"></i><b>12.4.2</b> Use Cases (Best Practices)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-2-data-collection-policies"><i class="fa fa-check"></i><b>12.5</b> Assignment 2: Data Collection Policies</a></li>
+<li class="chapter" data-level="12.6" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-3-data-transformations-and-quality-criteria"><i class="fa fa-check"></i><b>12.6</b> Assignment 3: Data Transformations and Quality Criteria</a></li>
+<li class="chapter" data-level="12.7" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-4-data-licensing"><i class="fa fa-check"></i><b>12.7</b> Assignment 4: Data Licensing</a></li>
+<li class="chapter" data-level="12.8" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-5-metadata-application-profiles"><i class="fa fa-check"></i><b>12.8</b> Assignment 5: Metadata Application Profiles</a></li>
+<li class="chapter" data-level="12.9" data-path="protocol-assignment.html"><a href="protocol-assignment.html#assignment-optional-repository-architectures"><i class="fa fa-check"></i><b>12.9</b> Assignment OPTIONAL: Repository Architectures</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>13</b> Appendix</a><ul>
+<li class="chapter" data-level="13.1" data-path="appendix.html"><a href="appendix.html#hypothes.is"><i class="fa fa-check"></i><b>13.1</b> Hypothes.is</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">LIS 598 - Data Curation II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="linked-data" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Linked Data</h1>
+<p>The final week in Data Curation II addresses the prospect of linked data for curation. At various points this quarter we have discussed the idea of semantically enhanced data that takes on a form of artificial intelligence. This “intelligence” is practically achieved through enhanced markup of data and web infrastructure that enables applications to make use of data that are published following strict linked data standards. Thus far we have touched on, but not explored in-depth the ways that linked data practically manifests in curation work. In the following chapter, I will introduce some working definitions and provide an overview of concepts related to linked data and the promise, but ultimate failure of the semantic web. Next week, I will describe ontologies and their role in a linked data ecosystem.</p>
+<div id="the-early-web" class="section level3">
+<h3><span class="header-section-number">10.0.1</span> The Early Web</h3>
+<p>A “web of information” seems almost silly to say aloud in certain academic or technical circles. We have, over a very short period of time, gone from an internet infrastructure that was rudimentary and difficult to access, to a paradigm of native web-publishing. Graphic user interfaces have provided a layer of accessibility to what are otherwise rote protocols for transferring information between computers, and for structuring rich information experiences. We can browse, search, and discover all kinds of data by simply navigating and “clicking” on hypertext links.</p>
+<p>For all of the affordances of the web there are also some substantial limitations of a first generation of web technologies for data. These technologies allow for some exchange and consumption of data, but our end-user experience of the web often seems frustratingly incomplete. For example - HTML, CSS, and Javascript provide for a rich user experience with web-pages, but the underlying markup of text using these standards doesn’t allow for the interoperable exchange of structured data between applications. Without a way to make the data behind a web-page portable and transferrable - we are left with static pages that can simply point at one another, but not accurately incorporate or consume data from one another.</p>
+<p>Let’s take an example of searching for information:</p>
+<p>On the early web, if I searched <a href="https://en.wikipedia.org/wiki/Ask.com">Ask Jeeves</a> for the keyword “Ursula Franklin” I would likely get a list of indexed pages that include a reference to or about the scientist named Ursula Franklin (Here are the <a href="https://cse.google.com/cse?cx=partner-pub-7633895505036451:4516228122&amp;q=Ursula+Franklin&amp;ref=www.google.com/">actual results from Ask Jeeves</a>). In order to browse and uncover some facts about this monumentally important person - I need to click on a link, read a page, and digest the factual information that the static webpage contains. This is despite the fact that Ask Jeeves has indexed millions of webpages about Ursula Franklin - many of these pages contain structured factual information about her life, her publications, and her contributions to a scientific enterprise. The early web only allowed pages to point at one another through links.</p>
+<p>In contemporary search engines, I can search Google for “Ursula Franklin” and immediately receive both indexed webpages about the scientist, as well as some structured factual information about her life, her written works, and similar scientists.</p>
+<p><img src="Images/GoogleUrsula.png" /></p>
+<p>The display of this factual information (called the <a href="https://support.google.com/knowledgepanel/answer/9163198?hl=en">“knowledge bar”</a> isn’t <em>just</em> a neat trick by Google - it is made possible by a semantically enhanced information that is queried and retrieved based on <strong>linked data</strong> standards. This contemporary version of the web allows for the data - information embedded in pages such as photos, videos and facts - to be queried and retrieved. That is practically achieved through markup with linked data standards that both point at one another, but also allow for indexing and retrieval of data.</p>
+<p>In the following sub-sections I’ll unpack how this linked data ecosystem evolved, and the implications that a paradigm of linked data holds for the working curation professional.</p>
+</div>
+<div id="the-promise-and-failure-of-the-semantic-web" class="section level3">
+<h3><span class="header-section-number">10.0.2</span> The promise and failure of the Semantic Web</h3>
+<p>In short, the semantic web was an approach to the development of web technologies that privileged machine-readable data. This readability or “machine intelligence” was proposed to overcome the limitations of Web 1.0. The early technologies that facilitated exchange of information, such as HTTP and HTML, were meant to enable a web of information to emerge - linking documents to one another through standards that could interoperate regardless of what browser, or which search engine we choose to use.</p>
+<p>The semantic web - which was positioned between the interactivity of Web 2.0 and Web 3.0 - was to be facilitated by markup languages that allow for the semantic contents of data to be declared explicitly, and logic to be used inferentially to build connections between data embedded in web documents. In the vision of the semantic web, web content could both be displayed (like typical HTML and CSS) as well as queried and acted upon by web applications. We previously discussed both schema.org and the idea of a “triple” as ways in which data can be encoded such that they are machine-readable on the web. The idea of the triple is central to the vision of semantic web evangelists. They see all factual content as relationships which can be explicitly declared. By explicitly declaring just a few relationships we can build up a variety of “inferences”. Think back to our discussion of Simpsons characters - by knowing some familial relationships we could infer that Lisa and Bart were siblings without having to explicitly declare that is the case.</p>
+<p>Where the semantic web failed was in believing that this kind of explicit declaration of web content was scalable. The effort needed to structurally enhance all factual information with rigid standards was overwhelming (given the difficulty of using standards like the Resource Description Framework or <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>) - given the variety of information on the web and the effort needed to explicitly declare this factual information in a markup language like RDF. As a result, the semantic web vision of building inference engines has faltered. But, the ability to use markup to facilitate the exchange of data on the web - linked data - has had much more success. Linked data makes use of lightweight standards that allow for a few simple statements to be included in a web-page - facilitating exchange of data. By moving from a vision of “inference” and “intelligence” to machine-readable linking of data has proved much more viable for data curators.</p>
+<p>In previous chapters we have discussed some of the ways in which machine-readability is achieved, but we did not go into detail about how this encoding practically takes place. In the following section I will describe some of the practical realities of linked data, and how linked data is created using the standard JSON-LD.</p>
+</div>
+<div id="linked-data-1" class="section level3">
+<h3><span class="header-section-number">10.0.3</span> Linked Data</h3>
+<p>The linked data paradigm - which is the practical manifestation of the semantic web vision - makes use of structured markup to enhance web resources such that we can query and discover related information through simple declarations.</p>
+<p>Let’s take a simple web page that includes a bunch of random ideas expressed about people, places, and things [^note: I choose the <a href="https://hipsum.co/">hipster Lorum Ipsum</a> random text generation to create text for this “dummy” web page]. If one of those topics in our web page is about Austin, TX web 1.0 would create a link between that topic and a relevant page about Austin, TX.</p>
+<p><img src="Images/austin-earlyWeb.jpg" /></p>
+<p>In a linked data paradigm we could not only create a simple link from one web resource to another, but we could semantically enhance this markup using existing data about Austin, TX on the world wide web. We would practically do this by explicitly stating that Austin, TX is a place, that place is near some other places in Texas, and Austin, TX has a particular population. Just as we have discussed in previous chapters - we want to make these kinds of explicit declarations drawing upon existing standards. In this example, we want to draw on authoritative data about places that exist in the real world. <a href="https://en.wikipedia.org/wiki/DBpedia">DbPedia</a> is a linked data resource that contains exactly this kind of information. DbPedia is in fact all of the information that exists in Wikipedia put into a linked data format. This allows us to make simple declarations in our markup “linking” to what DbPedia knows about the place Austin, TX.</p>
+<p><img src="Images/AustinLateWeb.jpg" /></p>
+<p>Note that in the markup of the image above - we not only created an HTML link between the two resources, but we also included some markup that referenced DbPedia. We essentially said “DbPedia - tell us all of the facts that you know about Austin, TX including its population and what other places Austin, TX is near”. The linked data graph that results from this markup is below our syntax. Using just this simple markup, DbPedia was queried and returned to our webpage some factual information about Austin, TX - including that it has a population of 964,254, and that it is near other cities in Texas. Pretty neat, right? All we had to do was ask DbPedia what it knows about Austin, TX and the linked data syntax of our page allowed machines to trade factual information about what is known about Austin, TX.</p>
+<p>Our original “dummy page” is now “machine readable” in the sense that it contains not only a reference to another web page about Austin, TX but a whole range of new facts.</p>
+<p>In the example above I cheated a little by knowing that DbPedia was a linked data source. I had to have prior knowledge that such a valuable resource existed and that I could create some admittedly non-trivial syntax could be used to semantically enhance my webpage. The good news is that you don’t have to know a lot of linked data sources to create valuable linked data. In fact, all of the linked data sources (sometimes called the “linked data cloud”) started back in 2007 with just 12 sources.</p>
+<p><img src="https://lod-cloud.net/versions/2007-05-01/lod-cloud.png" /></p>
+<p>It has now (as of May 2020) grown to over <a href="https://lod-cloud.net/">1200 authoritative linked data sources</a><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> that can be used to semantically enhance any web page. More importantly, we can create linked data using standards like Schema.org to turn any data that we publish to the web into linked data. That is, we can link any data we publish up to this growing “cloud” through syntax. Doing so increases the ability of our data to be meaningfully discovered, indexed by emerging linked data sources, and in essence, connected to all other data that exists on the web!</p>
+<p>In the next section we will look at how we can practically link our data to existing resources. This is acheived through the standard JSON-LD.</p>
+</div>
+<div id="json-ld" class="section level3">
+<h3><span class="header-section-number">10.0.4</span> JSON-LD</h3>
+<p>Schema.org - which we have talked about in the previous chapter on Data Discovery - is practically implemented on the web through an encoding standard called JSON-LD (which stands for JSON-Linked Data). To understand the power of JSON-LD let’s think all the way back to our chapter on <a href="https://nniiicc.github.io/LIS-598-DC2-Sp2020/tables-trees-and-triples.html#trees-and-tables">Tables, Trees, and Triples</a> where I described differences in hierarchical data structuring (XML) vs graph structuring (JSON). Recall that in that chapter I warned:</p>
+<p>“What we gain expressive power from a markup language comes at the expense of computational tractability. The more syntax we have to write to define how and where a set of data are interpreted by our computers at the physical level, the more difficult and expensive it will be to retrieve that data.”</p>
+<p>In that chapter I also explained that JSON is an object-oriented graph and XML is a hierarchical tree. The tradeoff between these two structures is that XML can use a schema to explicitly declare what it’s content is about (I’ll save you some jumping back and forth and paste that section below in quotations)</p>
+<p>“JSON treats an object as independent from any kind of semantic meaning that humans might reliably expect that object to have. JSON, in its structuring of data, is therefore able to achieve a kind of independence at the data level that XML cannot. But, removing this semantic (or contextual) meaning has both affordances and limitations. By keeping data objects “independent” from the schema we have the ability compute against (that is retrieve, reorder, and analyze) objects efficiently. But, for JSON we also lose the ability to embed meaning in the structure of our data.&quot;</p>
+<p>JSON-LD is an attempt to add meaning to the structure of graph data through a schema. In fact, Schema.org provides (one of many) schemas for JSON-LD. This means our independent objects in JSON can be given a declarative value (a schema) and that schema can, if structured properly, start to link our data to all of the linked data that exists on the world wide web.</p>
+<p>JSON-LD has some key markup features that are necessary to practically implement linked data. In introducing these features I’ll also note how the syntax of JSON-LD works through examples.</p>
+</div>
+<div id="practical-json-ld" class="section level3">
+<h3><span class="header-section-number">10.0.5</span> Practical JSON-LD</h3>
+<p>JSON-LD operates exactly like JSON - there are attributes and values that are declared. In JSON these declarations are “dumb” objects - they don’t have any semantic meaning. In JSON-LD we have the ability to give these objects meaning through external schemas. The two features we will look at first are the Context and ID tags.</p>
+<div id="context" class="section level4">
+<h4><span class="header-section-number">10.0.5.1</span> Context</h4>
+<p>Context or <code>@Context</code> - In JSON-LD the <code>@Context</code> tag is used to declare a schema that will be used to name attributes in the dataset. So any attribute in our JSON-LD should be understood as following the schema that <code>@Context</code> defines. If we plan to use, for example, the Schema.org standard we can in the <code>@Context</code> syntax specify this is the standard we are following and expect that all of the machines that interpret our data’s attributes as being in the Schema.org standard.</p>
+<p>Here is an example of how this might practically work. The following is a typical JSON representation of some structured information about me.</p>
+<pre><code>{
+  &quot;name&quot;: &quot;Nic Weber&quot;,
+  &quot;homepage&quot;: &quot;http://nicweber.info&quot;,
+  &quot;photo&quot;: &quot;http://nicweber.info/nic.png&quot;
+}</code></pre>
+<p>In this data we have attribute and value pairs like <code>name</code> and <code>Nic Weber</code>… But our attributes don’t mean anything to a machine. These are just objects that we, as data curators, have to know and understand in order to make sense of.</p>
+<p>If we use the JSON-LD <code>@Context</code> tag we can pull in a schema to give our attributes some semantic meaning.</p>
+<pre><code>{
+  &quot;@context&quot;: {
+    &quot;name&quot;: &quot;http://schema.org/name&quot;
+    &quot;homepage&quot;: &quot;http://schema.org/url&quot;
+    &quot;photo&quot;: &quot;http://schema.org/image&quot;&quot;
+    
+  },
+  &quot;name&quot;: &quot;Nic Weber&quot;
+  &quot;homepage&quot;: &quot;http://nicweber.info&quot;
+  &quot;photo&quot;: &quot;http://nicweber.info/nic.png&quot;
+}</code></pre>
+<p>In this example we have declared that our attributes are not just dumb objects, but they mean something specific in the linked data standard of Schema.org. The <code>name</code> variable in fact means what Schema.org defines as a “name”. A machine can interpret this information given the namespace that defines “name” at the following address <code>http://schema.org/name</code>.</p>
+<p>Note that in this example our data also has an attribute <code>homepage</code> that corresponds with the Schema.org definition for a URL, and a <code>photo</code> which corresponds with the Schema.org definition of an Image. So a machine can interpret that Nic Weber is the name of a person, that person has a webpage, and that webpage contains a photo of Nic Weber. If another web resources wanted to consume my linked data - they could ask Schema.org “What do you know about Nic Weber” and retrieve a result like “This is a person, with a webpage, and a photo”. To see this in practice - here is a result when you search for me on Google. The University of Washington has used Schema.org to say who I am, what my photo is, and through this web of linked data Google also identifies my Google Scholar page where it pulls in Co-authors and relevant publications that appear on the web.</p>
+<p><img src="Images/Nic-GoogleResults.png" /></p>
+<p>All of this semantic meaning is achieved through the use of JSON-LD and Schema.org.</p>
+</div>
+<div id="id" class="section level4">
+<h4><span class="header-section-number">10.0.5.2</span> ID</h4>
+<p>In a linked data paradigm every factual statement is made up of resources, and in order to resolve or find those resources we need an identifier which uniquely picks out that the information about that resource.</p>
+<p>The ID or <code>@ID</code> tag in JSON-LD then is simply the syntax that is used to uniquely identify things that are being described in the data. Practically, this differs only slightly from the <code>@Context</code>which is used to pull in an existing schema and name attributes. With <code>@ID</code> we can instead use the namespaces to identify our objects.</p>
+<p>Here is a JSON-LD encoding of the same factual information as our previous example.</p>
+<pre><code>{
+  &quot;http://schema.org/name&quot;: &quot;Nic Weber&quot;,
+  &quot;http://schema.org/url&quot;: { &quot;@id&quot;: &quot;http://nicweber.info&quot; },
+  &quot;http://schema.org/image&quot;: { &quot;@id&quot;: &quot;http://nicweber.info/nic.png&quot; }
+}</code></pre>
+<p>Note - we are still using Schema.org as the authority for things like “name”, “url” and “image” - only with the <code>@ID</code> tage we used the schema.org namespace as our actual attribute name. So for a JSON-LD encoding of information about me - there is no plain language “name” attribute, but instead the attribute is “<a href="http://schema.org/name" class="uri">http://schema.org/name</a>”. In some ways - this makes machine operations easier, there are fewer lines of data to read and interpret. But, the cost of using this form of syntax is that it is much less human readable (we have to know, for example, what “url” means to accurately interpret what the link “<a href="http://nicweber.info" class="uri">http://nicweber.info</a>” stands for).</p>
+<p>Both approaches - using plain language attribute names as well as id names - are valid. We can use either to create linked data about Nic Weber. The important point is that we have used JSON-LD to create graph structured data that is semantically meaningful. In particular, we added a schema to define attributes in our dataset through the standard Scehma.org and its namespaces.</p>
+</div>
+</div>
+<div id="linked-data-for-curation" class="section level3">
+<h3><span class="header-section-number">10.0.6</span> Linked Data for Curation</h3>
+<p>The description of linked data above may seem somewhat tenuously related to data curation. In the following section I will draw on examples from previous chapters to explain how and why linked data is relevant to our practical work in curating data for reuse.</p>
+<p>In our first chapter we used the scenario of an intrepid graduate student sitting in a Brazilian rainforrest counting frogs. Our graduate student transported her observations from the field to a digital computing environment. In doing so she faced a series of choices about how to structure her data for future use. Now, it is unrealistic to expect that our graduate student would follow any of the struct rules described above to create an initial digital record of her observations as linked data. More than likely she will simply enter her data in a spreadsheet application like Excel and use some plain text variation of this table (like a csv) for her analysis.</p>
+<p>As downstream curators we will receive a copy of her completed Excel table. In preparing that data for publication the table will likely require some tidying and some restructuring in order to be meaningfully reused. When we have completed this tidying, and created some additional descriptive metadata, we are ready to publish this data to a repository where other users can search for and discover the data. Using linked data we could not just publish some structured descriptive information about the data that is available - but we could also connect this data to all of the other factual information on the web about the species of frogs that are being described, the place where the observations were made, the dates when the observations ocurred, etc. In doing so we would have a semantically rich description of our dataset that could be indexed and made more reliably evaluated by an end-user of our repository. Think for example if, like the Google Knowledge Bar, our data repositories could report factual information about our data and all related data instead of just a static webpage.</p>
+<p>Let’s explore how linked data could enhance another example from our previous chapters.</p>
+<p>In the Data Discovery chapter I described a process of seeking and ultimately being disappointed by the results of 311 open data relevant to a research project. Problematically - I was interpreting variables described in metadata and then not finding these variables accurately recorded in the dataset that was being described. If in a linked data paradigm there were a standard that was used - like Schema.org - to say exactly what the variable represents and how I should interpret the use of that variable I could have saved a lot of trouble in opening and reading datasets. Further, I could have also had a much better initial search experience. By retrieving standardized descriptive names of the attributes of a dataset I could have likely determined that the data published by New York City, Bellevue, and Detroit did not meet my needs.</p>
+<p>Practically though - it seems rather unrealistic to expect that open data publishers who struggle to create accurate and meaningful descriptive metadata could also create linked open data. And this is very true - it is currently rather difficult to publish linked open data without significant effort in markup. But, just as web 1.0 evolved to web 2.0 where interactive web content could be published with tools like Wikipedia, WordPress, or Twitter - so too will there be an evolution of the web to more easily and simply publish semantically enhanced linked data. How and when that next evolution will occur is hard to predict. But<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, it is very encouraging to see that major tech companies like Google, Yahoo, and Microsoft are adopting Schema.org, and encouraging it’s use. In fact, just recently <a href="http://blog.schema.org/2020/03/schema-for-coronavirus-special.html">Schema.org published a new set of markup recommendations</a> for publishing linked data about Covid-19. If there is any silver lining in the current pandemic it is that we are seeing important use cases about the publishing of timely data emerge. For the time being, linked data is a fancy and sometimes novel method of data publishing that affords some convenience to end users. But, the more rapid and quick we see responses needed for emerging public health and safety scenarios the better we realize the potential for curating linked open data.</p>
+</div>
+<div id="lecture-7" class="section level2">
+<h2><span class="header-section-number">10.1</span> Lecture</h2>
+<p>Forthcoming</p>
+</div>
+<div id="reading-2" class="section level2">
+<h2><span class="header-section-number">10.2</span> Reading</h2>
+<ul>
+<li>Allemang, D., &amp; Hendler, J. (2011). Semantic web for the working ontologist: effective modeling in RDFS and OWL. Second Edition. <a href="https://canvas.uw.edu/files/65174738/download?download_frd=1">PDF</a></li>
+<li><ul>
+<li>Read Chapter 1 for an introduction to SW’s concepts… if you are interested Chapter 2 gives a bit more detail on how the SW works, and Chapter 3 introduces RDF and knowledge modeling.</li>
+</ul></li>
+<li>Ontology Development 101 (Noy and McGuiness) <a href="https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html" class="uri">https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html</a> (Read Section 1 and 2; 3 and 4 are optional)</li>
+<li><ul>
+<li>Note - this is a classic formulation of what an
+ontology is and how to create one… The software they reference in building out the example is called Protege (free <a href="https://protege.stanford.edu/" class="uri">https://protege.stanford.edu/</a> ) - If you are really keen you can follow along.(For reference - this short list from Wikipedia is quite helpful) <a href="https://en.wikipedia.org/wiki/Ontology_(information_science)#Components" class="uri">https://en.wikipedia.org/wiki/Ontology_(information_science)#Components</a></li>
+</ul></li>
+<li>Ontology for Data Science <a href="https://towardsdatascience.com/ontology-and-data-science-45e916288cc5" class="uri">https://towardsdatascience.com/ontology-and-data-science-45e916288cc5</a>
+Sem Web for the Legal Domain <a href="https://content.iospress.com/articles/semantic-web/sw224" class="uri">https://content.iospress.com/articles/semantic-web/sw224</a></li>
+</ul>
+<p>Case Study (optional):</p>
+<ul>
+<li>ARL White Paper on Wikidata: Opportunities and Recommendations (2019) <a href="https://www.arl.org/publications-resources/4751-arl-white-paper-on-wikidata-opportunities-and-recommendations#.XLdxXZNKh2Y" class="uri">https://www.arl.org/publications-resources/4751-arl-white-paper-on-wikidata-opportunities-and-recommendations#.XLdxXZNKh2Y</a></li>
+</ul>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Note that image is big and may take a long time to load<a href="linked-data.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>This is the rare moment where I will praise industry<a href="linked-data.html#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="metadata-application-profiles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="emerging-topics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
