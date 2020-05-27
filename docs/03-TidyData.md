@@ -1,9 +1,9 @@
-# Tidy Data 
+# Tidy Data
 
 ## Chapter
-The idea of "tidy data" underlies principles in data management, and database administration that have been around for decades. In 2014, Hadley Wickham started to formalize some of these rules in what he called "Principles for Tidy Data." 
+The idea of "tidy data" underlies principles in data management, and database administration that have been around for decades. In 2014, Hadley Wickham started to formalize some of these rules in what he called "Principles for Tidy Data."
 
-These principles are focused mainly on how to follow some simple conventions for structuring data in a matrix (or table) to use in the statistical programming language `R`. 
+These principles are focused mainly on how to follow some simple conventions for structuring data in a matrix (or table) to use in the statistical programming language `R`.
 
 In this chapter, I am going to give an overview of tidy data principles as they relate to data curation, but also try to extend "tidy data" to some of the underlying principles in organizing, managing, and preparing all kinds of structured data for meaningful use. This chapter also sets up a forthcoming chapter on "tidy metadata".
 
@@ -21,7 +21,7 @@ More simply, for any given table we associate one observation with one or more v
 
 This image depicts the structure of a tidy dataset ^[This image is from the open access textbook [R for Data Science](https://r4ds.had.co.nz/tidy-data.html#fig:tidy-structure)].
 
-The following tidy data table includes characters appearing in a Lewis Caroll [novel](https://en.wikipedia.org/wiki/Sylvie_and_Bruno). The characters are observations, and the variables that we associate with each observation are `Age` and `Height`. Each variable has a standard unit of measurement. 
+The following tidy data table includes characters appearing in a Lewis Caroll [novel](https://en.wikipedia.org/wiki/Sylvie_and_Bruno). The characters are observations, and the variables that we associate with each observation are `Age` and `Height`. Each variable has a standard unit of measurement.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -53,11 +53,11 @@ The following tidy data table includes characters appearing in a Lewis Caroll [n
   </tr>
 </table>
 
-#### Tidy Data Curation 
+#### Tidy Data Curation
 
-The principles described above may seem simplistic and highly intuitive. But, often these principles aren't followed when creating or publishing a dataset. This may be for a variety of reasons, but most obvious is that data creators are often working for convenience in data entry rather than thinking about future data analysis. 
+The principles described above may seem simplistic and highly intuitive. But, often these principles aren't followed when creating or publishing a dataset. This may be for a variety of reasons, but most obvious is that data creators are often working for convenience in data entry rather than thinking about future data analysis.
 
-Think back to our Ch. 3 example of an ecology graduate student sitting in a field observing frogs. After a long day of fieldwork she might not care too much about how she makes her data conform with principles of tidy data - she just wants to record her observations. Or, she may be simply following the conventions of a structure that has already been set up by a member of her lab. Later, when she returns to the data to perform some analysis for a publication she may need to clean the data in order to ease computaiton. But, often she'll simply archive her raw data and not worry about what she did to transform the data in order to make it useful for analysis. These data management practices are highly inefficient, and repsent an excellent point for curators to intervene. 
+Think back to our Ch. 3 example of an ecology graduate student sitting in a field observing frogs. After a long day of fieldwork she might not care too much about how she makes her data conform with principles of tidy data - she just wants to record her observations. Or, she may be simply following the conventions of a structure that has already been set up by a member of her lab. Later, when she returns to the data to perform some analysis for a publication she may need to clean the data in order to ease computaiton. But, often she'll simply archive her raw data and not worry about what she did to transform the data in order to make it useful for analysis. These data management practices are highly inefficient, and repsent an excellent point for curators to intervene.
 
 For data curators, the principles of tidy data can be applied at different points in time.
 
@@ -104,13 +104,13 @@ First, a variable is often inefficently **"spread"** across multiple columns. Fo
 </table>
 
 
-The problem with this structure is that the GDP variables are currently represented as annual values. That is, we have variables that are spread out across multiple columns when they could be easily and more effectively included as values for multiple observations. 
+The problem with this structure is that the GDP variables are currently represented as annual values. That is, we have variables that are spread out across multiple columns when they could be easily and more effectively included as values for multiple observations.
 
 To tidy this kind of dataset we would transform the data by using a **long pivot**. We will restructure the data table so that it is longer - containing more observations. To do this we will:
 
 - Create a `Year` column that can represent the year in which the GDP is being observed for a country.
 - Create a second column that can represent the GDP value.  
-- We will then separate the observations based on the year in which they occur. 
+- We will then separate the observations based on the year in which they occur.
 
 Our new tidy dataset then looks like this:
 
@@ -156,7 +156,7 @@ Our new tidy dataset then looks like this:
 
 Our dataset now contains four observations - USA 2016 and 2017 GDP, and UK 2016 and 2017 GDP. What we've done is remove any external information needed to interpret what the data represent. This could, for example, help with secondary analysis when we want to directly plot GDP over time.
 
-The second type of data structuring problem that curators are likely to encounter is when one observation is **scattered** across multiple rows. This is the exact opposite of the problem that we encountered with spreading variables across multiple columns. In short, the problem with having multiple observations scattered across rows is that we're duplicating information by confusing a variable for a value. 
+The second type of data structuring problem that curators are likely to encounter is when one observation is **scattered** across multiple rows. This is the exact opposite of the problem that we encountered with spreading variables across multiple columns. In short, the problem with having multiple observations scattered across rows is that we're duplicating information by confusing a variable for a value.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -244,15 +244,15 @@ Our dataset now contains only two observations - the GDP and Population for the 
 
 In sum, the pivot works to either:
 
-1. Transform variables so that they correspond with just one observation. We do this by adding new observations. This makes a tidy dataset longer. 
-2. Transform values that are acting as variables. We do this by creating new variables and replacing the incorrect observation. This makes a tidy dataset wider. 
+1. Transform variables so that they correspond with just one observation. We do this by adding new observations. This makes a tidy dataset longer.
+2. Transform values that are acting as variables. We do this by creating new variables and replacing the incorrect observation. This makes a tidy dataset wider.
 
 
 ### Separating and Gathering
-Two other types of transformations are often necessary to create a tidy dataset: **Separating** values that may be incorrectly combined, and **Gathering** redundant values into a single variable. Both of these transformations are highly context dependent. 
+Two other types of transformations are often necessary to create a tidy dataset: **Separating** values that may be incorrectly combined, and **Gathering** redundant values into a single variable. Both of these transformations are highly context dependent.
 
 #### Separating
-Separating variables is a transformation necessary when two distinct values are used as a summary. This is a common shorthand method of data entry. 
+Separating variables is a transformation necessary when two distinct values are used as a summary. This is a common shorthand method of data entry.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -284,9 +284,9 @@ Separating variables is a transformation necessary when two distinct values are 
   </tr>
 </table>
 
-In this table we have a variable `GDP per capita` that represents the amount of GDP divided by the population of each country. This may be intuitive to an undergraduate economics student, but it violates our tidy data principle of having one value per variable. Also notice that the `GDP per capita` variable does not use a standard unit of measurement. 
+In this table we have a variable `GDP per capita` that represents the amount of GDP divided by the population of each country. This may be intuitive to an undergraduate economics student, but it violates our tidy data principle of having one value per variable. Also notice that the `GDP per capita` variable does not use a standard unit of measurement.
 
-To separate these values we would simply create a new column for each of the variables. You may recognize this as a form of 'wide pivot'. 
+To separate these values we would simply create a new column for each of the variables. You may recognize this as a form of 'wide pivot'.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -329,7 +329,7 @@ To separate these values we would simply create a new column for each of the var
 
 By separating the values into their own columns we know have a tidy dataset that includes four variables for each observation.
 
-#### Gathering 
+#### Gathering
 Gathering variables is the exact opposite of separating - instead of having multiple values in a single variable, a data collector may have gone overboard in recording their observations and unintentionally created a dataset that is too granular (that is, has too much specificity). Generally, granular data is good - but it can also create unnecessary work for performing analysis or interpreting data when taken too far.
 
 <style type="text/css">
@@ -403,22 +403,22 @@ In this dataset we have a very granular representation of time. If as data curat
 </table>
 
 
-Our dataset now has just two variables - the time when a species was observed, and the location. We've appealed to standard (IS0 8601) to represent time, and expect that anyone using this dataset will know the temporal convetion HH:MM:SS. 
+Our dataset now has just two variables - the time when a species was observed, and the location. We've appealed to standard (IS0 8601) to represent time, and expect that anyone using this dataset will know the temporal convetion HH:MM:SS.
 
-As I said in opening this section - the assumptions we make in tidying data are highly context dependent. If we were working in a field where granular data like `seconds` was not typical, this kind of representation might not be necessary. But, if we want to preserve all of the information that our dataset contains then appealing to broad standards is a best practice. 
+As I said in opening this section - the assumptions we make in tidying data are highly context dependent. If we were working in a field where granular data like `seconds` was not typical, this kind of representation might not be necessary. But, if we want to preserve all of the information that our dataset contains then appealing to broad standards is a best practice.
 
 ### Tidy Data in Practice
 
-For the purposes of this class, using tidy data principles in a specific programming language is not necessary. Simply understanding common transformations and principles are all that we need to start curating tidy data. 
+For the purposes of this class, using tidy data principles in a specific programming language is not necessary. Simply understanding common transformations and principles are all that we need to start curating tidy data.
 
-But, it is worth knowing that the tidy data principles have been implemented in a number of executable libraries using `R`. This includes the suite of libraries known as the [tidyverse](https://www.tidyverse.org/). A nice overview of what the tidyverse libraries make possible working with data in `R` is summarized in this [blogpost](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/) by Joseph Rickert. 
+But, it is worth knowing that the tidy data principles have been implemented in a number of executable libraries using `R`. This includes the suite of libraries known as the [tidyverse](https://www.tidyverse.org/). A nice overview of what the tidyverse libraries make possible working with data in `R` is summarized in this [blogpost](https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/) by Joseph Rickert.
 
 There are also a number of beginner tutorials and [cheat-sheets](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Tidyverse+Cheat+Sheet.pdf) available to get started. If you come from a database background, I particularly like this [tutorial](https://idc9.github.io/stor390/notes/tidy_data/tidy_data.html#relational_data_and_joining_tables) on tidy data applied to the relational model by my colleague [Iain Carmichael](https://idc9.github.io/).
 
 ### Extending Tidy Data Beyond the Traditional Observation   
-Many examples of tidy data, such as the ones above, depend upon discrete observations that are often rooted in statistical evidence, or a scientific domain. Qualitative and humanities data often contain unique points of reference (e.g. notions of place rather than mapped coordinates), interpreted factual information (e.g. observations to a humanist mean something very different than to an ecologist), and a need for granularity that may seem non-obvious to the tidy data curator. 
+Many examples of tidy data, such as the ones above, depend upon discrete observations that are often rooted in statistical evidence, or a scientific domain. Qualitative and humanities data often contain unique points of reference (e.g. notions of place rather than mapped coordinates), interpreted factual information (e.g. observations to a humanist mean something very different than to an ecologist), and a need for granularity that may seem non-obvious to the tidy data curator.
 
-In the following section I will try to offer some extensions to the concept of tidy data that draws upon the work of [Matthew Lincoln](https://matthewlincoln.net/) for tidy digital humanities data. In particular, we  will look at ways to transform two types of data: Dates and Categories. Each of these types of data often have multiple ways of being represented. But, this shouldn't preclude us from bringing some coherence to untidy data. 
+In the following section I will try to offer some extensions to the concept of tidy data that draws upon the work of [Matthew Lincoln](https://matthewlincoln.net/) for tidy digital humanities data. In particular, we  will look at ways to transform two types of data: Dates and Categories. Each of these types of data often have multiple ways of being represented. But, this shouldn't preclude us from bringing some coherence to untidy data.
 
 For these explanations I'll use Matthew's data because it represents a wonderful example of how to restructure interpreted factual information that was gathered from a museum catalog. The following reference dataset will be used throughout the next two sections. Take a quick moment to read and think about the data that we will transform.    
 
@@ -482,11 +482,11 @@ For these explanations I'll use Matthew's data because it represents a wonderful
 </table>
 
 #### Dates
-In the previous section I described the adherence to a standard, ISO 8601, for structuring time based on the observation of a species. We can imagine a number of use cases where this rigid standard would not be useful for structuring a date or time. In historical data, for example, we may not need the specificity of an ISO standard, and instead we may need to represent something like a period, a date range, or an estimate of time. In the museum catalog dataset we see three different ways to represent a date: After a date, circa a year, and a data error in the catalog (`16220`). 
+In the previous section I described the adherence to a standard, ISO 8601, for structuring time based on the observation of a species. We can imagine a number of use cases where this rigid standard would not be useful for structuring a date or time. In historical data, for example, we may not need the specificity of an ISO standard, and instead we may need to represent something like a period, a date range, or an estimate of time. In the museum catalog dataset we see three different ways to represent a date: After a date, circa a year, and a data error in the catalog (`16220`).
 
 It is helpful to think of these different date representations as "duration" (events with date ranges) and "fixed points" in time.
 
-Following the tidy data principles, if we want to represent a specific point in time we often need to come up with a consistent unit of measurement. For example, we may have a simple variable like date with the following different representations: 
+Following the tidy data principles, if we want to represent a specific point in time we often need to come up with a consistent unit of measurement. For example, we may have a simple variable like date with the following different representations:
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -624,9 +624,9 @@ Another obstacle we may come across in representing dates in our data is missing
   </tr>
 </table>
 
-We may be tempted to look at these four observations and think it is a simple data entry error - the last observation is clearly supposed to follow the sequence of representing the last day in a year, and the first day in a year. But, without complete knowledge we would have to decide whether or not we should infer this pattern or whether we should transform all of the data to be a duration (range of dates). 
+We may be tempted to look at these four observations and think it is a simple data entry error - the last observation is clearly supposed to follow the sequence of representing the last day in a year, and the first day in a year. But, without complete knowledge we would have to decide whether or not we should infer this pattern or whether we should transform all of the data to be a duration (range of dates).
 
-There is not a single right answer - a curator would simply have to decide how and in what ways the data might be made more meaningful for reuse. The wrong approach though would be to leave the ambiguity in the dataset. Instead, what we might do is correct what we assume to be a data entry error and create documentation which conveys that inference to a potential reuser. 
+There is not a single right answer - a curator would simply have to decide how and in what ways the data might be made more meaningful for reuse. The wrong approach though would be to leave the ambiguity in the dataset. Instead, what we might do is correct what we assume to be a data entry error and create documentation which conveys that inference to a potential reuser.
 
 There are many ways to do this with metadata, but a helpful approach might be just to add a new column with notes.
 
@@ -660,7 +660,7 @@ There are many ways to do this with metadata, but a helpful approach might be ju
   </tr>
 </table>
 
-Documentation is helpful for all data curation tasks, but is essential in tidying data that may have a number of ambiguities. 
+Documentation is helpful for all data curation tasks, but is essential in tidying data that may have a number of ambiguities.
 
 Let's return to our original dataset and clean up the dates following the above instructions for tidying ambiguous date information.
 
@@ -711,16 +711,16 @@ Let's return to our original dataset and clean up the dates following the above 
   </tr>
 </table>
 
-We have added two new variables which represent a duration (range of time) - the earliest estimate and the latest estimate of when a work of art was created ^[You may be wondering why 1669 is the latest date for the first entry. Rembrandt died in 1669 - His work definitely had staying power, but I think its safe to say he wasn't producing new paintings after that]. 
+We have added two new variables which represent a duration (range of time) - the earliest estimate and the latest estimate of when a work of art was created ^[You may be wondering why 1669 is the latest date for the first entry. Rembrandt died in 1669 - His work definitely had staying power, but I think its safe to say he wasn't producing new paintings after that].
 
 Note that we also retained the original dates in our datset. This is another approach to communicating ambiguity - we can simply retain the untidy data, but provide a clean version for analysis. I don't particularly like this approach, but if we assume that the user of this tidy data has the ability to easily exclude a variable from their analysis then this is a perfectly acceptable practice.
 
 #### Categories
 LIS research in knowledge organization (KO) has many useful principles for approaching data and metadata tidying, including the idea of "authority control" ^[We'll talk about this in depth in coming weeks]. In short, authority control is the process of appealing to standard way of representing a spelling, categorization, or classification in data.
 
-In approaching interpretive data that may contain many ambiguities we can draw upon the idea of authority control to logically decide how best to represent categorical information to our users. 
+In approaching interpretive data that may contain many ambiguities we can draw upon the idea of authority control to logically decide how best to represent categorical information to our users.
 
-A helpful heuristic to keep in mind when curating data with categories is that it is much easier to combine categories later than it is to separate them initially. We can do this by taking some time to evaluate and analyze a dataset first, and then adding new categories later. 
+A helpful heuristic to keep in mind when curating data with categories is that it is much easier to combine categories later than it is to separate them initially. We can do this by taking some time to evaluate and analyze a dataset first, and then adding new categories later.
 
 Let's return to our original dataset to understand what authority control looks like in tidy data practice.
 
@@ -764,15 +764,15 @@ In the variable medium there are actually three values:
 2. The material (or support) that the medium was applied to.
 3. A conservation technique.
 
-This ambiguity likely stems from the fact that art historians often use an informal vocabulary for describing a variable like medium. 
+This ambiguity likely stems from the fact that art historians often use an informal vocabulary for describing a variable like medium.
 
-Think of the placard on any museum that you have visited -- Often times the "medium" information on that placard will contain a plain language description. This information is stored in a museum database and used to both identify a work owned by the museum, but also produce things like exhibit catalogues and placards. Here is an example from our dataset. 
+Think of the placard on any museum that you have visited -- Often times the "medium" information on that placard will contain a plain language description. This information is stored in a museum database and used to both identify a work owned by the museum, but also produce things like exhibit catalogues and placards. Here is an example from our dataset.
 
 ![](https://raw.githubusercontent.com/OpenDataLiteracy/LIS-598-Sp2020-DC2/master/Images/rembrandt-example.jpg)
 
 But, we don't want to create a dataset that retains ambiguous short-hand categories simply because this is convenient to an exhibit curator. What we want is to tidy the data such that it can be broadly useful, and accurately describe a particular piece of art.
 
-This example should trigger a memory from our earlier review of tidy data principles - when we see the conflation of two or more values in a single variable we need to apply a "separate" transformation. To do this we will create three new variables to perform a "wide pivot". 
+This example should trigger a memory from our earlier review of tidy data principles - when we see the conflation of two or more values in a single variable we need to apply a "separate" transformation. To do this we will create three new variables to perform a "wide pivot".
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -823,9 +823,9 @@ This example should trigger a memory from our earlier review of tidy data princi
 
 In this wide pivot, we retained the original `medium` variable, but we have also separated the `support` and `conservation notes` into new variables. ^[Note: I will have much more to say about this example and how we can use an "authority control" in future chapters]
 
-Our original dataset also contained another variable - Name - with multiple values and ambiguities. In general, names are the cause of great confusion in information science. In part because names are often hard to disambiguate across time, but also because "identity" is difficult in the context of cultural heritage data. Art history is no exception. 
+Our original dataset also contained another variable - Name - with multiple values and ambiguities. In general, names are the cause of great confusion in information science. In part because names are often hard to disambiguate across time, but also because "identity" is difficult in the context of cultural heritage data. Art history is no exception.
 
-In our original dataset, we have a mix of name disambugity and identity problems. 
+In our original dataset, we have a mix of name disambugity and identity problems.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -861,21 +861,21 @@ In our original dataset, we have a mix of name disambugity and identity problems
   </tr>
 </table>
 
-Let's unpack some of these ambiguities: 
+Let's unpack some of these ambiguities:
 
-- The first observation "Studio of Rembrandt, Govaert Flink" contains two names - `Rembrandt` and `Govaert Flink`. It also has a qualification, that the work was produced in `the studio of` Rembrandt. 
-- The third observation contains a qualifier `Possibly` to note uncertainty in the painting's provenance. 
-- All four of the observations have a different way of arranging given names and surnames. 
+- The first observation "Studio of Rembrandt, Govaert Flink" contains two names - `Rembrandt` and `Govaert Flink`. It also has a qualification, that the work was produced in `the studio of` Rembrandt.
+- The third observation contains a qualifier `Possibly` to note uncertainty in the painting's provenance.
+- All four of the observations have a different way of arranging given names and surnames.
 
-To tidy names there are a number of clear transformations we could apply. We could simply create a `first_name` and `last_name` variable and seperate these values. 
+To tidy names there are a number of clear transformations we could apply. We could simply create a `first_name` and `last_name` variable and seperate these values.
 
 But this is not all of the information that our `Name` variable contains. It also contains qualifiers. And, it is much more difficult to effectively retain qualifications in structured data. In part because they don't neatly fall into the triple model that we expect our plain language to take when being structured as a table.
 
-Take for example our third observation. The subject "Vermeer" has an object (the painting) "View of Delft" being connected by a predicate "painted". In plain language we could easily represent this triple as "Vermeer-painted-View_of_Delft". 
+Take for example our third observation. The subject "Vermeer" has an object (the painting) "View of Delft" being connected by a predicate "painted". In plain language we could easily represent this triple as "Vermeer-painted-View_of_Delft".
 
 But, our first observation is much more complex and not well suited for the triple form. The plain language statement would look somoething like "The studio of Rembrandt sponsored Govaert Flink in painting 'Isaac blessing Jacob'" ^[The painting in question is [here](https://upload.wikimedia.org/wikipedia/commons/b/b2/Amsterdam_-_Rijksmuseum_1885_-_The_Gallery_of_Honour_%281st_Floor%29_-_Isaac_blessing_Jacob_1638_by_Govert_Flinck.jpg)]
 
-To represent these ambiguities in our tidy data, we need to create some way to qualify and attribute the different works to different people. Warning in advanance, this will be a VERY wide pivot. 
+To represent these ambiguities in our tidy data, we need to create some way to qualify and attribute the different works to different people. Warning in advanance, this will be a VERY wide pivot.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -941,31 +941,31 @@ To represent these ambiguities in our tidy data, we need to create some way to q
   </tr>
 </table></div>
 
-Across all observations we separated first and second names. In the case of Vermeer, this is an important distinction as there are multiple Vermeers that produced works of art likely to be found in a museum catalogue. 
+Across all observations we separated first and second names. In the case of Vermeer, this is an important distinction as there are multiple Vermeers that produced works of art likely to be found in a museum catalogue.
 
-In the third observation, we also added a qualifier "possibly" to communicate that the origin of the work is assumed, but not verified to be Vermeer. We also used this qualification variable for Rembrandt, who had a studio that most definitely produced a work of art, but the person who may have actually put oil to canvas is ambiguous. 
+In the third observation, we also added a qualifier "possibly" to communicate that the origin of the work is assumed, but not verified to be Vermeer. We also used this qualification variable for Rembrandt, who had a studio that most definitely produced a work of art, but the person who may have actually put oil to canvas is ambiguous.
 
-We also created a representation of artist that is numbered - so that we could represent the first artist and the second artist associated with a painting. 
+We also created a representation of artist that is numbered - so that we could represent the first artist and the second artist associated with a painting.
 
-Each of these approaches to disambiguation are based on a "separating" transformation through a wide pivot. We tidy the dataset by creating qualifiers, and add variables to represent multiple artists. 
+Each of these approaches to disambiguation are based on a "separating" transformation through a wide pivot. We tidy the dataset by creating qualifiers, and add variables to represent multiple artists.
 
-This solution is far from perfect, and we can imagine this going quickly overboard without some control in place for how we will name individuals and how we will assign credit for their work. But, this example also makes clear that the structural decisions are ours to make as data curators. We can solve each transformation problem in multiple ways. The key to tidy data is having a command of the different strategies for transforming data, and knowing when and why to apply each transformation. 
+This solution is far from perfect, and we can imagine this going quickly overboard without some control in place for how we will name individuals and how we will assign credit for their work. But, this example also makes clear that the structural decisions are ours to make as data curators. We can solve each transformation problem in multiple ways. The key to tidy data is having a command of the different strategies for transforming data, and knowing when and why to apply each transformation.
 
-In future chapters we will further explore the idea of appealing to an "authority control" when making these types of decisions around tidying data and metadata. 
+In future chapters we will further explore the idea of appealing to an "authority control" when making these types of decisions around tidying data and metadata.
 
 ### Summary
 In this chapter we've gone full tilt on the boring aspects of data structuring In doing so, we tried to adhere to a set of principles for tidying data:
 
-- Observations are rows that have variables containing values. 
+- Observations are rows that have variables containing values.
 - Variables are columns. Each variable contains only one value, and each value follows a standard unit of measurement.
 
-We focused on three types of transformations for tidying data: 
+We focused on three types of transformations for tidying data:
 
-- Pivots - which are either wide or long. 
-- Separating - which creates new variables 
+- Pivots - which are either wide or long.
+- Separating - which creates new variables
 - Gathering - which collapses variables  
 
-I also introduced the idea of using "authority control" for normalizing or making regular data that does not neatly conform to the conventions spelled out by "Tidy Data Principles". 
+I also introduced the idea of using "authority control" for normalizing or making regular data that does not neatly conform to the conventions spelled out by "Tidy Data Principles".
 
 ## Lecture
 
@@ -997,7 +997,7 @@ Spreadsheet practices in the wild:
 
 - Mack, K., Lee, J., Chang, K., Karahalios, K., & Parameswaran, A. (2018, April). Characterizing scalability issues in spreadsheet software using online forums. In Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems (pp. 1-9).
 
-Formatting data tables in spreadsheets: 
+Formatting data tables in spreadsheets:
 
 - [Data Carpentry lesson](https://datacarpentry.org/2015-05-03-NDIC/excel-ecology/01-format-data.html)
 
