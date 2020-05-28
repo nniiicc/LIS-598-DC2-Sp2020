@@ -1,6 +1,4 @@
-## Chapter
-
-### Linked Data
+# Linked Data
 The final week in Data Curation II addresses the prospect of linked data for curation. At various points this quarter we have discussed the idea of semantically enhanced data that takes on a form of artificial intelligence. This "intelligence" is practically achieved through enhanced markup of data and web infrastructure that enables applications to make use of data that are published following strict linked data standards. Thus far we have touched on, but not explored in-depth the ways that linked data practically manifests in curation work. In the following chapter, I will introduce some working definitions and provide an overview of concepts related to linked data and the promise, but ultimate failure of the semantic web. Next week, I will describe ontologies and their role in a linked data ecosystem.
 
 ### The Early Web
@@ -142,7 +140,8 @@ Practically though - it seems rather unrealistic to expect that open data publis
 
 
 ## Lecture
-Forthcoming
+
+<iframe width=853 height=478 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cYhuoBpZLZ&v=6&ff=1&title=0&controls=1" allowfullscreen="true"></iframe>
 
 ## Reading
 
