@@ -1,4 +1,6 @@
-# Linked Data
+## Chapter
+
+### Linked Data
 The final week in Data Curation II addresses the prospect of linked data for curation. At various points this quarter we have discussed the idea of semantically enhanced data that takes on a form of artificial intelligence. This "intelligence" is practically achieved through enhanced markup of data and web infrastructure that enables applications to make use of data that are published following strict linked data standards. Thus far we have touched on, but not explored in-depth the ways that linked data practically manifests in curation work. In the following chapter, I will introduce some working definitions and provide an overview of concepts related to linked data and the promise, but ultimate failure of the semantic web. Next week, I will describe ontologies and their role in a linked data ecosystem.
 
 ### The Early Web
@@ -64,7 +66,7 @@ JSON-LD is an attempt to add meaning to the structure of graph data through a sc
 
 JSON-LD has some key markup features that are necessary to practically implement linked data. In introducing these features I'll also note how the syntax of JSON-LD works through examples. 
 
-### Practical JSON-LD 
+### JSON-LD Applications
 JSON-LD operates exactly like JSON - there are attributes and values that are declared. In JSON these declarations are "dumb" objects - they don't have any semantic meaning. In JSON-LD we have the ability to give these objects meaning through external schemas. The two features we will look at first are the Context and ID tags. 
 
 #### Context
